@@ -38,7 +38,8 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className={twMerge(
-        "relative overflow-hidden rounded-[32px] border border-white/10 bg-white/50 backdrop-blur-md transition-colors duration-300",
+        "relative overflow-hidden rounded-[32px] border border-white/10 backdrop-blur-md transition-colors duration-300",
+        className.includes('bg-') ? "" : "bg-white/50",
         className
       )}
     >

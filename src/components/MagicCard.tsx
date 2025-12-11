@@ -38,7 +38,8 @@ const MagicCard: React.FC<MagicCardProps> = ({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className={twMerge(
-        "relative overflow-hidden rounded-[32px] border border-black/5 bg-white transition-all duration-300 hover:shadow-lg",
+        "relative overflow-hidden rounded-[32px] border border-black/5 transition-all duration-300 hover:shadow-lg",
+        className.includes('bg-') ? "" : "bg-white",
         className
       )}
     >
