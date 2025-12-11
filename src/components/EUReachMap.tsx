@@ -2,14 +2,25 @@ import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-const locations = [
-  { name: "Milano (HQ)", coords: [45.4642, 9.1900] as [number, number] },
-  { name: "Paris", coords: [48.8566, 2.3522] as [number, number] },
-  { name: "Berlin", coords: [52.5200, 13.4050] as [number, number] },
-  { name: "Madrid", coords: [40.4168, -3.7038] as [number, number] },
+export interface Location {
+  name: string;
+  coords: [number, number];
+}
+
+interface EUReachMapProps {
+  locations?: Location[];
+  theme?: 'light' | 'dark';
+  className?: string;
+}
+
+const defaultLocations: Location[] = [
+  { name: "Milano (HQ)", coords: [45.4642, 9.1900] },
+  { name: "Paris", coords: [48.8566, 2.3522] },
+  { name: "Berlin", coords: [52.5200, 13.4050] },
+  { name: "Madrid", coords: [40.4168, -3.7038] },
 ];
 
-const EUReachMap = () => {
+const EUReachMap = ({ locations = defaultLocations, theme = 'light', className = '' }: EUReachMapProps) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pointerInteracting = useRef<number | null>(null);
   const pointerInteractionMovement = useRef(0);
@@ -30,22 +41,23 @@ const EUReachMap = () => {
 
     if (!canvasRef.current) return;
 
+    const isDark = theme === 'dark';
+
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
       width: width * 2,
       height: height * 2,
       phi: 0,
       theta: 0.3,
-      dark: 0,
+      dark: isDark ? 1 : 0,
       diffuse: 1.2,
       mapSamples: 16000,
-      mapBrightness: 2,
-      baseColor: [0.95, 0.95, 0.95],
+      mapBrightness: isDark ? 1.2 : 2,
+      baseColor: isDark ? [0.1, 0.1, 0.1] : [0.95, 0.95, 0.95],
       markerColor: [0.184, 0.502, 0.929],
-      glowColor: [0.9, 0.9, 0.9],
+      glowColor: isDark ? [0.2, 0.2, 0.2] : [0.9, 0.9, 0.9],
       markers: locations.map(loc => ({ location: loc.coords, size: 0.08 })),
       onRender: (state) => {
-        // Drag interaction
         if (pointerInteracting.current !== null) {
             const delta = pointerInteractionMovement.current;
             phi += delta * 0.005;
@@ -61,7 +73,6 @@ const EUReachMap = () => {
       scale: 1,
     });
 
-    // Fade in canvas
     setTimeout(() => {
         if (canvasRef.current) {
             canvasRef.current.style.opacity = '1';
@@ -72,11 +83,13 @@ const EUReachMap = () => {
       globe.destroy();
       window.removeEventListener('resize', onResize);
     };
-  }, []);
+  }, [locations, theme]);
+
+  const isDark = theme === 'dark';
 
   return (
-    <div className="relative w-full aspect-[16/9] md:aspect-[21/9] bg-[#F8F9FA] rounded-[48px] overflow-hidden border border-black/5 flex items-center justify-center group">
-       <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
+    <div className={`relative w-full aspect-[16/9] md:aspect-[21/9] rounded-[48px] overflow-hidden flex items-center justify-center group ${isDark ? 'bg-black border border-white/10' : 'bg-[#F8F9FA] border border-black/5'} ${className}`}>
+       <div className="absolute inset-0 opacity-20" style={{ backgroundImage: `radial-gradient(${isDark ? '#fff' : '#000'} 1px, transparent 1px)`, backgroundSize: '30px 30px' }} />
        
        <div className="absolute top-8 left-8 z-10 hidden md:block">
            <div className="space-y-2">
@@ -89,7 +102,7 @@ const EUReachMap = () => {
                     className="flex items-center gap-2"
                    >
                        <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                       <span className="text-sm font-medium text-foreground/70">{loc.name}</span>
+                       <span className={`text-sm font-medium ${isDark ? 'text-white/70' : 'text-foreground/70'}`}>{loc.name}</span>
                    </motion.div>
                ))}
            </div>
@@ -135,7 +148,7 @@ const EUReachMap = () => {
          }}
        />
 
-       <div className="absolute bottom-8 right-8 bg-white/80 backdrop-blur-md px-6 py-3 rounded-full text-sm font-medium shadow-sm flex items-center gap-2">
+       <div className={`absolute bottom-8 right-8 px-6 py-3 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 ${isDark ? 'bg-white/10 backdrop-blur-md text-white' : 'bg-white/80 backdrop-blur-md text-black'}`}>
          <span className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
