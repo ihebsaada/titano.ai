@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-glass-gradient backdrop-blur-xl border border-white/40 shadow-glass;
+  }
+  
+  .glass-card {
+    @apply bg-glass-gradient backdrop-blur-xl border border-white/60 shadow-glass rounded-3xl transition-all duration-300;
+  }
+
+  .glass-nav {
+    @apply bg-[#F1F1F1]/70 backdrop-blur-xl border border-white/20 shadow-sm;
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full hover:bg-gray-400 transition-colors;
+}
+
+/* Hide scrollbar for clean look but allow scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
