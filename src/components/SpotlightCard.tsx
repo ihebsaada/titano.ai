@@ -5,12 +5,14 @@ interface SpotlightCardProps {
   children: React.ReactNode;
   className?: string;
   spotlightColor?: string;
+  variant?: 'default' | 'dark';
 }
 
 const SpotlightCard: React.FC<SpotlightCardProps> = ({
   children,
   className = "",
-  spotlightColor = "rgba(59, 130, 246, 0.1)" // Light blue default
+  spotlightColor = "rgba(59, 130, 246, 0.1)", // Light blue default
+  variant = 'default'
 }) => {
   const divRef = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -31,6 +33,9 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
     setOpacity(0);
   };
 
+  // Check if custom background is provided
+  // const hasCustomBackground = className && (className.includes('bg-') || className.includes('bg['));
+
   return (
     <div
       ref={divRef}
@@ -39,7 +44,7 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
       onMouseLeave={handleMouseLeave}
       className={twMerge(
         "relative overflow-hidden rounded-[32px] border border-white/10 backdrop-blur-md transition-colors duration-300",
-        className.includes('bg-') ? "" : "bg-white/50",
+        variant === 'dark' ? "" : "bg-white/50",
         className
       )}
     >

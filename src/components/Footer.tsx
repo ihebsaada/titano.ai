@@ -6,7 +6,7 @@ import SpotlightCard from './SpotlightCard';
 const Footer = () => {
   return (
     <footer className="relative pt-24 pb-0 overflow-hidden">
-       <SpotlightCard className="rounded-t-[60px] rounded-b-none border-t border-white/10 bg-black/90 backdrop-blur-3xl" spotlightColor="rgba(255, 255, 255, 0.1)">
+       <SpotlightCard className="rounded-t-[60px] rounded-b-none border-t border-white/10 bg-black/90 backdrop-blur-3xl" spotlightColor="rgba(255, 255, 255, 0.1)" variant="dark">
       
       <div className="max-w-[1920px] mx-auto px-6 md:px-12 relative z-10 pt-20 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">

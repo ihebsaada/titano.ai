@@ -14,7 +14,7 @@ const EcosystemMosaic5 = () => {
           viewport={{ once: true }}
           className="md:col-span-2 md:row-span-2 group"
         >
-          <MagicCard className="h-full flex flex-col justify-end relative overflow-hidden bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full flex flex-col justify-end relative overflow-hidden bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
             <div className="absolute inset-0 z-0">
                 <div 
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-60"
@@ -43,7 +43,7 @@ const EcosystemMosaic5 = () => {
           transition={{ delay: 0.1 }}
           className="md:col-span-2 md:row-span-1 group"
         >
-          <MagicCard className="h-full p-8 md:p-10 flex flex-col justify-center relative overflow-hidden bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full p-8 md:p-10 flex flex-col justify-center relative overflow-hidden bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
              <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-white/5 to-transparent" />
              <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div>
@@ -70,7 +70,7 @@ const EcosystemMosaic5 = () => {
           transition={{ delay: 0.2 }}
           className="md:col-span-1 md:row-span-1 group"
         >
-          <MagicCard className="h-full p-8 flex flex-col justify-between bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full p-8 flex flex-col justify-between bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
             <div className="bg-white/10 w-10 h-10 rounded-xl flex items-center justify-center shadow-sm text-white border border-white/10">
               <Database size={20} />
             </div>
@@ -89,7 +89,7 @@ const EcosystemMosaic5 = () => {
           transition={{ delay: 0.3 }}
           className="md:col-span-1 md:row-span-1 group"
         >
-          <MagicCard className="h-full flex flex-col justify-between relative overflow-hidden bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full flex flex-col justify-between relative overflow-hidden bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
              <div className="absolute inset-0 z-0">
                  <div 
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-60"
@@ -114,7 +114,7 @@ const EcosystemMosaic5 = () => {
           transition={{ delay: 0.4 }}
           className="md:col-span-4 md:row-span-1 group"
         >
-          <MagicCard className="h-full p-8 md:p-10 flex items-center relative overflow-hidden bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full p-8 md:p-10 flex items-center relative overflow-hidden bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
             <div className="relative z-10 flex items-center gap-6">
                <div className="bg-white/10 p-4 rounded-2xl text-white border border-white/10 backdrop-blur-sm">
                  <Map size={32} />

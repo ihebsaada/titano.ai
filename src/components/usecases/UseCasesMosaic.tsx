@@ -14,7 +14,7 @@ const UseCasesMosaic = () => {
           viewport={{ once: true }}
           className="md:col-span-1 md:row-span-2 group"
         >
-          <MagicCard className="h-full flex flex-col justify-end bg-[#1B1B1B] text-white border-white/10 relative overflow-hidden" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full flex flex-col justify-end bg-[#1B1B1B] text-white border-white/10 relative overflow-hidden" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
             {/* Full size image background */}
             <div 
               className="absolute inset-0 z-0"
@@ -47,7 +47,7 @@ const UseCasesMosaic = () => {
           transition={{ delay: 0.1 }}
           className="md:col-span-1 md:row-span-1 group"
         >
-          <MagicCard className="h-full p-8 flex flex-col justify-between bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full p-8 flex flex-col justify-between bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
             <div className="bg-white/10 w-10 h-10 rounded-xl flex items-center justify-center">
               <Megaphone size={20} />
             </div>
@@ -66,7 +66,7 @@ const UseCasesMosaic = () => {
           transition={{ delay: 0.2 }}
           className="md:col-span-1 md:row-span-1 group"
         >
-          <MagicCard className="h-full p-8 flex flex-col justify-between bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full p-8 flex flex-col justify-between bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
             <div className="bg-white/10 w-10 h-10 rounded-xl flex items-center justify-center">
               <Users size={20} />
             </div>
@@ -85,7 +85,7 @@ const UseCasesMosaic = () => {
           transition={{ delay: 0.3 }}
           className="md:col-span-1 md:row-span-1 group"
         >
-          <MagicCard className="h-full p-8 flex flex-col justify-between bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full p-8 flex flex-col justify-between bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
             <div className="bg-white/10 w-10 h-10 rounded-xl flex items-center justify-center">
               <Footprints size={20} />
             </div>
@@ -104,7 +104,7 @@ const UseCasesMosaic = () => {
           transition={{ delay: 0.4 }}
           className="md:col-span-1 md:row-span-1 group"
         >
-           <MagicCard className="h-full p-8 flex flex-col justify-between bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)">
+           <MagicCard className="h-full p-8 flex flex-col justify-between bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
              <div className="bg-white/10 w-10 h-10 rounded-xl flex items-center justify-center">
                 <Zap size={20} />
              </div>
@@ -123,7 +123,7 @@ const UseCasesMosaic = () => {
           transition={{ delay: 0.5 }}
           className="md:col-span-1 md:row-span-1 group"
         >
-           <MagicCard className="h-full p-8 flex flex-col justify-between bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)">
+           <MagicCard className="h-full p-8 flex flex-col justify-between bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
               <div className="bg-white/10 w-10 h-10 rounded-xl flex items-center justify-center">
                 <BarChart3 size={20} />
               </div>

@@ -29,7 +29,7 @@ const OSLayerStack = () => {
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
           >
-            <MagicCard className="p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-6 bg-[#1B1B1B] text-white border-white/10 hover:border-white/20 transition-colors" gradientColor="rgba(255, 255, 255, 0.08)">
+            <MagicCard className="p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-6 bg-[#1B1B1B] text-white border-white/10 hover:border-white/20 transition-colors" gradientColor="rgba(255, 255, 255, 0.08)" variant="dark">
               <div className="bg-white/10 p-2 rounded-xl border border-white/5 shrink-0 backdrop-blur-sm w-9 h-9 flex items-center justify-center">
                 {layer.icon}
               </div>

@@ -15,7 +15,7 @@ const ValuesGrid = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
         >
-          <MagicCard className="h-full p-8 md:p-12 bg-[#1B1B1B] text-white border-white/10 flex flex-col justify-center" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full p-8 md:p-12 bg-[#1B1B1B] text-white border-white/10 flex flex-col justify-center" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
             <div className="bg-white/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6 border border-white/10 backdrop-blur-sm">
                 <ShieldCheck className="w-6 h-6 text-white" />
             </div>
@@ -34,7 +34,7 @@ const ValuesGrid = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
         >
-          <MagicCard className="h-full p-8 md:p-12 bg-[#1B1B1B] text-white border-white/10 flex flex-col justify-between" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full p-8 md:p-12 bg-[#1B1B1B] text-white border-white/10 flex flex-col justify-between" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
             <div className="bg-white/10 w-12 h-12 rounded-xl flex items-center justify-center border border-white/10 backdrop-blur-sm">
                 <Eye className="w-6 h-6 text-white" />
             </div>
@@ -55,7 +55,7 @@ const ValuesGrid = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
         >
-          <MagicCard className="h-full p-8 bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full p-8 bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
             <div className="bg-white/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6 border border-white/10 backdrop-blur-sm">
                 <TrendingUp className="w-6 h-6 text-white" />
             </div>
@@ -72,7 +72,7 @@ const ValuesGrid = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
         >
-          <MagicCard className="h-full p-8 bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)">
+          <MagicCard className="h-full p-8 bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
             <div className="bg-white/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6 border border-white/10 backdrop-blur-sm">
                 <Target className="w-6 h-6 text-white" />
             </div>

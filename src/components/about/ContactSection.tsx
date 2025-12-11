@@ -24,7 +24,7 @@ const ContactSection = () => {
             transition={{ delay: index * 0.1 }}
             className="block group"
           >
-            <MagicCard className="p-8 h-48 flex flex-col justify-between transition-all duration-300 bg-[#1B1B1B] text-white border-white/10 hover:border-white/20" gradientColor="rgba(255, 255, 255, 0.05)">
+            <MagicCard className="p-8 h-48 flex flex-col justify-between transition-all duration-300 bg-[#1B1B1B] text-white border-white/10 hover:border-white/20" gradientColor="rgba(255, 255, 255, 0.05)" variant="dark">
               <div className="flex justify-between items-start">
                 <div className="bg-white/10 w-12 h-12 rounded-xl text-white transition-colors border border-white/10 backdrop-blur-sm flex items-center justify-center">
                   <Mail className="w-6 h-6" />

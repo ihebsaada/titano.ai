@@ -23,7 +23,7 @@ const TeamSection = () => {
             transition={{ delay: index * 0.1 }}
             className="group"
           >
-            <MagicCard className="p-8 h-full bg-[#1B1B1B] border-white/10 text-white flex flex-col items-center text-center hover:border-white/20 transition-colors" gradientColor="rgba(255, 255, 255, 0.05)">
+            <MagicCard className="p-8 h-full bg-[#1B1B1B] border-white/10 text-white flex flex-col items-center text-center hover:border-white/20 transition-colors" gradientColor="rgba(255, 255, 255, 0.05)" variant="dark">
                 <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 border border-white/10 group-hover:scale-105 transition-transform duration-300 mx-auto">
                     <div className="text-white/80 group-hover:text-white transition-colors">
                         {member.icon}

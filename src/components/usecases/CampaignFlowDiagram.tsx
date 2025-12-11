@@ -39,6 +39,7 @@ const CampaignFlowDiagram = () => {
                 <MagicCard 
                   className="h-48 flex flex-col justify-between p-6 bg-[#1B1B1B] text-white border-white/10 hover:border-white/20 transition-colors" 
                   gradientColor="rgba(255, 255, 255, 0.08)"
+                  variant="dark"
                 >
                   <div className="flex justify-between items-start">
                     <div className="p-2.5 rounded-xl bg-white/10 text-white backdrop-blur-sm border border-white/5 group-hover:scale-110 transition-transform duration-300">

@@ -5,12 +5,14 @@ interface MagicCardProps {
   children: React.ReactNode;
   className?: string;
   gradientColor?: string;
+  variant?: 'default' | 'dark';
 }
 
 const MagicCard: React.FC<MagicCardProps> = ({
   children,
   className = "",
-  gradientColor = "rgba(47, 128, 237, 0.15)" // Accent blue with low opacity
+  gradientColor = "rgba(47, 128, 237, 0.15)", // Accent blue with low opacity
+  variant = 'default'
 }) => {
   const divRef = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -31,6 +33,9 @@ const MagicCard: React.FC<MagicCardProps> = ({
     setOpacity(0);
   };
 
+  // Check if custom background is provided
+  // const hasCustomBackground = className && (className.includes('bg-') || className.includes('bg['));
+
   return (
     <div
       ref={divRef}
@@ -39,7 +44,7 @@ const MagicCard: React.FC<MagicCardProps> = ({
       onMouseLeave={handleMouseLeave}
       className={twMerge(
         "relative overflow-hidden rounded-[32px] border border-black/5 transition-all duration-300 hover:shadow-lg",
-        className.includes('bg-') ? "" : "bg-white",
+        variant === 'dark' ? "" : "bg-white",
         className
       )}
     >
