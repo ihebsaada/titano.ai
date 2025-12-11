@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface MagicCardProps {
   children: React.ReactNode;
@@ -36,7 +37,10 @@ const MagicCard: React.FC<MagicCardProps> = ({
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`relative overflow-hidden rounded-[32px] border border-black/5 bg-white transition-all duration-300 hover:shadow-lg ${className}`}
+      className={twMerge(
+        "relative overflow-hidden rounded-[32px] border border-black/5 bg-white transition-all duration-300 hover:shadow-lg",
+        className
+      )}
     >
       {/* Spotlight Effect */}
       <div

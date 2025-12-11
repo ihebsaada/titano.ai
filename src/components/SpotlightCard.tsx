@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface SpotlightCardProps {
   children: React.ReactNode;
@@ -36,7 +37,10 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`relative overflow-hidden rounded-[32px] border border-white/10 bg-white/50 backdrop-blur-md transition-colors duration-300 ${className}`}
+      className={twMerge(
+        "relative overflow-hidden rounded-[32px] border border-white/10 bg-white/50 backdrop-blur-md transition-colors duration-300",
+        className
+      )}
     >
       <div
         className="pointer-events-none absolute -inset-px opacity-0 transition-opacity duration-300"
