@@ -28,7 +28,7 @@ const VideoHero = () => {
             playsInline
           >
             <source 
-              src={isMobile ? "/videos/video-mobile.mp4" : "/videos/Sequenza 01_3.mp4"} 
+              src={isMobile ? "/videos/video-mobile.mp4" : "/videos/Sequenza 01_4.mp4"} 
               type="video/mp4" 
             />
           </video>
