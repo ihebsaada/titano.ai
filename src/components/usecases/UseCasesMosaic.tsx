@@ -21,7 +21,7 @@ const UseCasesMosaic = () => {
             >
               <div 
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-60"
-                style={{ backgroundImage: "url('/Images/robot-2.jpg')" }}
+                style={{ backgroundImage: "url('/public/Images/1.png')" }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1B1B1B] via-transparent to-transparent" />
             </div>
