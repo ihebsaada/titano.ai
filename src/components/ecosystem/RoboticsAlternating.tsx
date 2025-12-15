@@ -6,7 +6,7 @@ const RoboticsAlternating = () => {
     {
       title: "Autonomy Upgrade",
       desc: "Trasformiamo piattaforme robotiche standard in agenti autonomi intelligenti, capaci di operare in ambienti dinamici senza infrastrutture esterne.",
-      image: "/Images/robot-2.jpg",
+      image: "/Images/2.png",
       align: "left"
     },
     {
@@ -18,7 +18,7 @@ const RoboticsAlternating = () => {
     {
       title: "Interaction & Safety",
       desc: "Sistemi di sicurezza certificati e interfacce naturali rendono i robot Titano collaboratori affidabili e coinvolgenti per il pubblico.",
-      image: "/Images/robot-1.jpg",
+      image: "/Images/1.png",
       align: "left"
     }
   ];

@@ -7,7 +7,7 @@ const MosaicShowcase = () => {
     {
       title: "Robotics",
       desc: "Navigazione autonoma e delivery.",
-      image: "/Images/robot-1.jpg",
+      image: "/Images/1.png",
       link: "/ecosistema#robotics",
       colSpan: "md:col-span-2",
       bgPos: "center"
@@ -23,7 +23,7 @@ const MosaicShowcase = () => {
     {
       title: "Media Network",
       desc: "DOOH in movimento.",
-      image: "/Images/robot-3.jpg",
+      image: "/Images/3.png",
       link: "/ecosistema#media",
       colSpan: "md:col-span-3",
       height: "h-96",

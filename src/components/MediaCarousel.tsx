@@ -4,9 +4,9 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const MediaCarousel = () => {
   const slides = [
-    { type: 'image', src: '/Images/robot-2.jpg', caption: "Campagne contestuali nei centri commerciali." },
+    { type: 'image', src: '/Images/2.png', caption: "Campagne contestuali nei centri commerciali." },
     { type: 'image', src: '/Images/robot-4.jpg', caption: "Interazione diretta con il pubblico." },
-    { type: 'image', src: '/Images/robot-1.jpg', caption: "Delivery automatizzato in spazi complessi." },
+    { type: 'image', src: '/Images/1.png', caption: "Delivery automatizzato in spazi complessi." },
   ];
 
   const [current, setCurrent] = useState(0);
