@@ -1,6 +1,7 @@
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export interface Location {
   name: string;
@@ -24,6 +25,7 @@ const EUReachMap = ({ locations = defaultLocations, theme = 'light', className =
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pointerInteracting = useRef<number | null>(null);
   const pointerInteractionMovement = useRef(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     let phi = 0;
@@ -153,7 +155,7 @@ const EUReachMap = ({ locations = defaultLocations, theme = 'light', className =
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
          </span>
-         Global Operations Active
+         {t('map.globalOperations')}
        </div>
     </div>
   );

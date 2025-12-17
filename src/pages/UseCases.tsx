@@ -5,8 +5,11 @@ import ProofMetrics from '../components/usecases/ProofMetrics';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const UseCases = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-background min-h-screen pt-24 relative">
       {/* Background Grid */}
@@ -32,16 +35,16 @@ const UseCases = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent" />
           <div className="relative z-10">
             <h2 className="text-4xl md:text-6xl font-heading font-bold mb-8">
-              Pronto a innovare?
+              {t('useCases.ctaTitle')}
             </h2>
             <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-              Porta il tuo brand in movimento. Contattaci per scoprire le opportunità del network Titano.
+              {t('useCases.ctaText')}
             </p>
             <Link 
               to="/about-contact"
               className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition-colors shadow-lg"
             >
-              Contattaci per partnership media
+              {t('useCases.ctaButton')}
               <ArrowRight size={20} />
             </Link>
           </div>

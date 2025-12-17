@@ -7,8 +7,11 @@ import WorkflowDiagram from '../components/ecosystem/WorkflowDiagram';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Ecosystem = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-background min-h-screen pt-24 relative">
       {/* Background Grid */}
@@ -37,16 +40,16 @@ const Ecosystem = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-purple-900/10 opacity-50" />
           <div className="relative z-10">
             <h2 className="text-4xl md:text-6xl font-heading font-bold mb-8">
-              Oltre la robotica.
+              {t('ecosystem.ctaTitle')}
             </h2>
             <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-              Scopri come trasformiamo il movimento autonomo in un nuovo canale media misurabile e coinvolgente.
+              {t('ecosystem.ctaText')}
             </p>
             <Link 
               to="/use-cases"
               className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition-colors"
             >
-              Scopri il Media Network
+              {t('ecosystem.ctaButton')}
               <ArrowRight size={20} />
             </Link>
           </div>

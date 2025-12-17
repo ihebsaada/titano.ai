@@ -2,9 +2,11 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const VideoHero = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const checkMobile = () => {
@@ -44,7 +46,7 @@ const VideoHero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl md:text-7xl font-heading font-bold text-white mb-6 leading-tight"
         >
-          Costruiamo l’infrastruttura autonoma dell’Europa.
+          {t('hero.title')}
         </motion.h1>
         
         <motion.p 
@@ -53,7 +55,7 @@ const VideoHero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-2xl text-white/90 mb-10 max-w-3xl font-light"
         >
-          Robot intelligenti. Media dinamici. Dati reali. Un solo ecosistema.
+          {t('hero.subtitle')}
         </motion.p>
         
         <motion.div
@@ -65,7 +67,7 @@ const VideoHero = () => {
             to="/ecosistema"
             className="group flex items-center gap-3 px-8 py-4 bg-white text-dark rounded-full font-bold text-lg hover:bg-gray-200 transition-all"
           >
-            Esplora l’ecosistema Titano
+            {t('hero.explore')}
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </motion.div>

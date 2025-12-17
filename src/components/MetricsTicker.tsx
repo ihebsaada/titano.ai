@@ -1,5 +1,6 @@
 import { useInView } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Sparkline = ({ color = "#2F80ED" }) => (
   <svg width="120" height="40" viewBox="0 0 120 40" fill="none" className="opacity-50">
@@ -70,11 +71,13 @@ const Counter = ({ value, label }: { value: string, label: string }) => {
 };
 
 const MetricsTicker = () => {
+  const { t } = useTranslation();
+
   const stats = [
-    { value: "500+", label: "Robot Attivi" },
-    { value: "120", label: "Venue Integrate" },
-    { value: "1500", label: "Campagne Gestite" },
-    { value: "1M+", label: "Ore di Autonomia" }
+    { value: "500+", label: t('metrics.activeRobots') },
+    { value: "120", label: t('metrics.integratedVenues') },
+    { value: "1500", label: t('metrics.managedCampaigns') },
+    { value: "1M+", label: t('metrics.autonomyHours') }
   ];
 
   return (

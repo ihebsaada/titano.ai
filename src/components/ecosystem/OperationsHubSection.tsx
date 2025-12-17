@@ -1,13 +1,16 @@
 import { motion } from 'framer-motion';
 import EUReachMap from '../EUReachMap';
 import SpotlightCard from '../SpotlightCard';
+import { useTranslation } from 'react-i18next';
 
 const OperationsHubSection = () => {
+  const { t } = useTranslation();
+
   const stats = [
-    { label: "Mapping", value: "Active" },
-    { label: "Telemetry", value: "Real-time" },
-    { label: "Issues", value: "0 Critical" },
-    { label: "Network", value: "EU" },
+    { label: t('ecosystem.mapping'), value: t('ecosystem.active') },
+    { label: t('ecosystem.telemetry'), value: t('ecosystem.realtime') },
+    { label: t('ecosystem.issues'), value: t('ecosystem.zeroCritical') },
+    { label: t('ecosystem.network'), value: "EU" },
   ];
 
   return (
@@ -30,10 +33,10 @@ const OperationsHubSection = () => {
               viewport={{ once: true }}
               className="text-4xl md:text-6xl font-heading font-bold text-white mb-4"
             >
-              Intelligence Operativa 24/7
+              {t('ecosystem.operationsHubTitle')}
             </motion.h2>
             <p className="text-gray-400 text-xl max-w-xl">
-              Un centro di controllo globale per monitorare, gestire e ottimizzare ogni singolo robot della flotta.
+              {t('ecosystem.operationsHubText')}
             </p>
           </div>
 

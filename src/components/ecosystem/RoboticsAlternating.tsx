@@ -1,23 +1,26 @@
 import { motion } from 'framer-motion';
 import SpotlightCard from '../SpotlightCard';
+import { useTranslation } from 'react-i18next';
 
 const RoboticsAlternating = () => {
+  const { t } = useTranslation();
+
   const sections = [
     {
-      title: "Autonomy Upgrade",
-      desc: "Trasformiamo piattaforme robotiche standard in agenti autonomi intelligenti, capaci di operare in ambienti dinamici senza infrastrutture esterne.",
+      title: t('ecosystem.autonomyUpgrade'),
+      desc: t('ecosystem.autonomyUpgradeDesc'),
       image: "/Images/2.png",
       align: "left"
     },
     {
-      title: "Navigation",
-      desc: "Algoritmi di path planning avanzati permettono movimenti fluidi e sicuri tra le persone, ottimizzando i percorsi in tempo reale.",
+      title: t('ecosystem.navigation'),
+      desc: t('ecosystem.navigationDesc'),
       image: "/Images/robot-4.jpg",
       align: "right"
     },
     {
-      title: "Interaction & Safety",
-      desc: "Sistemi di sicurezza certificati e interfacce naturali rendono i robot Titano collaboratori affidabili e coinvolgenti per il pubblico.",
+      title: t('ecosystem.interactionSafety'),
+      desc: t('ecosystem.interactionSafetyDesc'),
       image: "/Images/1.png",
       align: "left"
     }
@@ -26,8 +29,8 @@ const RoboticsAlternating = () => {
   return (
     <section className="px-6 md:px-12 max-w-[1920px] mx-auto mb-32 space-y-24">
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Robotics Layer</h2>
-        <p className="text-xl text-text-secondary">Hardware agnostico, intelligenza proprietaria.</p>
+        <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">{t('ecosystem.roboticsLayer')}</h2>
+        <p className="text-xl text-text-secondary">{t('ecosystem.roboticsSubtitle')}</p>
       </div>
 
       {sections.map((section, index) => (

@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const EcosystemHero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative pt-32 pb-20 px-6 md:px-12 max-w-[1920px] mx-auto overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-transparent pointer-events-none -z-10" />
@@ -12,7 +15,7 @@ const EcosystemHero = () => {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="text-5xl md:text-8xl font-heading font-bold mb-6 tracking-tight text-foreground"
         >
-          L’Ecosistema Titano
+          {t('ecosystem.heroTitle')}
         </motion.h1>
         
         <motion.p 
@@ -21,7 +24,7 @@ const EcosystemHero = () => {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-xl md:text-2xl text-text-secondary font-light leading-relaxed"
         >
-          Una piattaforma unificata che connette robot, software e operazioni reali.
+          {t('ecosystem.heroSubtitle')}
         </motion.p>
       </div>
 

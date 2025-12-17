@@ -1,22 +1,25 @@
 import { motion } from 'framer-motion';
 import { Briefcase, Cpu, Bot, Users, PieChart, ArrowRight } from 'lucide-react';
 import MagicCard from '../MagicCard';
-
-const steps = [
-  { id: "01", label: "Brand", icon: <Briefcase size={20} />, description: "Definizione KPI" },
-  { id: "02", label: "Titano OS", icon: <Cpu size={20} />, description: "Configurazione AI" },
-  { id: "03", label: "Robot", icon: <Bot size={20} />, description: "Attivazione Field" },
-  { id: "04", label: "Audience", icon: <Users size={20} />, description: "Ingaggio Attivo" },
-  { id: "05", label: "Analytics", icon: <PieChart size={20} />, description: "Report & ROI" },
-];
+import { useTranslation } from 'react-i18next';
 
 const CampaignFlowDiagram = () => {
+  const { t } = useTranslation();
+
+  const steps = [
+    { id: "01", label: t('campaignFlow.brand'), icon: <Briefcase size={20} />, description: t('campaignFlow.kpiDefinition') },
+    { id: "02", label: t('campaignFlow.titanoOS'), icon: <Cpu size={20} />, description: t('campaignFlow.aiConfig') },
+    { id: "03", label: t('campaignFlow.robot'), icon: <Bot size={20} />, description: t('campaignFlow.fieldActivation') },
+    { id: "04", label: t('campaignFlow.audience'), icon: <Users size={20} />, description: t('campaignFlow.activeEngagement') },
+    { id: "05", label: t('campaignFlow.analytics'), icon: <PieChart size={20} />, description: t('campaignFlow.reportROI') },
+  ];
+
   return (
     <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32">
       <div className="text-center mb-20">
-        <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">Il flusso della campagna</h2>
+        <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">{t('campaignFlow.title')}</h2>
         <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-          Dalla pianificazione strategica all'analisi dei risultati in 5 step integrati.
+          {t('campaignFlow.subtitle')}
         </p>
       </div>
 

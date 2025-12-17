@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
 import MagicCard from '../MagicCard';
 import { Bot, Cpu, Database, Map, MonitorPlay } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const EcosystemMosaic5 = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="px-6 md:px-12 max-w-[1920px] mx-auto mb-32">
       <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-6 h-auto md:h-[900px]">
@@ -27,9 +30,9 @@ const EcosystemMosaic5 = () => {
               <div className="bg-white/10 backdrop-blur-md w-12 h-12 rounded-xl flex items-center justify-center mb-6 text-white border border-white/10">
                 <Bot size={24} />
               </div>
-              <h3 className="text-3xl font-heading font-bold mb-4">Robotics Layer</h3>
+              <h3 className="text-3xl font-heading font-bold mb-4">{t('ecosystem.roboticsLayer')}</h3>
               <p className="text-lg text-gray-300 max-w-md">
-                Autonomia multi-marca per robot indoor in centri commerciali, aeroporti, hospitality e retail.
+                {t('ecosystem.roboticsDesc')}
               </p>
             </div>
           </MagicCard>
@@ -51,10 +54,10 @@ const EcosystemMosaic5 = () => {
                     <div className="bg-white/10 p-2 rounded-xl text-white backdrop-blur-sm border border-white/10">
                       <Cpu size={24} />
                     </div>
-                    <h3 className="text-2xl font-heading font-bold">Titano OS</h3>
+                    <h3 className="text-2xl font-heading font-bold">{t('ecosystem.titanoOS')}</h3>
                   </div>
                   <p className="text-gray-400 text-lg">
-                    Navigazione, sensing, media e intelligenza di flotta.
+                    {t('ecosystem.titanoOSDesc')}
                   </p>
                 </div>
                 <div className="hidden md:block w-32 h-32 bg-white/5 rounded-full blur-3xl absolute right-12 top-1/2 -translate-y-1/2" />
@@ -75,8 +78,8 @@ const EcosystemMosaic5 = () => {
               <Database size={20} />
             </div>
             <div>
-              <h3 className="text-xl font-heading font-bold mb-2">Data Fabric</h3>
-              <p className="text-sm text-gray-400">Motore di insight dal mondo reale.</p>
+              <h3 className="text-xl font-heading font-bold mb-2">{t('ecosystem.dataFabric')}</h3>
+              <p className="text-sm text-gray-400">{t('ecosystem.dataFabricDesc')}</p>
             </div>
           </MagicCard>
         </motion.div>
@@ -101,7 +104,7 @@ const EcosystemMosaic5 = () => {
                <div className="bg-white/10 backdrop-blur-md w-10 h-10 rounded-xl flex items-center justify-center border border-white/10">
                  <MonitorPlay size={20} />
                </div>
-               <h3 className="text-xl font-heading font-bold">Autonomous Media</h3>
+               <h3 className="text-xl font-heading font-bold">{t('ecosystem.autonomousMedia')}</h3>
             </div>
           </MagicCard>
         </motion.div>
@@ -120,8 +123,8 @@ const EcosystemMosaic5 = () => {
                  <Map size={32} />
                </div>
                <div>
-                 <h3 className="text-2xl font-heading font-bold mb-1">Operations Hub (EU)</h3>
-                 <p className="text-gray-400">Monitoraggio attivo e gestione remota della flotta globale.</p>
+                 <h3 className="text-2xl font-heading font-bold mb-1">{t('ecosystem.operationsHub')}</h3>
+                 <p className="text-gray-400">{t('ecosystem.operationsHubDesc')}</p>
                </div>
             </div>
           </MagicCard>

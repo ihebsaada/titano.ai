@@ -1,22 +1,25 @@
 import { motion } from 'framer-motion';
 import { Compass, Eye, PlaySquare, Cloud, Database } from 'lucide-react';
 import MagicCard from '../MagicCard';
-
-const layers = [
-  { id: 1, title: "Navigation & Mapping", desc: "Mappatura 3D e localizzazione in tempo reale.", icon: <Compass className="w-5 h-5 text-white" /> },
-  { id: 2, title: "Vision & Sensing", desc: "Riconoscimento ostacoli e analisi ambientale.", icon: <Eye className="w-5 h-5 text-white" /> },
-  { id: 3, title: "Media Engine", desc: "Distribuzione contenuti contestuale e programmata.", icon: <PlaySquare className="w-5 h-5 text-white" /> },
-  { id: 4, title: "Fleet Cloud", desc: "Orchestrazione centralizzata e aggiornamenti OTA.", icon: <Cloud className="w-5 h-5 text-white" /> },
-  { id: 5, title: "Data Fabric", desc: "Pipeline dati unificata per analytics e reporting.", icon: <Database className="w-5 h-5 text-white" /> },
-];
+import { useTranslation } from 'react-i18next';
 
 const OSLayerStack = () => {
+  const { t } = useTranslation();
+
+  const layers = [
+    { id: 1, title: t('ecosystem.layer1Title'), desc: t('ecosystem.layer1Desc'), icon: <Compass className="w-5 h-5 text-white" /> },
+    { id: 2, title: t('ecosystem.layer2Title'), desc: t('ecosystem.layer2Desc'), icon: <Eye className="w-5 h-5 text-white" /> },
+    { id: 3, title: t('ecosystem.layer3Title'), desc: t('ecosystem.layer3Desc'), icon: <PlaySquare className="w-5 h-5 text-white" /> },
+    { id: 4, title: t('ecosystem.layer4Title'), desc: t('ecosystem.layer4Desc'), icon: <Cloud className="w-5 h-5 text-white" /> },
+    { id: 5, title: t('ecosystem.layer5Title'), desc: t('ecosystem.layer5Desc'), icon: <Database className="w-5 h-5 text-white" /> },
+  ];
+
   return (
     <section className="px-6 md:px-12 max-w-5xl mx-auto mb-32">
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Titano OS Layer</h2>
+        <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">{t('ecosystem.osLayersTitle')}</h2>
         <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-          Un'architettura software modulare progettata per l'autonomia scalabile.
+          {t('ecosystem.osLayersSubtitle')}
         </p>
       </div>
 

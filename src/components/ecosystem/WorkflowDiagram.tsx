@@ -1,27 +1,29 @@
 import { motion } from 'framer-motion';
-import { Map, Settings, PlayCircle, Rocket, Activity } from 'lucide-react';
-
-const steps = [
-  { title: "Map", icon: <Map size={24} />, desc: "Digitalizzazione ambiente" },
-  { title: "Integrate", icon: <Settings size={24} />, desc: "Setup flotta e regole" },
-  { title: "Test", icon: <PlayCircle size={24} />, desc: "Simulazione e validazione" },
-  { title: "Go-Live", icon: <Rocket size={24} />, desc: "Deployment operativo" },
-  { title: "Operate", icon: <Activity size={24} />, desc: "Gestione 24/7" },
-];
+import { Link, Monitor, Layers, Database } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const WorkflowDiagram = () => {
+  const { t } = useTranslation();
+
+  const steps = [
+    { title: t('workflow.connect'), icon: <Link size={24} />, desc: t('workflow.connectDesc') },
+    { title: t('workflow.control'), icon: <Monitor size={24} />, desc: t('workflow.controlDesc') },
+    { title: t('workflow.deploy'), icon: <Layers size={24} />, desc: t('workflow.deployDesc') },
+    { title: t('workflow.optimize'), icon: <Database size={24} />, desc: t('workflow.optimizeDesc') },
+  ];
+
   return (
     <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Dal sopralluogo all'autonomia</h2>
-        <p className="text-text-secondary">Un processo collaudato per un deployment rapido e senza rischi.</p>
+        <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">{t('workflow.title')}</h2>
+        <p className="text-text-secondary">{t('workflow.subtitle')}</p>
       </div>
 
       <div className="relative">
         {/* Connecting Line */}
         <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -z-10 -translate-y-1/2" />
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={index}

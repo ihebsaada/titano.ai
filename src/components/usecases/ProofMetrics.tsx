@@ -1,13 +1,16 @@
 import { motion } from 'framer-motion';
 import SpotlightCard from '../SpotlightCard';
-
-const metrics = [
-  { value: "450K+", label: "Monthly Impressions", desc: "Media per location" },
-  { value: "85%", label: "Attention Rate", desc: "Vs 12% DOOH statico" },
-  { value: "100%", label: "Path Coverage", desc: "Copertura totale aree" },
-];
+import { useTranslation } from 'react-i18next';
 
 const ProofMetrics = () => {
+  const { t } = useTranslation();
+
+  const metrics = [
+    { value: "450K+", label: t('proofMetrics.monthlyImpressions'), desc: t('proofMetrics.mediaPerLocation') },
+    { value: "85%", label: t('proofMetrics.attentionRate'), desc: t('proofMetrics.vsStatic') },
+    { value: "100%", label: t('proofMetrics.pathCoverage'), desc: t('proofMetrics.totalCoverage') },
+  ];
+
   return (
     <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

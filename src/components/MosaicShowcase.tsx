@@ -1,28 +1,31 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const MosaicShowcase = () => {
+  const { t } = useTranslation();
+
   const items = [
     {
-      title: "Robotics",
-      desc: "Navigazione autonoma e delivery.",
+      title: t('mosaic.robotics'),
+      desc: t('mosaic.roboticsDesc'),
       image: "/Images/1.png",
       link: "/ecosistema#robotics",
       colSpan: "md:col-span-2",
       bgPos: "center"
     },
     {
-      title: "Titano OS",
-      desc: "Il cervello operativo.",
+      title: t('mosaic.titanoOS'),
+      desc: t('mosaic.titanoOSDesc'),
       image: "/Images/dashboard.png", // using the renamed 22.png
       link: "/ecosistema#software",
       colSpan: "md:col-span-1",
       bgPos: "center"
     },
     {
-      title: "Media Network",
-      desc: "DOOH in movimento.",
+      title: t('mosaic.mediaNetwork'),
+      desc: t('mosaic.mediaNetworkDesc'),
       image: "/Images/3.png",
       link: "/ecosistema#media",
       colSpan: "md:col-span-3",

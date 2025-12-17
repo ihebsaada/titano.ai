@@ -4,10 +4,17 @@ import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import clsx from 'clsx';
 import SpotlightCard from './SpotlightCard';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'en' ? 'it' : 'en';
+    i18n.changeLanguage(newLang);
+  };
 
   // Close mobile menu on route change
   useEffect(() => {
@@ -27,10 +34,10 @@ const Navbar = () => {
   }, [isOpen]);
 
   const navLinks = [
-    { name: 'Home', path: '/', desc: 'Visione & Impatto' },
-    { name: 'Ecosistema', path: '/ecosistema', desc: 'Tecnologia & Piattaforma' },
-    { name: 'Use Cases', path: '/use-cases', desc: 'Applicazioni Reali' },
-    { name: 'Chi Siamo', path: '/about-contact', desc: 'Missione & Contatti' },
+    { name: t('navbar.home'), path: '/', desc: t('navbar.homeDesc') },
+    { name: t('navbar.ecosystem'), path: '/ecosistema', desc: t('navbar.ecosystemDesc') },
+    { name: t('navbar.useCases'), path: '/use-cases', desc: t('navbar.useCasesDesc') },
+    { name: t('navbar.about'), path: '/about-contact', desc: t('navbar.aboutDesc') },
   ];
 
   return (
@@ -72,13 +79,21 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* CTA Button (Desktop) */}
-            <div className="hidden md:block">
+            {/* Language Switcher & CTA (Desktop) */}
+            <div className="hidden md:flex items-center gap-4">
+              <button 
+                onClick={toggleLanguage}
+                className="w-10 h-10 rounded-full flex items-center justify-center bg-white/40 hover:bg-white/70 transition-colors text-gray-700 hover:text-black"
+                aria-label="Toggle language"
+              >
+                <span className="text-xs font-bold font-mono">{i18n.language === 'en' ? 'EN' : 'IT'}</span>
+              </button>
+
               <Link 
                 to="/about-contact" 
                 className="px-6 py-2.5 bg-[#101010] text-white rounded-full text-sm font-bold hover:bg-black transition-all shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 duration-300 flex items-center gap-2"
               >
-                Contattaci
+                {t('navbar.contact')}
                 <div className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
               </Link>
             </div>
@@ -183,11 +198,14 @@ const Navbar = () => {
                    onClick={() => setIsOpen(false)}
                    className="flex-1 bg-[#101010] text-white p-6 rounded-[32px] font-bold text-center shadow-xl active:scale-95 transition-transform"
                  >
-                   Contattaci
+                   {t('navbar.contact')}
                  </Link>
-                 <div className="p-6 bg-white rounded-[32px] flex items-center justify-center shadow-xl">
-                   <img src="/Images/cropped-logo_senza_fondo-03.png" alt="Logo" className="h-8 w-auto opacity-50" />
-                 </div>
+                 <button 
+                   onClick={() => { toggleLanguage(); setIsOpen(false); }}
+                   className="p-6 bg-white rounded-[32px] flex items-center justify-center shadow-xl font-bold font-mono text-xl"
+                 >
+                    {i18n.language === 'en' ? 'EN' : 'IT'}
+                 </button>
               </div>
             </motion.div>
           </motion.div>

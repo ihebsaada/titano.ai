@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const MediaCarousel = () => {
+  const { t } = useTranslation();
+
   const slides = [
-    { type: 'image', src: '/Images/2.png', caption: "Campagne contestuali nei centri commerciali." },
-    { type: 'image', src: '/Images/robot-4.jpg', caption: "Interazione diretta con il pubblico." },
-    { type: 'image', src: '/Images/1.png', caption: "Delivery automatizzato in spazi complessi." },
+    { type: 'image', src: '/Images/2.png', caption: t('mediaCarousel.slide1') },
+    { type: 'image', src: '/Images/robot-4.jpg', caption: t('mediaCarousel.slide2') },
+    { type: 'image', src: '/Images/1.png', caption: t('mediaCarousel.slide3') },
   ];
 
   const [current, setCurrent] = useState(0);
