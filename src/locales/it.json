@@ -23,7 +23,10 @@
     "scaleTitle": "Scalabilità Globale.",
     "scaleText": "Dagli hub operativi in Europa al supporto remoto globale. La nostra rete è progettata per gestire migliaia di robot simultaneamente.",
     "mediaTitle": "Media Autonomo (Application Layer)",
-    "mediaText": "Una delle prime applicazioni su larga scala di Titano OS, che abilita pubblicità dinamica e guidata dai dati negli spazi fisici."
+    "mediaText": "Una delle prime applicazioni su larga scala di Titano OS, che abilita pubblicità dinamica e guidata dai dati negli spazi fisici.",
+    "ctaTitle": "Inizia il tuo viaggio con Titano AI",
+    "ctaText": "Distribuisci unità autonome nella tua venue o fai pubblicità sul nostro network.",
+    "ctaButton": "Contattaci"
   },
   "metrics": {
     "activeRobots": "Robot Attivi",

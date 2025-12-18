@@ -23,7 +23,10 @@
     "scaleTitle": "Global Scalability.",
     "scaleText": "From operational hubs in Europe to remote global support. Our network is designed to manage thousands of robots simultaneously.",
     "mediaTitle": "Autonomous Media (Application Layer)",
-    "mediaText": "One of the first large-scale applications of Titano OS, enabling dynamic, data-driven advertising in physical spaces."
+    "mediaText": "One of the first large-scale applications of Titano OS, enabling dynamic, data-driven advertising in physical spaces.",
+    "ctaTitle": "Start your journey with Titano AI",
+    "ctaText": "Deploy autonomous units in your venue or advertise on our network.",
+    "ctaButton": "Contact Us"
   },
   "metrics": {
     "activeRobots": "Active Robots",
