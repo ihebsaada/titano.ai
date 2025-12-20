@@ -13,13 +13,13 @@ const AutonomousUnits = () => {
       gradient: "rgba(47, 128, 237, 0.2)"
     },
     {
-      name: "PORTA",
+      name: "ATLAS",
       subtitle: t('autonomousUnits.portaSubtitle'),
       tags: ["Venues", "Campuses", "Operations"],
       gradient: "rgba(16, 185, 129, 0.2)"
     },
     {
-      name: "PRAESIDIO",
+      name: "ARGUS",
       subtitle: t('autonomousUnits.praesidioSubtitle'),
       tags: ["Access Control", "Surveillance", "Safety"],
       gradient: "rgba(245, 158, 11, 0.2)"

@@ -1,95 +1,69 @@
-import { useInView } from 'framer-motion';
-import { useRef, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
-const Sparkline = ({ color = "#2F80ED" }) => (
-  <svg width="120" height="40" viewBox="0 0 120 40" fill="none" className="opacity-50">
-    <path 
-      d="M0 35 C 20 35, 20 10, 40 10 C 60 10, 60 30, 80 30 C 100 30, 100 5, 120 5" 
-      stroke={color} 
-      strokeWidth="2" 
-      strokeLinecap="round" 
-      fill="none"
-    />
-    <path 
-      d="M0 35 C 20 35, 20 10, 40 10 C 60 10, 60 30, 80 30 C 100 30, 100 5, 120 5 L 120 40 L 0 40 Z" 
-      fill={`url(#gradient-${color})`} 
-      className="opacity-20"
-    />
-    <defs>
-      <linearGradient id={`gradient-${color}`} x1="0" y1="0" x2="0" y2="1">
-        <stop stopColor={color} stopOpacity="0.5"/>
-        <stop offset="1" stopColor={color} stopOpacity="0"/>
-      </linearGradient>
-    </defs>
-  </svg>
-);
-
-const Counter = ({ value, label }: { value: string, label: string }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const [count, setCount] = useState(0);
-  
-  // Extract number from string (e.g., "500+" -> 500)
-  const numberValue = parseInt(value.replace(/[^0-9]/g, '')) || 0;
-  const suffix = value.replace(/[0-9]/g, '');
-
-  useEffect(() => {
-    if (isInView) {
-      let start = 0;
-      const duration = 2000;
-      const stepTime = 20;
-      const steps = duration / stepTime;
-      const increment = numberValue / steps;
-
-      const timer = setInterval(() => {
-        start += increment;
-        if (start >= numberValue) {
-          setCount(numberValue);
-          clearInterval(timer);
-        } else {
-          setCount(Math.floor(start));
-        }
-      }, stepTime);
-      return () => clearInterval(timer);
-    }
-  }, [isInView, numberValue]);
-
-  return (
-    <div ref={ref} className="flex flex-col items-center justify-center p-6 relative">
-       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 opacity-10">
-         <Sparkline />
-       </div>
-       <div className="text-5xl md:text-7xl font-heading font-bold text-foreground mb-2 relative z-10 tracking-tighter">
-         {count}{suffix}
-       </div>
-       <div className="text-xs font-bold tracking-[0.2em] uppercase text-text-secondary">
-         {label}
-       </div>
-    </div>
-  );
-};
+import { motion } from 'framer-motion';
 
 const MetricsTicker = () => {
   const { t } = useTranslation();
 
-  const stats = [
-    { value: "500+", label: t('metrics.activeRobots') },
-    { value: "120", label: t('metrics.integratedVenues') },
-    { value: "1500", label: t('metrics.managedCampaigns') },
-    { value: "1M+", label: t('metrics.autonomyHours') }
+  const cases = [
+    {
+      title: t('realWorldData.case1Title'),
+      stats: t('realWorldData.case1Stats'),
+      footer: t('realWorldData.case1Footer'),
+    },
+    {
+      title: t('realWorldData.case2Title'),
+      stats: t('realWorldData.case2Stats'),
+      footer: t('realWorldData.case2Footer'),
+    },
+    {
+      title: t('realWorldData.case3Title'),
+      stats: t('realWorldData.case3Stats'),
+      footer: t('realWorldData.case3Footer'),
+    }
   ];
 
   return (
-    <div className="glass-panel rounded-[48px] p-12 md:p-16 relative overflow-hidden">
-       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/40 to-transparent pointer-events-none" />
-       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 relative z-10 divide-x divide-black/5">
-         {stats.map((stat, i) => (
-           <div key={i} className={i % 2 !== 0 && window.innerWidth < 768 ? "border-l border-black/5 pl-8" : ""}>
-             <Counter value={stat.value} label={stat.label} />
-           </div>
-         ))}
-       </div>
+    <div className="w-full">
+      {/* Header */}
+      <div className="mb-12 text-center md:text-left">
+         <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">{t('realWorldData.title')}</h2>
+         <p className="text-xl text-text-secondary max-w-3xl">{t('realWorldData.subtitle')}</p>
+      </div>
+
+      {/* Cases Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        {cases.map((item, index) => (
+          <motion.div 
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 }}
+            className="glass-panel p-8 rounded-[32px] flex flex-col h-full border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-colors duration-300"
+          >
+             <h3 className="text-lg font-bold mb-6 text-accent border-b border-white/10 pb-4 min-h-[60px] flex items-center">
+               {item.title}
+             </h3>
+             <div className="flex-grow mb-8 space-y-3">
+               {item.stats.split('\n').map((line, i) => (
+                 <p key={i} className="text-lg md:text-xl font-mono font-medium text-foreground">
+                   {line}
+                 </p>
+               ))}
+             </div>
+             <p className="text-sm text-text-secondary mt-auto pt-4 border-t border-white/5 italic">
+               {item.footer}
+             </p>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Disclaimer */}
+      <div className="text-center border-t border-white/10 pt-8">
+        <p className="text-xs md:text-sm text-gray-500 font-mono uppercase tracking-wider max-w-3xl mx-auto">
+          {t('realWorldData.disclaimer')}
+        </p>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Compass, Eye, PlaySquare, Cloud, Database } from 'lucide-react';
+import { Compass, Eye, PlaySquare, Cloud } from 'lucide-react';
 import MagicCard from '../MagicCard';
 import { useTranslation } from 'react-i18next';
 
@@ -9,9 +9,8 @@ const OSLayerStack = () => {
   const layers = [
     { id: 1, title: t('ecosystem.layer1Title'), desc: t('ecosystem.layer1Desc'), icon: <Compass className="w-5 h-5 text-white" /> },
     { id: 2, title: t('ecosystem.layer2Title'), desc: t('ecosystem.layer2Desc'), icon: <Eye className="w-5 h-5 text-white" /> },
-    { id: 3, title: t('ecosystem.layer3Title'), desc: t('ecosystem.layer3Desc'), icon: <PlaySquare className="w-5 h-5 text-white" /> },
-    { id: 4, title: t('ecosystem.layer4Title'), desc: t('ecosystem.layer4Desc'), icon: <Cloud className="w-5 h-5 text-white" /> },
-    { id: 5, title: t('ecosystem.layer5Title'), desc: t('ecosystem.layer5Desc'), icon: <Database className="w-5 h-5 text-white" /> },
+    { id: 3, title: t('ecosystem.layer4Title'), desc: t('ecosystem.layer4Desc'), icon: <Cloud className="w-5 h-5 text-white" /> },
+    { id: 4, title: t('ecosystem.layer3Title'), desc: t('ecosystem.layer3Desc'), icon: <PlaySquare className="w-5 h-5 text-white" /> },
   ];
 
   return (

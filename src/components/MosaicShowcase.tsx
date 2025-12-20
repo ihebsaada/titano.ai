@@ -18,7 +18,7 @@ const MosaicShowcase = () => {
     {
       title: t('mosaic.titanoOS'),
       desc: t('mosaic.titanoOSDesc'),
-      image: "/Images/dashboard.png", // using the renamed 22.png
+      image: "/Images/Other/Tavola da disegno 3 copia.jpg", // using the renamed 22.png
       link: "/ecosistema#software",
       colSpan: "md:col-span-1",
       bgPos: "center"
