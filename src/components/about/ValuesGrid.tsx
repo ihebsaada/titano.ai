@@ -1,11 +1,14 @@
 import { motion } from 'framer-motion';
 import MagicCard from '../MagicCard';
 import { ShieldCheck, Eye, TrendingUp, Target } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const ValuesGrid = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32">
-      <h2 className="text-3xl font-heading font-bold mb-12">I nostri valori</h2>
+      <h2 className="text-3xl font-heading font-bold mb-12">{t('about.valuesTitle')}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[600px]">
         
         {/* Safety - Large */}
@@ -19,9 +22,9 @@ const ValuesGrid = () => {
             <div className="bg-white/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6 border border-white/10 backdrop-blur-sm">
                 <ShieldCheck className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-3xl font-bold mb-4 font-heading">Safety</h3>
+            <h3 className="text-3xl font-bold mb-4 font-heading">{t('about.valueSafetyTitle')}</h3>
             <p className="text-xl text-gray-400 max-w-lg leading-relaxed">
-              La sicurezza delle persone e degli ambienti è la priorità assoluta in ogni riga di codice e in ogni movimento.
+              {t('about.valueSafetyDesc')}
             </p>
           </MagicCard>
         </motion.div>
@@ -39,9 +42,9 @@ const ValuesGrid = () => {
                 <Eye className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h3 className="text-3xl font-bold mb-4 font-heading">Clarity</h3>
+              <h3 className="text-3xl font-bold mb-4 font-heading">{t('about.valueClarityTitle')}</h3>
               <p className="text-lg text-gray-400 leading-relaxed">
-                Trasparenza nei dati, nella privacy e nelle operazioni. Nessuna "black box".
+                {t('about.valueClarityDesc')}
               </p>
             </div>
           </MagicCard>
@@ -59,8 +62,8 @@ const ValuesGrid = () => {
             <div className="bg-white/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6 border border-white/10 backdrop-blur-sm">
                 <TrendingUp className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-2xl font-bold mb-3 font-heading">Scalability</h3>
-            <p className="text-gray-400 leading-relaxed">Progettiamo per flotte di migliaia di unità, non per demo isolate.</p>
+            <h3 className="text-2xl font-bold mb-3 font-heading">{t('about.valueScalabilityTitle')}</h3>
+            <p className="text-gray-400 leading-relaxed">{t('about.valueScalabilityDesc')}</p>
           </MagicCard>
         </motion.div>
 
@@ -76,8 +79,8 @@ const ValuesGrid = () => {
             <div className="bg-white/10 w-12 h-12 rounded-xl flex items-center justify-center mb-6 border border-white/10 backdrop-blur-sm">
                 <Target className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-2xl font-bold mb-3 font-heading">Precision</h3>
-            <p className="text-gray-400 leading-relaxed">Accuratezza millimetrica nella navigazione e nel targeting.</p>
+            <h3 className="text-2xl font-bold mb-3 font-heading">{t('about.valuePrecisionTitle')}</h3>
+            <p className="text-gray-400 leading-relaxed">{t('about.valuePrecisionDesc')}</p>
           </MagicCard>
         </motion.div>
 

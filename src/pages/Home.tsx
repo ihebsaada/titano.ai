@@ -9,7 +9,6 @@ import VideoHero from '../components/VideoHero';
 import CookieBanner from '../components/CookieBanner';
 import SpotlightCard from '../components/SpotlightCard';
 import AutonomousUnits from '../components/AutonomousUnits';
-import ParallaxMosaic from '../components/home/ParallaxMosaic';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
@@ -93,18 +92,15 @@ const Home = () => {
         <MediaCarousel />
       </section>
 
-      {/* Parallax Image Mosaic */}
-      <ParallaxMosaic />
-
       {/* CTA Section */}
-      <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32 mt-[70vh] text-center">
+      <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32 text-center">
         <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">{t('home.ctaTitle')}</h2>
         <p className="text-xl text-text-secondary max-w-2xl mx-auto mb-8">
           {t('home.ctaText')}
         </p>
         <Link 
           to="/about-contact" 
-          className="inline-block bg-accent text-white px-8 py-4 rounded-full font-bold hover:bg-accent/80 transition-all duration-300 shadow-lg hover:shadow-accent/25"
+          className="inline-block bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-white/25"
         >
           {t('home.ctaButton')}
         </Link>

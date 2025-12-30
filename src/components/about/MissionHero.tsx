@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const MissionHero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative pt-32 pb-24 px-6 md:px-12 max-w-[1920px] mx-auto text-center">
       <motion.div
@@ -10,7 +13,7 @@ const MissionHero = () => {
         className="max-w-6xl mx-auto"
       >
         <h1 className="text-5xl md:text-8xl font-heading font-bold mb-8 tracking-tight text-foreground leading-tight">
-          Costruiamo l’infrastruttura per l’autonomia nel mondo reale.
+          {t('mission.heroTitle')}
         </h1>
       </motion.div>
     </section>

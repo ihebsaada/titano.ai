@@ -33,7 +33,7 @@ const WorkflowDiagram = () => {
               transition={{ delay: index * 0.1 }}
               className="relative flex flex-col items-center text-center group"
             >
-              <div className="w-16 h-16 rounded-2xl bg-white border border-gray-200 shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-accent group-hover:text-accent transition-all duration-300 z-10">
+              <div className="w-16 h-16 rounded-2xl bg-white border border-gray-200 shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-foreground group-hover:text-foreground transition-all duration-300 z-10">
                 {step.icon}
               </div>
               <h3 className="text-lg font-bold mb-2">{step.title}</h3>

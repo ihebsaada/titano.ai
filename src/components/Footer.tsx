@@ -63,6 +63,12 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className="border-t border-white/10 pt-8 mt-8 pb-4">
+             <p className="text-gray-600 text-xs text-center max-w-4xl mx-auto leading-relaxed">
+                {t('footer.businessDetails')}
+             </p>
+        </div>
+
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} Titano AI. {t('footer.rights')}

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import MagicCard from '../MagicCard';
 import { Mail, ArrowUpRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const contacts = [
   { title: "Business", email: "business@titano.ai" },
@@ -10,9 +11,11 @@ const contacts = [
 ];
 
 const ContactSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="px-6 md:px-12 max-w-7xl mx-auto pb-32">
-      <h2 className="text-3xl font-heading font-bold mb-12">Contatti</h2>
+      <h2 className="text-3xl font-heading font-bold mb-12">{t('about.contactTitle')}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {contacts.map((contact, index) => (
           <motion.a 

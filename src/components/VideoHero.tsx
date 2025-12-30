@@ -28,12 +28,9 @@ const VideoHero = () => {
             loop
             muted
             playsInline
-          >
-            <source 
-              src={isMobile ? "/videos/video-mobile.mp4" : "/videos/Sequenza 01_4.mp4"} 
-              type="video/mp4" 
-            />
-          </video>
+            preload="auto"
+            src={isMobile ? "/videos/video-mobile.mp4" : "/videos/Sequenza 01_4.mp4"}
+          />
           {/* Overlay to ensure text readability */}
           <div className="absolute inset-0 bg-black/50" />
       </div>

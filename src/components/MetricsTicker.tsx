@@ -41,7 +41,7 @@ const MetricsTicker = () => {
             transition={{ delay: index * 0.1 }}
             className="glass-panel p-8 rounded-[32px] flex flex-col h-full border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-colors duration-300"
           >
-             <h3 className="text-lg font-bold mb-6 text-accent border-b border-white/10 pb-4 min-h-[60px] flex items-center">
+             <h3 className="text-lg font-bold mb-6 text-foreground border-b border-white/10 pb-4 min-h-[60px] flex items-center">
                {item.title}
              </h3>
              <div className="flex-grow mb-8 space-y-3">

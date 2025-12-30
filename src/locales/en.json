@@ -17,7 +17,7 @@
   },
   "home": {
     "introTitle": "The Operating Layer",
-    "introText": "Titano provides the missing operating layer that allows autonomous systems to operate reliably in real-world environments.",
+    "introText": "Titano integrates autonomous robotics, data platforms, and media technology into a single scalable infrastructure.",
     "ecosystemTag": "Ecosystem",
     "ecosystemTitle": "One unified platform.",
     "scaleTitle": "Global Scalability.",
@@ -37,8 +37,8 @@
   "realWorldData": {
     "title": "Real World Data",
     "subtitle": "Operational metrics collected during real deployments managed via Titano OS.",
-    "case1Title": "CASE 1 — The Village, Parco de’ Medici (Roma)",
-    "case1Stats": "69 operational days\n594,000 estimated physical impressions\n4,500 QR scans\n338 km autonomous travel",
+    "case1Title": "CASE 1 — The Village, Parco de’ Medici Shopping Center (Roma)",
+    "case1Stats": "2 autonomous units deployed\n69 operational days\n594,000 estimated physical impressions\n4,500 QR scans\n338 km autonomous travel",
     "case1Footer": "Data collected during summer 2025 operations.",
     "case2Title": "CASE 2 — Maison Valentino",
     "case2Stats": "350,000+ views\n80,000+ physical interactions",
@@ -129,6 +129,8 @@
     "disclaimer": "Powered by Titano OS. Hardware-agnostic autonomous units operating on third-party robotic platforms."
   },
   "useCases": {
+    "heroTitle": "Autonomous Media",
+    "heroSubtitle": "Dynamic, contextual, and measurable DOOH through robotic mobility.",
     "verticals": "Verticals",
     "subtitle": "Where Titano OS adds value.",
     "universities": "Universities",
@@ -154,7 +156,28 @@
     "address": "Milan, Italy",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "cookies": "Cookie Policy"
+    "cookies": "Cookie Policy",
+    "businessDetails": "Titano Srl, with registered office in Rome, Via Anastasio II No. 442 - ZIP code 00165, tax code and VAT number 18186181006, in the person of its legal representative pro tempore Mr. Lorenzo Macali (hereinafter, \"Titano\");"
+  },
+  "mission": {
+    "heroTitle": "Building the infrastructure for real-world autonomy."
+  },
+  "about": {
+    "visionStory1": "Autonomy is not the future, it is the present. Crediamo che i robot debbano uscire dai laboratori e integrarsi negli spazi quotidiani, portando efficienza e nuovi servizi dove le persone vivono e lavorano.",
+    "visionStory1Highlight": "Autonomy is not the future, it is the present.",
+    "visionStory2": "With Titano OS, we have created a centralized brain capable of orchestrating heterogeneous fleets, transforming simple machines into an intelligent network of data and media in motion.",
+    "visionStory3": "Born in Europe, we carry forward a vision of ethical, safe, and integrated technology, building the infrastructure that will enable the next generation of urban and commercial services.",
+    "valuesTitle": "Our Values",
+    "valueSafetyTitle": "Safety",
+    "valueSafetyDesc": "The safety of people and environments is the absolute priority in every line of code and in every movement.",
+    "valueClarityTitle": "Clarity",
+    "valueClarityDesc": "Transparency in data, privacy, and operations. No 'black box'.",
+    "valueScalabilityTitle": "Scalability",
+    "valueScalabilityDesc": "We design for fleets of thousands of units, not for isolated demos.",
+    "valuePrecisionTitle": "Precision",
+    "valuePrecisionDesc": "Millimeter accuracy in navigation and targeting.",
+    "teamTitle": "Team",
+    "contactTitle": "Contacts"
   },
   "campaignFlow": {
     "title": "Campaign Flow",

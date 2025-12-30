@@ -7,9 +7,9 @@ const MediaCarousel = () => {
   const { t } = useTranslation();
 
   const slides = [
-    { type: 'image', src: '/Images/2.png', caption: t('mediaCarousel.slide1') },
-    { type: 'image', src: '/Images/robot-4.jpg', caption: t('mediaCarousel.slide2') },
-    { type: 'image', src: '/Images/1.png', caption: t('mediaCarousel.slide3') },
+    { type: 'image', src: '/Images/Other/02bdab73-a5c4-4f0c-8366-cecd97c66bd2.avif', caption: t('mediaCarousel.slide1') },
+    { type: 'image', src: '/Images/Other/0386869e-0855-4ba7-b11d-594f52ee27e6.avif', caption: t('mediaCarousel.slide2') },
+    { type: 'image', src: '/Images/Other/0df45e80-4782-4307-826b-50c650ef31c5.avif', caption: t('mediaCarousel.slide3') },
   ];
 
   const [current, setCurrent] = useState(0);

@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const VisionStory = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="px-6 md:px-12 max-w-4xl mx-auto mb-32">
       <div className="space-y-12 text-xl md:text-2xl font-light leading-relaxed text-text-secondary">
@@ -9,7 +12,7 @@ const VisionStory = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="text-foreground font-medium">L'autonomia non è il futuro, è il presente.</span> Crediamo che i robot debbano uscire dai laboratori e integrarsi negli spazi quotidiani, portando efficienza e nuovi servizi dove le persone vivono e lavorano.
+          <span className="text-foreground font-medium">{t('about.visionStory1Highlight')}</span> {t('about.visionStory1').replace(t('about.visionStory1Highlight'), '').trim()}
         </motion.p>
 
         <motion.p
@@ -18,7 +21,12 @@ const VisionStory = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
         >
-          Con <span className="text-foreground font-medium">Titano OS</span>, abbiamo creato un cervello centralizzato capace di orchestrare flotte eterogenee, trasformando semplici macchine in una rete intelligente di dati e media in movimento.
+          {t('about.visionStory2').split('Titano OS').map((text, i, arr) => (
+            <span key={i}>
+              {text}
+              {i < arr.length - 1 && <span className="text-foreground font-medium">Titano OS</span>}
+            </span>
+          ))}
         </motion.p>
 
         <motion.p
@@ -27,7 +35,7 @@ const VisionStory = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
         >
-          Nati in Europa, portiamo avanti una visione di tecnologia etica, sicura e integrata, costruendo l'infrastruttura che abiliterà la prossima generazione di servizi urbani e commerciali.
+          {t('about.visionStory3')}
         </motion.p>
       </div>
     </section>

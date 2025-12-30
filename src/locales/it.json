@@ -17,7 +17,7 @@
   },
   "home": {
     "introTitle": "Il Layer Operativo",
-    "introText": "Titano fornisce il layer operativo mancante che permette ai sistemi autonomi di operare in modo affidabile negli ambienti reali.",
+    "introText": "Titano integra robotica autonoma, piattaforme dati e tecnologia media in un’unica infrastruttura scalabile.",
     "ecosystemTag": "Ecosistema",
     "ecosystemTitle": "Una piattaforma unificata.",
     "scaleTitle": "Scalabilità Globale.",
@@ -37,8 +37,8 @@
   "realWorldData": {
     "title": "Dati dal Mondo Reale",
     "subtitle": "Metriche operative raccolte durante deployment reali gestiti tramite Titano OS.",
-    "case1Title": "CASE 1 — The Village, Parco de’ Medici (Roma)",
-    "case1Stats": "69 giorni operativi\n594.000 impression fisiche stimate\n4.500 QR scan\n338 km percorsi autonomi",
+    "case1Title": "CASE 1 — The Village, Centro Commerciale Parco de’ Medici (Roma)",
+    "case1Stats": "2 unità autonome impiegate\n69 giorni operativi\n594.000 impression fisiche stimate\n4.500 QR scan\n338 km percorsi autonomi",
     "case1Footer": "Dati raccolti durante l’operatività estiva 2025.",
     "case2Title": "CASE 2 — Maison Valentino",
     "case2Stats": "350.000+ visualizzazioni\n80.000+ interazioni fisiche",
@@ -129,6 +129,8 @@
     "disclaimer": "Powered by Titano OS. Unità autonome hardware-agnostic operanti su piattaforme robotiche di terze parti."
   },
   "useCases": {
+    "heroTitle": "Media Autonomo",
+    "heroSubtitle": "DOOH dinamico, contestuale e misurabile tramite mobilità robotica.",
     "verticals": "Verticali",
     "subtitle": "Dove Titano OS aggiunge valore.",
     "universities": "Università",
@@ -154,7 +156,28 @@
     "address": "Milano, Italia",
     "privacy": "Privacy Policy",
     "terms": "Termini di Servizio",
-    "cookies": "Cookie Policy"
+    "cookies": "Cookie Policy",
+    "businessDetails": "Titano Srl, con sede legale in Roma, Via Anastasio II n. 442 - CAP 00165, codice fiscale e partita IVA 18186181006, in persona del legale rappresentante pro tempore Sig. Lorenzo Macali (di seguito, \"Titano\");"
+  },
+  "mission": {
+    "heroTitle": "Costruiamo l’infrastruttura per l’autonomia nel mondo reale."
+  },
+  "about": {
+    "visionStory1": "L'autonomia non è il futuro, è il presente. Crediamo che i robot debbano uscire dai laboratori e integrarsi negli spazi quotidiani, portando efficienza e nuovi servizi dove le persone vivono e lavorano.",
+    "visionStory1Highlight": "L'autonomia non è il futuro, è il presente.",
+    "visionStory2": "Con Titano OS, abbiamo creato un cervello centralizzato capace di orchestrare flotte eterogenee, trasformando semplici macchine in una rete intelligente di dati e media in movimento.",
+    "visionStory3": "Nati in Europa, portiamo avanti una visione di tecnologia etica, sicura e integrata, costruendo l'infrastruttura che abiliterà la prossima generazione di servizi urbani e commerciali.",
+    "valuesTitle": "I nostri valori",
+    "valueSafetyTitle": "Safety",
+    "valueSafetyDesc": "La sicurezza delle persone e degli ambienti è la priorità assoluta in ogni riga di codice e in ogni movimento.",
+    "valueClarityTitle": "Clarity",
+    "valueClarityDesc": "Trasparenza nei dati, nella privacy e nelle operazioni. Nessuna \"black box\".",
+    "valueScalabilityTitle": "Scalability",
+    "valueScalabilityDesc": "Progettiamo per flotte di migliaia di unità, non per demo isolate.",
+    "valuePrecisionTitle": "Precision",
+    "valuePrecisionDesc": "Accuratezza millimetrica nella navigazione e nel targeting.",
+    "teamTitle": "Team",
+    "contactTitle": "Contatti"
   },
   "campaignFlow": {
     "title": "Il flusso della campagna",

@@ -18,7 +18,6 @@ const EcosystemMosaic5 = () => {
           className="md:col-span-2 md:row-span-2 group"
         >
           <MagicCard className="h-full p-8 md:p-10 flex flex-col justify-between relative overflow-hidden bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
-             <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-white/5 to-transparent" />
              <div className="relative z-10 flex flex-col h-full justify-between">
                 <div>
                   <div className="flex items-center gap-3 mb-4">
@@ -31,7 +30,6 @@ const EcosystemMosaic5 = () => {
                     {t('ecosystem.titanoOSDesc')}
                   </p>
                 </div>
-                <div className="hidden md:block w-32 h-32 bg-white/5 rounded-full blur-3xl absolute right-12 top-1/2 -translate-y-1/2" />
              </div>
           </MagicCard>
         </motion.div>
@@ -88,7 +86,7 @@ const EcosystemMosaic5 = () => {
             <div className="absolute inset-0 z-0">
                 <div 
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-60"
-                  style={{ backgroundImage: "url('/Images/1.png')" }}
+                  style={{ backgroundImage: "url('/Images/Other/23ffd6d2-d574-4482-a275-4e26cc6310f8.avif')" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-[#1B1B1B] via-[#1B1B1B]/80 to-transparent" />
             </div>
@@ -119,7 +117,7 @@ const EcosystemMosaic5 = () => {
              <div className="absolute inset-0 z-0">
                  <div 
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-60"
-                  style={{ backgroundImage: "url('/Images/3.png')" }}
+                  style={{ backgroundImage: "url('/Images/Other/2bce8a51-f233-437a-97b3-360431a2f4b4.avif')" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-l from-[#1B1B1B] via-[#1B1B1B]/80 to-transparent" />
              </div>

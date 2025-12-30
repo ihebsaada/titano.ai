@@ -27,7 +27,7 @@ const ProofMetrics = () => {
                 initial={{ scale: 0.5, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ delay: index * 0.1 + 0.2, type: "spring" }}
-                className="text-5xl md:text-7xl font-heading font-bold text-accent mb-4 tracking-tight"
+                className="text-5xl md:text-7xl font-heading font-bold text-foreground mb-4 tracking-tight"
               >
                 {metric.value}
               </motion.div>
