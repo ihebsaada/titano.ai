@@ -4,11 +4,6 @@ import { useTranslation } from 'react-i18next';
 
 const team = [
   { 
-    name: "Lorenzo Macali", 
-    role: "Founder & CEO", 
-    image: "/Images/Team/lorenzo.avif" 
-  },
-  { 
     name: "Francisco Javier Martin Romo", 
     role: "CEPO", 
     image: "/Images/Team/Francisco.avif" 

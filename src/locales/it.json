@@ -12,16 +12,16 @@
   },
   "hero": {
     "title": "Costruiamo l'infrastruttura autonoma dell'Europa",
-    "subtitle": "Titano orchestra robot, spazi, media e dati attraverso un sistema operativo unificato costruito per scalare.",
+    "subtitle": "Robot Intelligenti. Media dinamici. Dati reali. Un solo ecosistema",
     "explore": "Esplora l'Ecosistema Titano"
   },
   "home": {
     "introTitle": "Il Layer Operativo",
-    "introText": "Titano integra robotica autonoma, piattaforme dati e tecnologia media in un’unica infrastruttura scalabile.",
+    "introText": "Titano è il ponte tra robotica, dati e media, portando l'autonomia nel mondo reale.",
     "ecosystemTag": "Ecosistema",
-    "ecosystemTitle": "Una piattaforma unificata.",
-    "scaleTitle": "Scalabilità Globale.",
-    "scaleText": "Dagli hub operativi in Europa al supporto remoto globale. La nostra rete è progettata per gestire migliaia di robot simultaneamente.",
+    "ecosystemTitle": "Una Piattaforma Unica e Integrata",
+    "scaleTitle": "Progettato per Scalare",
+    "scaleText": "La nostra rete gestisce migliaia di robot in tutta Europa, supportata da hub operativi dedicati.",
     "mediaTitle": "Media Autonomo (Application Layer)",
     "mediaText": "Una delle prime applicazioni su larga scala di Titano OS, che abilita pubblicità dinamica e guidata dai dati negli spazi fisici.",
     "ctaTitle": "Inizia il tuo viaggio con Titano AI",
@@ -36,14 +36,14 @@
   },
   "realWorldData": {
     "title": "Dati dal Mondo Reale",
-    "subtitle": "Metriche operative raccolte durante deployment reali gestiti tramite Titano OS.",
-    "case1Title": "CASE 1 — The Village, Centro Commerciale Parco de’ Medici (Roma)",
+    "subtitle": "Metriche reali dai deployment di Titano OS sul campo.",
+    "case1Title": "CASE 1: The Village, Centro Commerciale Parco de’ Medici (Roma)",
     "case1Stats": "2 unità autonome impiegate\n69 giorni operativi\n594.000 impression fisiche stimate\n4.500 QR scan\n338 km percorsi autonomi",
     "case1Footer": "Dati raccolti durante l’operatività estiva 2025.",
-    "case2Title": "CASE 2 — Maison Valentino",
+    "case2Title": "CASE 2: Maison Valentino",
     "case2Stats": "350.000+ visualizzazioni\n80.000+ interazioni fisiche",
     "case2Footer": "Attivazione brand tramite Unità Autonoma LUXA.",
-    "case3Title": "CASE 3 — Skuola.net",
+    "case3Title": "CASE 3: Skuola.net",
     "case3Stats": "486.000 visualizzazioni\n100.000+ interazioni",
     "case3Footer": "Campagna di engagement in ambienti urbani e universitari.",
     "disclaimer": "I dati mostrati si riferiscono a singoli casi di deployment reale e non rappresentano metriche aggregate di rete."
@@ -66,9 +66,9 @@
   },
   "ecosystem": {
     "heroTitle": "L’Ecosistema Titano",
-    "heroSubtitle": "Un’infrastruttura di controllo che unifica robot, dati e operazioni reali.",
+    "heroSubtitle": "L'infrastruttura che connette robot, dati e operazioni fisiche.",
     "roboticsLayer": "Layer Robotico",
-    "roboticsDesc": "Esecuzione fisica dell’autonomia su robot multi-marca in ambienti reali.",
+    "roboticsDesc": "Esecuzione fisica dell’autonomia su robot multi marca in ambienti reali.",
     "roboticsSubtitle": "Automazione intelligente per spazi moderni.",
     "titanoOS": "Titano OS",
     "titanoOSDesc": "Sistema operativo di controllo per navigazione, sensing, media e intelligenza di flotta.",
@@ -77,7 +77,7 @@
     "autonomousMedia": "Autonomous Media (Application Layer)",
     "operationsHub": "Operations Hub (EU)",
     "operationsHubDesc": "Centro operativo per monitoraggio attivo e gestione remota della flotta.",
-    "osLayersTitle": "Titano OS — Control Layer",
+    "osLayersTitle": "Titano OS Control Layer",
     "osLayersSubtitle": "Un sistema operativo di controllo progettato per governare l’autonomia fisica su scala.",
     "layer1Title": "Navigazione & Mappatura",
     "layer1Desc": "Localizzazione, mappatura 3D e routing autonomo in ambienti reali.",
@@ -90,7 +90,7 @@
     "layer5Title": "Data Fabric",
     "layer5Desc": "Pipeline dati unificata per analytics e reporting.",
     "autonomyUpgrade": "Upgrade Autonomia",
-    "autonomyUpgradeDesc": "Trasformiamo piattaforme robotiche standard in agenti autonomi intelligenti, capaci di operare in ambienti dinamici senza infrastrutture esterne.",
+    "autonomyUpgradeDesc": "Trasformiamo piattaforme robotiche standard in agenti autonomi intelligenti capaci di operare in ambienti dinamici senza infrastrutture esterne.",
     "navigation": "Navigazione",
     "navigationDesc": "Algoritmi di path planning avanzati permettono movimenti fluidi e sicuri tra le persone, ottimizzando i percorsi in tempo reale.",
     "interactionSafety": "Interazione & Sicurezza",
@@ -100,7 +100,7 @@
     "mapping": "Mappatura",
     "active": "Attiva",
     "telemetry": "Telemetria",
-    "realtime": "Real-time",
+    "realtime": "Realtime",
     "issues": "Problemi",
     "zeroCritical": "0 Critici",
     "network": "Network",
@@ -112,7 +112,7 @@
     "title": "Il Workflow Titano",
     "subtitle": "Dalla connessione all'ottimizzazione continua.",
     "connect": "Connetti",
-    "connectDesc": "Robot multi-brand si connettono a Titano OS",
+    "connectDesc": "Robot multi brand si connettono a Titano OS",
     "control": "Controlla",
     "controlDesc": "Gli spazi operano e monitorano le flotte da remoto",
     "deploy": "Deploy",
@@ -122,11 +122,11 @@
   },
   "autonomousUnits": {
     "title": "Unità Autonome",
-    "description": "Titano opera nel mondo reale attraverso Unità Autonome: istanze operative di Titano OS progettate per svolgere funzioni fisiche specifiche. Ogni unità è hardware-agnostic, controllata centralmente dal sistema e può operare su diverse piattaforme robotiche, mantenendo coerenza, sicurezza e scalabilità.",
+    "description": "Titano lavora attraverso Unità Autonome specializzate. Sono istanze indipendenti del sistema operativo che girano su qualsiasi robot per gestire compiti specifici nel mondo reale.",
     "luxaSubtitle": "Media Autonomo & Interazione",
     "portaSubtitle": "Logistica Autonoma & Delivery",
     "praesidioSubtitle": "Sicurezza Autonoma & Monitoraggio",
-    "disclaimer": "Powered by Titano OS. Unità autonome hardware-agnostic operanti su piattaforme robotiche di terze parti."
+    "disclaimer": "Powered by Titano OS. Unità autonome hardware agnostic operanti su piattaforme robotiche di terze parti."
   },
   "useCases": {
     "heroTitle": "Media Autonomo",
@@ -157,7 +157,7 @@
     "privacy": "Privacy Policy",
     "terms": "Termini di Servizio",
     "cookies": "Cookie Policy",
-    "businessDetails": "Titano Srl, con sede legale in Roma, Via Anastasio II n. 442 - CAP 00165, codice fiscale e partita IVA 18186181006"
+    "businessDetails": "Titano Srl, con sede legale in Roma, Via Anastasio II n. 442 CAP 00165, codice fiscale e partita IVA 18186181006;"
   },
   "mission": {
     "heroTitle": "Costruiamo l’infrastruttura per l’autonomia nel mondo reale."
@@ -165,8 +165,8 @@
   "about": {
     "visionStory1": "L'autonomia non è il futuro, è il presente. Crediamo che i robot debbano uscire dai laboratori e integrarsi negli spazi quotidiani, portando efficienza e nuovi servizi dove le persone vivono e lavorano.",
     "visionStory1Highlight": "L'autonomia non è il futuro, è il presente.",
-    "visionStory2": "Con Titano OS, abbiamo creato un cervello centralizzato capace di orchestrare flotte eterogenee, trasformando semplici macchine in una rete intelligente di dati e media in movimento.",
-    "visionStory3": "Nati in Europa, portiamo avanti una visione di tecnologia etica, sicura e integrata, costruendo l'infrastruttura che abiliterà la prossima generazione di servizi urbani e commerciali.",
+    "visionStory2": "Titano OS è il cervello del sistema: trasforma l'hardware standard in una rete intelligente di dati e media in movimento.",
+    "visionStory3": "Nati in Europa, costruiamo tecnologia etica e sicura per abilitare la prossima generazione di servizi urbani e commerciali.",
     "valuesTitle": "I nostri valori",
     "valueSafetyTitle": "Safety",
     "valueSafetyDesc": "La sicurezza delle persone e degli ambienti è la priorità assoluta in ogni riga di codice e in ogni movimento.",
