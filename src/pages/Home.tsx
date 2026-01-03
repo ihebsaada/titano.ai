@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import BackgroundCanvas from '../components/BackgroundCanvas';
 import LogoMarquee from '../components/LogoMarquee';
 import MetricsTicker from '../components/MetricsTicker';
 import MosaicShowcase from '../components/MosaicShowcase';
@@ -16,16 +15,7 @@ const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-background min-h-screen relative">
-      {/* Background Grid */}
-      <div className="fixed inset-0 opacity-[0.1] z-0 pointer-events-none" 
-        style={{
-          backgroundImage: 'linear-gradient(#808080 1px, transparent 1px), linear-gradient(90deg, #808080 1px, transparent 1px)', 
-          backgroundSize: '40px 40px' 
-        }} 
-      />
-      <BackgroundCanvas />
-      
+    <div className="min-h-screen relative">
       <VideoHero />
 
       {/* Floating Intro Section */}

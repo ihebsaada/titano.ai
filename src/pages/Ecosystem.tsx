@@ -13,14 +13,7 @@ const Ecosystem = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-background min-h-screen pt-24 relative">
-      {/* Background Grid */}
-      <div className="absolute inset-0 opacity-[0.1]" 
-        style={{
-          backgroundImage: 'linear-gradient(#808080 1px, transparent 1px), linear-gradient(90deg, #808080 1px, transparent 1px)', 
-          backgroundSize: '40px 40px' 
-        }} 
-      />
+    <div className="min-h-screen pt-24 relative">
       <EcosystemHero />
       <EcosystemMosaic5 />
       <OSLayerStack />

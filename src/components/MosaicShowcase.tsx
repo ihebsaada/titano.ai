@@ -10,7 +10,7 @@ const MosaicShowcase = () => {
     {
       title: t('mosaic.robotics'),
       desc: t('mosaic.roboticsDesc'),
-      image: "/Images/Other/171310a1-e611-4cdc-8408-553dd40983ba.avif",
+      image: "/Images/New/8f4d7086-6611-40f5-aee1-bf335891e2b4.avif",
       link: "/ecosistema#robotics",
       colSpan: "md:col-span-2",
       bgPos: "center"
@@ -18,7 +18,7 @@ const MosaicShowcase = () => {
     {
       title: t('mosaic.titanoOS'),
       desc: t('mosaic.titanoOSDesc'),
-      image: "/Images/Other/Tavola da disegno 3 copia.jpg", // using the renamed 22.png
+      image: "/Images/New/da8f9877-ee2d-4d51-a2ad-931feeacb780.avif",
       link: "/ecosistema#software",
       colSpan: "md:col-span-1",
       bgPos: "center"
@@ -26,7 +26,7 @@ const MosaicShowcase = () => {
     {
       title: t('mosaic.mediaNetwork'),
       desc: t('mosaic.mediaNetworkDesc'),
-      image: "/Images/Other/1f9125e5-4f4a-425a-b068-ab1553ac6a21.avif",
+      image: "/Images/New/55f31b54-3707-4ae9-8cf8-4f3db432fa33.avif",
       link: "/ecosistema#media",
       colSpan: "md:col-span-3",
       height: "h-96",

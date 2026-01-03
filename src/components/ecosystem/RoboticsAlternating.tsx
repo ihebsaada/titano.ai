@@ -9,19 +9,19 @@ const RoboticsAlternating = () => {
     {
       title: t('ecosystem.autonomyUpgrade'),
       desc: t('ecosystem.autonomyUpgradeDesc'),
-      image: "/Images/Other/3cda0b0c-f1f0-4e5c-8c4d-8f74a45f4ff2.avif",
+      image: "/Images/New/2c14ed4b-900c-4962-929d-66573a16e0ce.avif",
       align: "left"
     },
     {
       title: t('ecosystem.navigation'),
       desc: t('ecosystem.navigationDesc'),
-      image: "/Images/Other/637149d4-1ff3-4ca0-9950-699e3695a760.avif",
+      image: "/Images/New/55f31b54-3707-4ae9-8cf8-4f3db432fa33.avif",
       align: "right"
     },
     {
       title: t('ecosystem.interactionSafety'),
       desc: t('ecosystem.interactionSafetyDesc'),
-      image: "/Images/Other/6e62bcb3-88ee-4d95-aeab-f8ca20ce827b.avif",
+      image: "/Images/New/61525c5f-cde0-453b-a72c-41ed3ca01706.avif",
       align: "left"
     }
   ];
