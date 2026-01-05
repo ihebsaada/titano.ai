@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
 
 const MetricsTicker = () => {
   const { t } = useTranslation();
@@ -9,16 +10,19 @@ const MetricsTicker = () => {
       title: t('realWorldData.case1Title'),
       stats: t('realWorldData.case1Stats'),
       footer: t('realWorldData.case1Footer'),
+      link: "https://www.instagram.com/reels/DP1ZU-fjEqX/"
     },
     {
       title: t('realWorldData.case2Title'),
       stats: t('realWorldData.case2Stats'),
       footer: t('realWorldData.case2Footer'),
+      link: "https://www.instagram.com/reel/DSK5t3CkaBO/"
     },
     {
       title: t('realWorldData.case3Title'),
       stats: t('realWorldData.case3Stats'),
       footer: t('realWorldData.case3Footer'),
+      link: "https://www.instagram.com/reel/DP1ZU-fjEqX/"
     }
   ];
 
@@ -39,11 +43,19 @@ const MetricsTicker = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="glass-panel p-8 rounded-[32px] flex flex-col h-full border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-colors duration-300"
+            className="glass-panel p-8 rounded-[32px] flex flex-col h-full border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-colors duration-300 group"
           >
-             <h3 className="text-lg font-bold mb-6 text-foreground border-b border-white/10 pb-4 min-h-[60px] flex items-center">
-               {item.title}
-             </h3>
+             <a 
+               href={item.link} 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="flex items-center justify-between group/link border-b border-white/10 pb-4 mb-6 hover:text-gray-400 transition-colors"
+             >
+               <h3 className="text-lg font-bold text-foreground group-hover/link:text-gray-400 flex-grow pr-4">
+                 {item.title}
+               </h3>
+               <ExternalLink size={18} className="text-text-secondary group-hover/link:text-gray-400 transition-colors flex-shrink-0" />
+             </a>
              <div className="flex-grow mb-8 space-y-3">
                {item.stats.split('\n').map((line, i) => (
                  <p key={i} className="text-lg md:text-xl font-mono font-medium text-foreground">

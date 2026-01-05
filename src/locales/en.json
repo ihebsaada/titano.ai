@@ -41,9 +41,9 @@
     "case1Stats": "2 autonomous units deployed\n69 operational days\n594,000 estimated physical impressions\n4,500 QR scans\n338 km autonomous travel",
     "case1Footer": "Data collected during summer 2025 operations.",
     "case2Title": "CASE 2: Maison Valentino",
-    "case2Stats": "350,000+ views\n80,000+ physical interactions",
+    "case2Stats": "350,000+ views\n80.000+ physical interactions",
     "case2Footer": "Brand activation via LUXA Autonomous Unit.",
-    "case3Title": "CASE 3: Skuola.net",
+    "case3Title": "CASE 3: Skuola",
     "case3Stats": "486,000 views\n100,000+ interactions",
     "case3Footer": "Engagement campaign in urban and university environments.",
     "disclaimer": "The data shown refers to single real deployment cases and does not represent aggregated network metrics."
@@ -192,6 +192,27 @@
     "activeEngagement": "Active Engagement",
     "analytics": "Analytics",
     "reportROI": "Report & ROI"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: January 2026",
+    "intro": "At Titano, we take your privacy seriously. This policy explains how we collect, use, and protect your data when you interact with our platform and autonomous systems.",
+    "section1Title": "1. Data Collection",
+    "section1Text": "We collect minimal data necessary for operations, including technical logs, anonymous usage metrics, and contact information provided through our forms.",
+    "section2Title": "2. Use of Data",
+    "section2Text": "Your data is used to provide and improve our services, manage autonomous fleet operations, and communicate with you regarding your inquiries.",
+    "section3Title": "3. Data Protection",
+    "section3Text": "We implement industry standard security measures to protect your information from unauthorized access or disclosure.",
+    "section4Title": "4. Cookies",
+    "section4Text": "We use essential and analytical cookies to ensure the platform works correctly and to understand how it's used. You can manage your preferences through our cookie settings.",
+    "section5Title": "5. Contact",
+    "section5Text": "If you have any questions about this policy, please contact us at info@titano.ai."
+  },
+  "cookies": {
+    "title": "Privacy & Data",
+    "description": "We use minimal technology to ensure the platform functions correctly and to analyze anonymous usage. No invasive tracking.",
+    "accept": "Accept",
+    "settings": "Settings"
   },
   "proofMetrics": {
     "monthlyImpressions": "Monthly Impressions",

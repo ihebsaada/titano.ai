@@ -43,7 +43,7 @@
     "case2Title": "CASE 2: Maison Valentino",
     "case2Stats": "350.000+ visualizzazioni\n80.000+ interazioni fisiche",
     "case2Footer": "Attivazione brand tramite Unità Autonoma LUXA.",
-    "case3Title": "CASE 3: Skuola.net",
+    "case3Title": "CASE 3: Skuola",
     "case3Stats": "486.000 visualizzazioni\n100.000+ interazioni",
     "case3Footer": "Campagna di engagement in ambienti urbani e universitari.",
     "disclaimer": "I dati mostrati si riferiscono a singoli casi di deployment reale e non rappresentano metriche aggregate di rete."
@@ -192,6 +192,27 @@
     "activeEngagement": "Ingaggio Attivo",
     "analytics": "Analytics",
     "reportROI": "Report & ROI"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Ultimo aggiornamento: Gennaio 2026",
+    "intro": "In Titano, prendiamo sul serio la tua privacy. Questa policy spiega come raccogliamo, utilizziamo e proteggiamo i tuoi dati quando interagisci con la nostra piattaforma e i nostri sistemi autonomi.",
+    "section1Title": "1. Raccolta Dati",
+    "section1Text": "Raccogliamo i dati minimi necessari per le operazioni, inclusi log tecnici, metriche di utilizzo anonime e informazioni di contatto fornite tramite i nostri moduli.",
+    "section2Title": "2. Uso dei Dati",
+    "section2Text": "I tuoi dati vengono utilizzati per fornire e migliorare i nostri servizi, gestire le operazioni della flotta autonoma e comunicare con te in merito alle tue richieste.",
+    "section3Title": "3. Protezione dei Dati",
+    "section3Text": "Implementiamo misure di sicurezza standard del settore per proteggere le tue informazioni da accessi o divulgazioni non autorizzate.",
+    "section4Title": "4. Cookie",
+    "section4Text": "Utilizziamo cookie essenziali e analitici per garantire che la piattaforma funzioni correttamente e per capire come viene utilizzata. Puoi gestire le tue preferenze tramite le nostre impostazioni dei cookie.",
+    "section5Title": "5. Contatti",
+    "section5Text": "Se hai domande su questa policy, contattaci all'indirizzo info@titano.ai."
+  },
+  "cookies": {
+    "title": "Privacy e Dati",
+    "description": "Utilizziamo tecnologie minime per garantire il funzionamento della piattaforma e analizzare l'uso anonimo. Nessun tracciamento invasivo.",
+    "accept": "Accetta",
+    "settings": "Impostazioni"
   },
   "proofMetrics": {
     "monthlyImpressions": "Monthly Impressions",

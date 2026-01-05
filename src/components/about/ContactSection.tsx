@@ -4,7 +4,7 @@ import { Mail, ArrowUpRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const contacts = [
-  { title: "Business", email: "business@titano.ai" },
+  { title: "Commercial", email: "commercial@titano.ai" },
   { title: "Partnerships", email: "partners@titano.ai" },
   { title: "Media", email: "press@titano.ai" },
   { title: "Investors", email: "investors@titano.ai" }

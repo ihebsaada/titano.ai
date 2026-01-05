@@ -1,8 +1,23 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { MapPin, Linkedin } from 'lucide-react';
+import { MapPin, Linkedin, Instagram } from 'lucide-react';
 import SpotlightCard from './SpotlightCard';
 import { useTranslation } from 'react-i18next';
+
+const TikTokIcon = ({ size = 18 }: { size?: number }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round"
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -49,16 +64,13 @@ const Footer = () => {
             <ul className="space-y-4">
               <li><Link to="/ecosistema" className="text-gray-400 hover:text-white transition-colors">{t('navbar.ecosystem')}</Link></li>
               <li><Link to="/use-cases" className="text-gray-400 hover:text-white transition-colors">{t('navbar.useCases')}</Link></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
             </ul>
           </div>
 
           <div className="md:col-span-3">
             <h4 className="text-white font-bold mb-6 text-lg tracking-tight">{t('footer.legal')}</h4>
             <ul className="space-y-4">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.privacy')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.terms')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.cookies')}</a></li>
+              <li><Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">{t('footer.privacy')}</Link></li>
             </ul>
           </div>
         </div>
@@ -74,12 +86,32 @@ const Footer = () => {
             © {new Date().getFullYear()} Titano AI. {t('footer.rights')}
           </p>
           
-          <div className="flex items-center gap-8">
-            <a href="#" className="hover:text-white transition-colors">{t('footer.privacy')}</a>
-            <a href="#" className="hover:text-white transition-colors">{t('footer.cookies')}</a>
-            <div className="flex items-center gap-4 ml-4 pl-8 border-l border-white/10">
-              <a href="#" className="text-white hover:text-white transition-colors p-2 hover:bg-white/5 rounded-lg">
+          <div className="flex items-center gap-6">
+            <Link to="/privacy-policy" className="hover:text-white transition-colors text-gray-500 text-sm">{t('footer.privacy')}</Link>
+            <div className="flex items-center gap-2 ml-4 pl-6 border-l border-white/10">
+              <a 
+                href="https://www.linkedin.com/company/titanoai" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-lg"
+              >
                 <Linkedin size={18} />
+              </a>
+              <a 
+                href="https://www.instagram.com/titanoai" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-lg"
+              >
+                <Instagram size={18} />
+              </a>
+              <a 
+                href="https://www.tiktok.com/@titanoai?_r=1&_t=ZN-92oeM8zgFFu" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-lg"
+              >
+                <TikTokIcon size={18} />
               </a>
             </div>
           </div>
