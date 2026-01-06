@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 import { useRef, useEffect, forwardRef } from 'react';
 import { Canvas, useFrame, useThree, ThreeEvent } from '@react-three/fiber';
 import { EffectComposer, wrapEffect } from '@react-three/postprocessing';
@@ -133,9 +132,9 @@ void mainImage(in vec4 inputColor, in vec2 uv, out vec4 outputColor) {
 `;
 
 class RetroEffectImpl extends Effect {
-  public uniforms: Map<string, THREE.Uniform<any>>;
+  public uniforms: Map<string, THREE.Uniform<unknown>>;
   constructor() {
-    const uniforms = new Map<string, THREE.Uniform<any>>([
+    const uniforms = new Map<string, THREE.Uniform<unknown>>([
       ['colorNum', new THREE.Uniform(4.0)],
       ['pixelSize', new THREE.Uniform(2.0)]
     ]);
@@ -143,16 +142,24 @@ class RetroEffectImpl extends Effect {
     this.uniforms = uniforms;
   }
   set colorNum(value: number) {
-    this.uniforms.get('colorNum')!.value = value;
+    const colorNumUniform = this.uniforms.get('colorNum');
+    if (colorNumUniform) {
+      colorNumUniform.value = value;
+    }
   }
   get colorNum(): number {
-    return this.uniforms.get('colorNum')!.value;
+    const colorNumUniform = this.uniforms.get('colorNum');
+    return colorNumUniform ? colorNumUniform.value as number : 4.0;
   }
   set pixelSize(value: number) {
-    this.uniforms.get('pixelSize')!.value = value;
+    const pixelSizeUniform = this.uniforms.get('pixelSize');
+    if (pixelSizeUniform) {
+      pixelSizeUniform.value = value;
+    }
   }
   get pixelSize(): number {
-    return this.uniforms.get('pixelSize')!.value;
+    const pixelSizeUniform = this.uniforms.get('pixelSize');
+    return pixelSizeUniform ? pixelSizeUniform.value as number : 2.0;
   }
 }
 
@@ -165,7 +172,7 @@ const RetroEffect = forwardRef<RetroEffectImpl, { colorNum: number; pixelSize: n
 RetroEffect.displayName = 'RetroEffect';
 
 interface WaveUniforms {
-  [key: string]: THREE.Uniform<any>;
+  [key: string]: THREE.Uniform<number | THREE.Vector2 | THREE.Color>;
   time: THREE.Uniform<number>;
   resolution: THREE.Uniform<THREE.Vector2>;
   waveSpeed: THREE.Uniform<number>;
