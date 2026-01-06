@@ -26,7 +26,7 @@ const MosaicShowcase = () => {
     {
       title: t('mosaic.mediaNetwork'),
       desc: t('mosaic.mediaNetworkDesc'),
-      image: "/Images/New/55f31b54-3707-4ae9-8cf8-4f3db432fa33.avif",
+      image: "/Images/New/049e360d-18ea-4326-9a8f-692a95f7e6fd.avif",
       link: "/ecosistema#media",
       colSpan: "md:col-span-3",
       height: "h-96",

@@ -8,8 +8,12 @@ const MediaCarousel = () => {
 
   const slides = [
     { type: 'image', src: '/Images/New/2c14ed4b-900c-4962-929d-66573a16e0ce.avif', caption: t('mediaCarousel.slide1') },
+    { type: 'image', src: '/Images/New/d1dc767c-ee62-44c7-a846-4868885c2f7f.avif', caption: t('mediaCarousel.slide4') },
     { type: 'image', src: '/Images/New/55f31b54-3707-4ae9-8cf8-4f3db432fa33.avif', caption: t('mediaCarousel.slide2') },
+    { type: 'image', src: '/Images/New/359c3b8d-be7a-4b7a-9ac5-923ae9d3ccd5.avif', caption: t('mediaCarousel.slide5') },
     { type: 'image', src: '/Images/New/61525c5f-cde0-453b-a72c-41ed3ca01706.avif', caption: t('mediaCarousel.slide3') },
+    { type: 'image', src: '/Images/New/049e360d-18ea-4326-9a8f-692a95f7e6fd.avif', caption: t('mediaCarousel.slide6') },
+    { type: 'image', src: '/Images/New/0f918059-c5e7-4c76-8f7f-169f9b992765.avif', caption: t('mediaCarousel.slide7') },
   ];
 
   const [current, setCurrent] = useState(0);

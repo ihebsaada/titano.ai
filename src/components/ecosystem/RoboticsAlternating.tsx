@@ -23,6 +23,18 @@ const RoboticsAlternating = () => {
       desc: t('ecosystem.interactionSafetyDesc'),
       image: "/Images/New/61525c5f-cde0-453b-a72c-41ed3ca01706.avif",
       align: "left"
+    },
+    {
+      title: t('ecosystem.mappingTitle'),
+      desc: t('ecosystem.mappingDesc'),
+      image: "/Images/New/d1dc767c-ee62-44c7-a846-4868885c2f7f.avif",
+      align: "right"
+    },
+    {
+      title: t('ecosystem.fleetTitle'),
+      desc: t('ecosystem.fleetDesc'),
+      image: "/Images/New/359c3b8d-be7a-4b7a-9ac5-923ae9d3ccd5.avif",
+      align: "left"
     }
   ];
 
