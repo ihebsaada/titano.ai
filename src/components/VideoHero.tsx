@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Dither from './Dither';
 
 const VideoHero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -19,8 +20,21 @@ const VideoHero = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-dark">
+      {/* Dither Background Layer */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <Dither 
+          colorNum={2.5}
+          waveColor={[0.5, 0.5, 0.5]}
+          enableMouseInteraction={true}
+          waveSpeed={0.05}
+          waveFrequency={3}
+          waveAmplitude={0.3}
+          mouseRadius={0.3}
+        />
+      </div>
+
       {/* Video Background */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full z-10">
          <video
             key={isMobile ? 'mobile' : 'desktop'}
             className="w-full h-full object-cover"
