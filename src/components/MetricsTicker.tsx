@@ -10,7 +10,7 @@ const MetricsTicker = () => {
       title: t('realWorldData.case1Title'),
       stats: t('realWorldData.case1Stats'),
       footer: t('realWorldData.case1Footer'),
-      link: "https://www.instagram.com/reels/DP1ZU-fjEqX/"
+      link: "https://vm.tiktok.com/ZNRMw2HA5/"
     },
     {
       title: t('realWorldData.case2Title'),
