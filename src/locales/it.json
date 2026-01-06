@@ -55,10 +55,10 @@
     "slide1": "Campagne contestuali nei centri commerciali.",
     "slide2": "Interazione diretta con il pubblico.",
     "slide3": "Delivery automatizzato in spazi complessi.",
-    "slide4": "Distribuzione di contenuti dinamici.",
-    "slide5": "Analisi dati in tempo reale.",
-    "slide6": "Integrazione con smart city.",
-    "slide7": "Navigazione autonoma avanzata."
+    "slide4": "Engagement in tempo reale nei centri urbani.",
+    "slide5": "Navigazione di precisione in aree ad alto traffico.",
+    "slide6": "Pubblicità dinamica in grandi eventi.",
+    "slide7": "Gestione intelligente della flotta."
   },
   "mosaic": {
     "robotics": "Robotica",
@@ -99,10 +99,6 @@
     "navigationDesc": "Algoritmi di path planning avanzati permettono movimenti fluidi e sicuri tra le persone, ottimizzando i percorsi in tempo reale.",
     "interactionSafety": "Interazione & Sicurezza",
     "interactionSafetyDesc": "Sistemi di sicurezza certificati e interfacce naturali rendono i robot Titano collaboratori affidabili e coinvolgenti per il pubblico.",
-    "mappingTitle": "Mappatura 3D Dinamica",
-    "mappingDesc": "I nostri sistemi creano mappe ad alta fedeltà in tempo reale, permettendo una comprensione profonda degli spazi fisici in continua evoluzione.",
-    "fleetTitle": "Intelligenza di Flotta",
-    "fleetDesc": "Coordinamento centralizzato che ottimizza i percorsi e le attività di ogni unità, garantendo massima efficienza operativa.",
     "operationsHubTitle": "Intelligence Operativa 24/7",
     "operationsHubText": "Un centro di controllo globale per monitorare, gestire e ottimizzare ogni singolo robot della flotta.",
     "mapping": "Mappatura",

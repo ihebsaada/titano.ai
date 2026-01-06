@@ -55,10 +55,10 @@
     "slide1": "Contextual campaigns in shopping malls.",
     "slide2": "Direct interaction with the public.",
     "slide3": "Automated delivery in complex spaces.",
-    "slide4": "Dynamic content distribution.",
-    "slide5": "Real-time data analysis.",
-    "slide6": "Integration with smart cities.",
-    "slide7": "Advanced autonomous navigation."
+    "slide4": "Real-time engagement in urban centers.",
+    "slide5": "Precision navigation in high-traffic areas.",
+    "slide6": "Dynamic advertising at large events.",
+    "slide7": "Intelligent fleet management."
   },
   "mosaic": {
     "robotics": "Robotics",
@@ -99,10 +99,6 @@
     "navigationDesc": "Advanced path planning algorithms enable fluid and safe movement among people, optimizing routes in real time.",
     "interactionSafety": "Interaction & Safety",
     "interactionSafetyDesc": "Certified safety systems and natural interfaces make Titano robots reliable and engaging collaborators for the public.",
-    "mappingTitle": "Dynamic 3D Mapping",
-    "mappingDesc": "Our systems create high-fidelity maps in real-time, allowing for a deep understanding of ever-evolving physical spaces.",
-    "fleetTitle": "Fleet Intelligence",
-    "fleetDesc": "Centralized coordination that optimizes routes and activities for every unit, ensuring maximum operational efficiency.",
     "operationsHubTitle": "24/7 Operational Intelligence",
     "operationsHubText": "A global control center to monitor, manage, and optimize every single robot in the fleet.",
     "mapping": "Mapping",

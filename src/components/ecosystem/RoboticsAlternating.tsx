@@ -9,31 +9,19 @@ const RoboticsAlternating = () => {
     {
       title: t('ecosystem.autonomyUpgrade'),
       desc: t('ecosystem.autonomyUpgradeDesc'),
-      image: "/Images/New/2c14ed4b-900c-4962-929d-66573a16e0ce.avif",
+      image: "/Images/New/049e360d-18ea-4326-9a8f-692a95f7e6fd.avif",
       align: "left"
     },
     {
       title: t('ecosystem.navigation'),
       desc: t('ecosystem.navigationDesc'),
-      image: "/Images/New/55f31b54-3707-4ae9-8cf8-4f3db432fa33.avif",
+      image: "/Images/New/8f4d7086-6611-40f5-aee1-bf335891e2b4.avif",
       align: "right"
     },
     {
       title: t('ecosystem.interactionSafety'),
       desc: t('ecosystem.interactionSafetyDesc'),
-      image: "/Images/New/61525c5f-cde0-453b-a72c-41ed3ca01706.avif",
-      align: "left"
-    },
-    {
-      title: t('ecosystem.mappingTitle'),
-      desc: t('ecosystem.mappingDesc'),
-      image: "/Images/New/d1dc767c-ee62-44c7-a846-4868885c2f7f.avif",
-      align: "right"
-    },
-    {
-      title: t('ecosystem.fleetTitle'),
-      desc: t('ecosystem.fleetDesc'),
-      image: "/Images/New/359c3b8d-be7a-4b7a-9ac5-923ae9d3ccd5.avif",
+      image: "/Images/New/0f918059-c5e7-4c76-8f7f-169f9b992765.avif",
       align: "left"
     }
   ];
