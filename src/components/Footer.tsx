@@ -33,11 +33,11 @@ const Footer = () => {
             <Link to="/" className="inline-block mb-8 group">
                 <motion.img 
                   whileHover={{ scale: 1.02 }}
-                  src="/Images/logo_senza_fondo-02.png" 
+                  src="/Images/Risorsa 3.png" 
                   alt="Titano AI" 
                   loading="lazy"
                   decoding="async"
-                  className="h-24 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all duration-300" 
+                  className="h-24 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all duration-300 filter invert" 
                 />
             </Link>
             <p className="text-gray-400 max-w-md text-lg leading-relaxed mb-8 font-light">
