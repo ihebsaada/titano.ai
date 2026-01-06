@@ -22,6 +22,8 @@ const LogoMarquee = () => {
                <img 
                  src={logo.src} 
                  alt={logo.alt} 
+                 loading="lazy"
+                 decoding="async"
                  className="h-20 md:h-32 w-auto max-w-full object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500 hover:scale-105"
                />
             </div>
@@ -32,6 +34,8 @@ const LogoMarquee = () => {
                <img 
                  src={logo.src} 
                  alt={logo.alt} 
+                 loading="lazy"
+                 decoding="async"
                  className="h-20 md:h-32 w-auto max-w-full object-contain opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500 hover:scale-105"
                />
             </div>

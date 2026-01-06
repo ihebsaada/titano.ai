@@ -35,6 +35,8 @@ const Footer = () => {
                   whileHover={{ scale: 1.02 }}
                   src="/Images/logo_senza_fondo-02.png" 
                   alt="Titano AI" 
+                  loading="lazy"
+                  decoding="async"
                   className="h-24 w-auto object-contain opacity-90 group-hover:opacity-100 transition-all duration-300" 
                 />
             </Link>

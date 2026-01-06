@@ -52,6 +52,8 @@ const TeamSection = () => {
                     <img 
                       src={member.image} 
                       alt={member.name}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105 transition-all duration-500 ease-out"
                     />
                 </div>

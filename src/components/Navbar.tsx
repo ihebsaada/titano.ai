@@ -57,6 +57,8 @@ const Navbar = () => {
                <img 
                  src="/Images/Risorsa 3.png" 
                  alt="Titano AI" 
+                 loading="eager"
+                 decoding="async"
                  className="h-7 md:h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
                />
             </Link>
