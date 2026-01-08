@@ -23,11 +23,6 @@ const team = [
     role: "CCO", 
     image: "/Images/Team/Jonathan.avif" 
   },
-  { 
-    name: "Marco Nicolini", 
-    role: "Legal counsel", 
-    image: "/Images/Team/marco.avif" 
-  },
 ];
 
 const TeamSection = () => {
@@ -36,7 +31,7 @@ const TeamSection = () => {
   return (
     <section className="px-6 md:px-12 max-w-[1920px] mx-auto mb-32 pt-24 border-t border-black/5">
       <h2 className="text-3xl font-heading font-bold mb-12">{t('about.teamTitle')}</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {team.map((member, index) => (
           <motion.div
             key={index}
