@@ -16,21 +16,6 @@ const UseCases = () => {
       <UseCasesMosaic />
       <CampaignFlowDiagram />
       <ProofMetrics />
-      
-      {/* Featured Image Section */}
-      <section className="px-6 md:px-12 max-w-7xl mx-auto mb-24">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="relative rounded-[48px] overflow-hidden h-[400px] md:h-[600px]"
-        >
-          <div 
-            className="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-700"
-            style={{ backgroundImage: "url('/Images/New/c4f3228c-ac07-4434-b8cd-2cb4c99b90ea.avif')" }}
-          />
-        </motion.div>
-      </section>
 
       {/* Final CTA */}
       <section className="px-6 md:px-12 pb-32 text-center">

@@ -86,7 +86,7 @@ const EcosystemMosaic5 = () => {
             <div className="absolute inset-0 z-0">
                 <div 
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-60"
-                  style={{ backgroundImage: "url('/Images/New/d1dc767c-ee62-44c7-a846-4868885c2f7f.avif')" }}
+                  style={{ backgroundImage: "url('/Images/New/8f4d7086-6611-40f5-aee1-bf335891e2b4.avif')" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-[#1B1B1B] via-[#1B1B1B]/80 to-transparent" />
             </div>
@@ -117,7 +117,7 @@ const EcosystemMosaic5 = () => {
              <div className="absolute inset-0 z-0">
                  <div 
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-60"
-                  style={{ backgroundImage: "url('/Images/New/55f31b54-3707-4ae9-8cf8-4f3db432fa33.avif')" }}
+                  style={{ backgroundImage: "url('/Images/New/da8f9877-ee2d-4d51-a2ad-931feeacb780.avif')" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-l from-[#1B1B1B] via-[#1B1B1B]/80 to-transparent" />
              </div>
