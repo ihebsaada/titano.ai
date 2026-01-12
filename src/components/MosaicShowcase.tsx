@@ -10,7 +10,7 @@ const MosaicShowcase = () => {
     {
       title: t('mosaic.robotics'),
       desc: t('mosaic.roboticsDesc'),
-      image: "/Images/New/8f4d7086-6611-40f5-aee1-bf335891e2b4.avif",
+      image: "public/Images/New/d1dc767c-ee62-44c7-a846-4868885c2f7f.avif",
       link: "/ecosistema#robotics",
       colSpan: "md:col-span-2",
       bgPos: "center"
@@ -26,7 +26,7 @@ const MosaicShowcase = () => {
     {
       title: t('mosaic.mediaNetwork'),
       desc: t('mosaic.mediaNetworkDesc'),
-      image: "/Images/New/55f31b54-3707-4ae9-8cf8-4f3db432fa33.avif",
+      image: "public/Images/New/359c3b8d-be7a-4b7a-9ac5-923ae9d3ccd5.avif",
       link: "/ecosistema#media",
       colSpan: "md:col-span-3",
       height: "h-96",
