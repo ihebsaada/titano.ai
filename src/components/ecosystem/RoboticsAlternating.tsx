@@ -9,7 +9,7 @@ const RoboticsAlternating = () => {
     {
       title: t('ecosystem.autonomyUpgrade'),
       desc: t('ecosystem.autonomyUpgradeDesc'),
-      image: "public/Images/New/049e360d-18ea-4326-9a8f-692a95f7e6fd.avif",
+      image: "/Images/New/049e360d-18ea-4326-9a8f-692a95f7e6fd.avif",
       align: "left"
     },
     {
@@ -21,7 +21,7 @@ const RoboticsAlternating = () => {
     {
       title: t('ecosystem.interactionSafety'),
       desc: t('ecosystem.interactionSafetyDesc'),
-      image: "public/Images/New/0f918059-c5e7-4c76-8f7f-169f9b992765.avif",
+      image: "/Images/New/0f918059-c5e7-4c76-8f7f-169f9b992765.avif",
       align: "left"
     }
   ];
