@@ -10,7 +10,7 @@ const MediaCarousel = () => {
     { type: 'image', src: '/Images/New/2c14ed4b-900c-4962-929d-66573a16e0ce.avif', caption: t('mediaCarousel.slide1') },
     { type: 'image', src: '/Images/New/049e360d-18ea-4326-9a8f-692a95f7e6fd.avif', caption: t('mediaCarousel.slide4') },
     { type: 'image', src: '/Images/New/0f918059-c5e7-4c76-8f7f-169f9b992765.avif', caption: t('mediaCarousel.slide5') },
-    { type: 'image', src: '/Images/New/30381065-7fac-40b9-8d18-4e6940621055.avif', caption: t('mediaCarousel.slide6') },
+    { type: 'image', src: '/Images/New/c4f3228c-ac07-4434-b8cd-2cb4c99b90ea.avif', caption: t('mediaCarousel.slide6') },
     { type: 'image', src: '/Images/New/359c3b8d-be7a-4b7a-9ac5-923ae9d3ccd5.avif', caption: t('mediaCarousel.slide7') },
     { type: 'image', src: '/Images/New/8f4d7086-6611-40f5-aee1-bf335891e2b4.avif', caption: t('mediaCarousel.slide8') },
   ];
