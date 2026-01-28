@@ -5,6 +5,7 @@ import Ecosystem from './pages/Ecosystem';
 import UseCases from './pages/UseCases';
 import AboutContact from './pages/AboutContact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import BrandGuidelines from './pages/BrandGuidelines';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/use-cases" element={<UseCases />} />
         <Route path="/about-contact" element={<AboutContact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/brand-guidelines" element={<BrandGuidelines />} />
       </Routes>
     </MainLayout>
   );

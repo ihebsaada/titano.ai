@@ -73,6 +73,7 @@ const Footer = () => {
             <h4 className="text-white font-bold mb-6 text-lg tracking-tight">{t('footer.legal')}</h4>
             <ul className="space-y-4">
               <li><Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">{t('footer.privacy')}</Link></li>
+              <li><Link to="/brand-guidelines" className="text-gray-400 hover:text-white transition-colors">Brand Guidelines</Link></li>
             </ul>
           </div>
         </div>
