@@ -55,9 +55,8 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h4 className="text-white font-bold mb-6 text-lg tracking-tight">{t('footer.company')}</h4>
             <ul className="space-y-4">
-              <li><Link to="/about-contact" className="text-gray-400 hover:text-white transition-colors">{t('navbar.about')}</Link></li>
-              <li><Link to="/about-contact" className="text-gray-400 hover:text-white transition-colors">Careers</Link></li>
-              <li><Link to="/about-contact" className="text-gray-400 hover:text-white transition-colors">Press</Link></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">{t('navbar.home')}</Link></li>
+              <li><Link to="/about-contact" className="text-gray-400 hover:text-white transition-colors">{t('navbar.contact')}</Link></li>
             </ul>
           </div>
 

@@ -160,6 +160,14 @@
     "ctaText": "Metti in movimento il tuo brand. Contattaci per scoprire le opportunità del network Titano.",
     "ctaButton": "Contattaci per partnership media"
   },
+  "proofMetrics": {
+    "monthlyImpressions": "Impression Mensili",
+    "mediaPerLocation": "Media per location",
+    "attentionRate": "Tasso di Attenzione",
+    "vsStatic": "Rispetto alla cartellonistica statica",
+    "pathCoverage": "Copertura del Percorso",
+    "totalCoverage": "Copertura totale dell'area"
+  },
   "footer": {
     "description": "",
     "company": "Azienda",
@@ -173,15 +181,15 @@
     "businessDetails": "Titano Srl, con sede legale in Roma, Via Anastasio II n. 442 CAP 00165, codice fiscale e partita IVA 18186181006;"
   },
   "mission": {
-    "heroTitle": "L'Infrastruttura Europea per la Robotica Autonoma, con sede a Milano."
+    "heroTitle": "Costruiamo l’infrastruttura per l’autonomia nel mondo reale."
   },
   "about": {
     "contactTitle": "Contatti",
     "teamTitle": "Il Nostro Team",
-    "visionStory1": "L'autonomia non è il futuro, è il presente. Crediamo che i robot debbano uscire dai laboratori ed entrare nei nostri spazi quotidiani, portando efficienza e nuovi servizi dove le persone vivono e lavorano.",
+    "visionStory1": "L'autonomia non è il futuro, è il presente. Crediamo che i robot debbano uscire dai laboratori e integrarsi negli spazi quotidiani, portando efficienza e nuovi servizi dove le persone vivono e lavorano.",
     "visionStory1Highlight": "L'autonomia non è il futuro, è il presente.",
-    "visionStory2": "Titano OS è il cervello dell'operazione, trasformando hardware standard in una rete intelligente di dati e media in movimento.",
-    "visionStory3": "Con sede a Milano, Italia, siamo una società europea che costruisce tecnologia etica e sicura per alimentare la prossima generazione di servizi urbani.",
+    "visionStory2": "Titano OS è il cervello del sistema: trasforma l'hardware standard in una rete intelligente di dati e media in movimento.",
+    "visionStory3": "Nati in Europa, costruiamo tecnologia etica e sicura per abilitare la prossima generazione di servizi urbani e commerciali.",
     "valuesTitle": "I Nostri Valori",
     "valueSafetyTitle": "Sicurezza",
     "valueSafetyDesc": "La sicurezza delle persone e degli ambienti è la priorità assoluta in ogni riga di codice e in ogni movimento.",
@@ -191,6 +199,20 @@
     "valueScalabilityDesc": "Progettiamo per flotte di migliaia di unità, non per demo isolate.",
     "valuePrecisionTitle": "Precisione",
     "valuePrecisionDesc": "Accuratezza millimetrica nella navigazione e nel targeting."
+  },
+  "campaignFlow": {
+    "title": "Dalla Strategia all'Azione",
+    "subtitle": "Come Titano trasforma gli obiettivi del brand in performance fisiche misurabili.",
+    "brand": "Brand Strategy",
+    "kpiDefinition": "Definizione KPI e target della campagna.",
+    "titanoOS": "Titano OS Config",
+    "aiConfig": "Configurazione dell'IA e dei parametri operativi.",
+    "robot": "Robot Deployment",
+    "fieldActivation": "Attivazione delle unità autonome sul campo.",
+    "audience": "Audience Engagement",
+    "activeEngagement": "Interazione diretta e raccolta dati in tempo reale.",
+    "analytics": "Real-time Analytics",
+    "reportROI": "Reporting dettagliato e analisi del ROI."
   },
   "chiETitano": {
     "title": "Chi è Titano",

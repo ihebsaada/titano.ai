@@ -160,6 +160,14 @@
     "ctaText": "Bring your brand in motion. Contact us to discover Titano network opportunities.",
     "ctaButton": "Contact us for media partnerships"
   },
+  "proofMetrics": {
+    "monthlyImpressions": "Monthly Impressions",
+    "mediaPerLocation": "Average per location",
+    "attentionRate": "Attention Rate",
+    "vsStatic": "Vs static signage",
+    "pathCoverage": "Path Coverage",
+    "totalCoverage": "Total area coverage"
+  },
   "footer": {
     "description": "",
     "company": "Company",
@@ -173,15 +181,15 @@
     "businessDetails": "Titano Srl, with registered office in Rome, Via Anastasio II No. 442 ZIP code 00165, tax code and VAT number 18186181006;"
   },
   "mission": {
-    "heroTitle": "The European Infrastructure for Autonomous Robotics, based in Milan."
+    "heroTitle": "Building the infrastructure for real-world autonomy."
   },
   "about": {
     "contactTitle": "Contact",
     "teamTitle": "Our Team",
-    "visionStory1": "Autonomy is not the future, it is the present. We believe robots should leave the lab and join our daily spaces, bringing efficiency and new services where people live and work.",
+    "visionStory1": "Autonomy is not the future, it is the present. We believe robots should leave the lab and integrate into daily spaces, bringing efficiency and new services where people live and work.",
     "visionStory1Highlight": "Autonomy is not the future, it is the present.",
-    "visionStory2": "Titano OS is the brain of the operation, turning standard hardware into an intelligent network of moving data and media.",
-    "visionStory3": "Based in Milan, Italy, we are a European company building ethical and safe technology to power the next generation of urban services.",
+    "visionStory2": "Titano OS is the brain of the system: turning standard hardware into an intelligent network of moving data and media.",
+    "visionStory3": "Born in Europe, we build ethical and safe technology to enable the next generation of urban and commercial services.",
     "valuesTitle": "Our Values",
     "valueSafetyTitle": "Safety",
     "valueSafetyDesc": "The safety of people and environments is the absolute priority in every line of code and in every movement.",
@@ -191,6 +199,20 @@
     "valueScalabilityDesc": "We design for fleets of thousands of units, not for isolated demos.",
     "valuePrecisionTitle": "Precision",
     "valuePrecisionDesc": "Millimeter accuracy in navigation and targeting."
+  },
+  "campaignFlow": {
+    "title": "From Strategy to Action",
+    "subtitle": "How Titano transforms brand objectives into measurable physical performance.",
+    "brand": "Brand Strategy",
+    "kpiDefinition": "Defining campaign KPIs and targets.",
+    "titanoOS": "Titano OS Config",
+    "aiConfig": "AI configuration and operational parameters.",
+    "robot": "Robot Deployment",
+    "fieldActivation": "Activation of autonomous units in the field.",
+    "audience": "Audience Engagement",
+    "activeEngagement": "Direct interaction and real-time data collection.",
+    "analytics": "Real-time Analytics",
+    "reportROI": "Detailed reporting and ROI analysis."
   },
   "chiETitano": {
     "title": "Who is Titano",
