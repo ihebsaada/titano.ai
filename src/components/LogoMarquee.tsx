@@ -1,12 +1,12 @@
 const LogoMarquee = () => {
   const logos = [
-    { src: '/Images/Logos/1.png', alt: 'Partner Logo 1' },
-    { src: '/Images/Logos/2.png', alt: 'Partner Logo 2' },
-    { src: '/Images/Logos/3.png', alt: 'Partner Logo 3' },
-    { src: '/Images/Logos/4.png', alt: 'Partner Logo 4' },
-    { src: '/Images/Logos/5.png', alt: 'Partner Logo 5' },
-    { src: '/Images/Logos/6.png', alt: 'Partner Logo 6' },
-    { src: '/Images/Logos/7.png', alt: 'Partner Logo 7' },
+    { src: '/Images/Logos/1.png', alt: 'Partner' },
+    { src: '/Images/Logos/2.png', alt: 'Partner' },
+    { src: '/Images/Logos/3.png', alt: 'Partner' },
+    { src: '/Images/Logos/4.png', alt: 'Partner' },
+    { src: '/Images/Logos/5.png', alt: 'Partner' },
+    { src: '/Images/Logos/6.png', alt: 'Partner' },
+    { src: '/Images/Logos/7.png', alt: 'Partner' },
   ];
 
   return (
