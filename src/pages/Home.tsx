@@ -5,7 +5,6 @@ import MosaicShowcase from '../components/MosaicShowcase';
 import MediaCarousel from '../components/MediaCarousel';
 import EUReachMap from '../components/EUReachMap';
 import VideoHero from '../components/VideoHero';
-import CookieBanner from '../components/CookieBanner';
 import SpotlightCard from '../components/SpotlightCard';
 import AutonomousUnits from '../components/AutonomousUnits';
 import { useTranslation } from 'react-i18next';
@@ -95,8 +94,6 @@ const Home = () => {
           {t('home.ctaButton')}
         </Link>
       </section>
-
-      <CookieBanner />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { ReactNode, useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import CookieBanner from '../components/CookieBanner';
 import { useLocation } from 'react-router-dom';
 
 interface MainLayoutProps {
@@ -90,6 +91,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
         {children}
       </main>
       <Footer />
+      <CookieBanner />
       </div>
     </div>
   );

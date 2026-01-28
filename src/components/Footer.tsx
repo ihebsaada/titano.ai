@@ -91,9 +91,15 @@ const Footer = () => {
           
           <div className="flex items-center gap-6">
             <Link to="/privacy-policy" className="hover:text-white transition-colors text-gray-500 text-sm">{t('footer.privacy')}</Link>
+            <button 
+              onClick={() => window.dispatchEvent(new CustomEvent('open-cookie-settings'))}
+              className="hover:text-white transition-colors text-gray-500 text-sm"
+            >
+              {t('cookies.settings')}
+            </button>
             <div className="flex items-center gap-2 ml-4 pl-6 border-l border-white/10">
               <a 
-                href="https://www.linkedin.com/company/titanoai" 
+                href="https://www.linkedin.com/company/titano-ai" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-lg"

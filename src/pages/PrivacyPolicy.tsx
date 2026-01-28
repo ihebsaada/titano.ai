@@ -1,9 +1,14 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import SpotlightCard from '../components/SpotlightCard';
+import { Settings } from 'lucide-react';
 
 const PrivacyPolicy = () => {
   const { t } = useTranslation();
+
+  const handleOpenCookieSettings = () => {
+    window.dispatchEvent(new CustomEvent('open-cookie-settings'));
+  };
 
   const sections = [
     { title: t('privacy.section1Title'), text: t('privacy.section1Text') },
@@ -53,6 +58,22 @@ const PrivacyPolicy = () => {
                 </div>
               ))}
             </div>
+          </SpotlightCard>
+
+          <SpotlightCard className="p-8 md:p-12 bg-white/5 border-white/10 rounded-[40px] text-center" spotlightColor="rgba(255, 255, 255, 0.05)">
+            <h3 className="text-2xl font-heading font-bold mb-4 text-foreground">
+              {t('cookies.settings')}
+            </h3>
+            <p className="text-text-secondary leading-relaxed text-lg font-light mb-8 max-w-2xl mx-auto">
+              {t('cookies.description')}
+            </p>
+            <button
+              onClick={handleOpenCookieSettings}
+              className="inline-flex items-center gap-2 bg-foreground text-white px-8 py-4 rounded-full font-bold hover:bg-black transition-all duration-300 shadow-lg"
+            >
+              <Settings size={20} />
+              {t('cookies.settings')}
+            </button>
           </SpotlightCard>
         </motion.div>
       </div>

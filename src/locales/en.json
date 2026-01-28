@@ -8,10 +8,12 @@
     "useCasesDesc": "Real Applications",
     "about": "About",
     "aboutDesc": "Mission & Contact",
+    "chiETitano": "Who is Titano",
+    "chiETitanoDesc": "Institutional Identity",
     "contact": "Contact Us"
   },
   "hero": {
-    "title": "Building Europe's Autonomous Infrastructure",
+    "title": "Titano — The European Infrastructure for Autonomous Robotics & Media",
     "subtitle": "Intelligent Robots. Dynamic Media. Real world Data. One Ecosystem.",
     "explore": "Explore Titano Ecosystem"
   },
@@ -153,7 +155,7 @@
     "ctaButton": "Contact us for media partnerships"
   },
   "footer": {
-    "description": "The European infrastructure for autonomous robotics and media in motion. Connecting AI and the real world.",
+    "description": "Titano is a European company based in Milan, building the operational layer for autonomous robotics and intelligent infrastructure.",
     "company": "Company",
     "technology": "Technology",
     "legal": "Legal",
@@ -163,15 +165,15 @@
     "terms": "Terms of Service",
     "cookies": "Cookie Policy",
     "businessDetails": "Titano Srl, with registered office in Rome, Via Anastasio II No. 442 ZIP code 00165, tax code and VAT number 18186181006;"
-   },
+  },
   "mission": {
-    "heroTitle": "Building the infrastructure for real world autonomy."
+    "heroTitle": "The European Infrastructure for Autonomous Robotics, based in Milan."
   },
   "about": {
     "visionStory1": "Autonomy is not the future, it is the present. We believe robots should leave the lab and join our daily spaces, bringing efficiency and new services where people live and work.",
     "visionStory1Highlight": "Autonomy is not the future, it is the present.",
     "visionStory2": "Titano OS is the brain of the operation, turning standard hardware into an intelligent network of moving data and media.",
-    "visionStory3": "Based in Europe, we build ethical and safe technology to power the next generation of urban services.",
+    "visionStory3": "Based in Milan, Italy, we are a European company building ethical and safe technology to power the next generation of urban services.",
     "valuesTitle": "Our Values",
     "valueSafetyTitle": "Safety",
     "valueSafetyDesc": "The safety of people and environments is the absolute priority in every line of code and in every movement.",
@@ -180,51 +182,49 @@
     "valueScalabilityTitle": "Scalability",
     "valueScalabilityDesc": "We design for fleets of thousands of units, not for isolated demos.",
     "valuePrecisionTitle": "Precision",
-    "valuePrecisionDesc": "Millimeter accuracy in navigation and targeting.",
-    "teamTitle": "Team",
-    "contactTitle": "Contacts"
+    "valuePrecisionDesc": "Millimeter accuracy in navigation and targeting."
   },
-  "campaignFlow": {
-    "title": "Campaign Flow",
-    "subtitle": "From strategic planning to results analysis in 5 integrated steps.",
-    "brand": "Brand",
-    "kpiDefinition": "KPI Definition",
-    "titanoOS": "Titano OS",
-    "aiConfig": "AI Configuration",
-    "robot": "Robot",
-    "fieldActivation": "Field Activation",
-    "audience": "Audience",
-    "activeEngagement": "Active Engagement",
-    "analytics": "Analytics",
-    "reportROI": "Report & ROI"
+  "chiETitano": {
+    "title": "Who is Titano",
+    "mainText": "Titano is a leading European company developing operational infrastructure for autonomous robotics and intelligent media.",
+    "hqLabel": "Headquarters",
+    "hqValue": "Milan, Italy",
+    "scopeLabel": "Operational Scope",
+    "scopeValue": "Europe",
+    "sectorsTitle": "Core Business & Sectors",
+    "sector1": "Autonomous Robotics: Development of navigation and control systems for third-party robotic platforms.",
+    "sector2": "Intelligent Infrastructure: Creation of the operational layer that enables autonomy in complex real-world environments.",
+    "sector3": "Robotic Media: Transforming robotics into a new dynamic, data-driven communication and advertising channel.",
+    "clarificationTitle": "Important Clarification",
+    "clarificationText": "Titano is a private corporate entity operating in the technology sector. It is not a satellite, not a space project, nor a reference to mythological figures. Our mission is rooted exclusively in the development of terrestrial technologies for automation and artificial intelligence applied to robotics.",
+    "footerText": "As a European infrastructure, Titano is committed to building the bridge between the digital world of data and the physical execution of tasks through autonomous robots, ensuring scalability, safety, and innovation in the global urban and commercial fabric."
+  },
+  "cookies": {
+    "title": "Cookie Preferences",
+    "description": "We use cookies to enhance your experience, analyze site traffic, and serve relevant content. You can manage your preferences below.",
+    "accept": "Accept All",
+    "settings": "Cookie Settings",
+    "save": "Save Preferences",
+    "necessary": "Necessary Cookies",
+    "necessaryDesc": "These cookies are required for the website to function properly.",
+    "analytics": "Analytics Cookies",
+    "analyticsDesc": "Help us understand how visitors interact with the website.",
+    "marketing": "Marketing Cookies",
+    "marketingDesc": "Used to track visitors across websites to show relevant ads."
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: January 2026",
-    "intro": "At Titano, we take your privacy seriously. This policy explains how we collect, use, and protect your data when you interact with our platform and autonomous systems.",
+    "lastUpdated": "Last Updated: January 2026",
+    "intro": "At Titano, we are committed to protecting your privacy and ensuring the security of your personal data. This policy explains how we collect, use, and safeguard your information when you interact with our autonomous robotics infrastructure and digital platforms.",
     "section1Title": "1. Data Collection",
-    "section1Text": "We collect minimal data necessary for operations, including technical logs, anonymous usage metrics, and contact information provided through our forms.",
-    "section2Title": "2. Use of Data",
-    "section2Text": "Your data is used to provide and improve our services, manage autonomous fleet operations, and communicate with you regarding your inquiries.",
-    "section3Title": "3. Data Protection",
-    "section3Text": "We implement industry standard security measures to protect your information from unauthorized access or disclosure.",
-    "section4Title": "4. Cookies",
-    "section4Text": "We use essential and analytical cookies to ensure the platform works correctly and to understand how it's used. You can manage your preferences through our cookie settings.",
-    "section5Title": "5. Contact",
-    "section5Text": "If you have any questions about this policy, please contact us at info@titano.ai."
-  },
-  "cookies": {
-    "title": "Privacy & Data",
-    "description": "We use minimal technology to ensure the platform functions correctly and to analyze anonymous usage. No invasive tracking.",
-    "accept": "Accept",
-    "settings": "Settings"
-  },
-  "proofMetrics": {
-    "monthlyImpressions": "Monthly Impressions",
-    "mediaPerLocation": "Average per location",
-    "attentionRate": "Attention Rate",
-    "vsStatic": "Vs 12% static DOOH",
-    "pathCoverage": "Path Coverage",
-    "totalCoverage": "Total area coverage"
+    "section1Text": "We collect information that you provide directly to us, such as when you contact us for partnerships, subscribe to our newsletter, or interact with our autonomous units. This may include your name, email address, company details, and any communication history.",
+    "section2Title": "2. Use of Information",
+    "section2Text": "The data we collect is used to provide and improve our services, process your requests, communicate with you about our technology, and ensure the safety and efficiency of our robotic operations in physical environments.",
+    "section3Title": "3. Data Security",
+    "section3Text": "We implement advanced technical and organizational measures to protect your data against unauthorized access, loss, or alteration. Our 'Titano OS' is designed with security-first principles to ensure the integrity of both digital and physical interactions.",
+    "section4Title": "4. Third-Party Sharing",
+    "section4Text": "We do not sell your personal data. We may share information with trusted partners who assist us in operating our infrastructure, provided they agree to keep this information confidential and comply with applicable data protection laws.",
+    "section5Title": "5. Your Rights",
+    "section5Text": "You have the right to access, correct, or delete your personal information. If you have any questions about your data or wish to exercise your rights, please contact our privacy team at privacy@titano.ai."
   }
 }
