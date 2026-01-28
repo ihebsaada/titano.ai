@@ -5,18 +5,23 @@ import { useTranslation } from 'react-i18next';
 const team = [
   { 
     name: "Lorenzo Macali", 
-    role: "CEO", 
+    role: "Founder & Chief Executive Officer", 
     image: "/Images/Team/lorenzo.avif" 
   },
   { 
+    name: "Richard Yang", 
+    role: "Chief Technology Officer", 
+    image: "/Images/Team/22e1a6d7-f722-42cd-97c7-2b0d65e81f15.avif" 
+  },
+  { 
     name: "Francisco Javier Martin Romo", 
-    role: "CEPO", 
+    role: "Chief Hardware Partnerships Officer", 
     image: "/Images/Team/Francisco.avif" 
   },
   { 
-    name: "Richard Yang", 
-    role: "CTO", 
-    image: "/Images/Team/22e1a6d7-f722-42cd-97c7-2b0d65e81f15.avif" 
+    name: "Dal Gill", 
+    role: "Chief Market Partnerships Officer", 
+    image: "/Images/Team/marco.avif" 
   },
   { 
     name: "Constantijn Vereecken", 
@@ -25,7 +30,7 @@ const team = [
   },
   { 
     name: "Jonathan Marin", 
-    role: "CCO", 
+    role: "Chief Commercial Officer", 
     image: "/Images/Team/Jonathan.avif" 
   },
 ];
@@ -36,7 +41,7 @@ const TeamSection = () => {
   return (
     <section className="px-6 md:px-12 max-w-[1920px] mx-auto mb-32 pt-24 border-t border-black/5">
       <h2 className="text-3xl font-heading font-bold mb-12">{t('about.teamTitle')}</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
         {team.map((member, index) => (
           <motion.div
             key={index}

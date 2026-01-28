@@ -13,7 +13,7 @@
     "contact": "Contattaci"
   },
   "hero": {
-    "title": "Titano — L'Infrastruttura Europea per la Robotica Autonoma e i Media",
+    "title": "Costruiamo l'infrastruttura autonoma dell'Europa",
     "subtitle": "Robot Intelligenti. Media dinamici. Dati reali. Un solo ecosistema",
     "explore": "Esplora l'Ecosistema Titano"
   },
@@ -51,7 +51,13 @@
     "disclaimer": "I dati mostrati si riferiscono a singoli casi di deployment reale e non rappresentano metriche aggregate di rete."
   },
   "map": {
-    "globalOperations": "Operazioni Globali Attive"
+    "globalOperations": "Operazioni Globali Attive",
+    "milano": "Milano (HQ)",
+    "paris": "Parigi",
+    "berlin": "Berlino",
+    "madrid": "Madrid",
+    "dubai": "Dubai",
+    "china": "Cina"
   },
   "mediaCarousel": {
     "slide1": "Campagne contestuali nei centri commerciali.",

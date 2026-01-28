@@ -13,7 +13,7 @@
     "contact": "Contact Us"
   },
   "hero": {
-    "title": "Titano — The European Infrastructure for Autonomous Robotics & Media",
+    "title": "Building Europe's Autonomous Infrastructure",
     "subtitle": "Intelligent Robots. Dynamic Media. Real world Data. One Ecosystem.",
     "explore": "Explore Titano Ecosystem"
   },
@@ -51,7 +51,13 @@
     "disclaimer": "The data shown refers to single real deployment cases and does not represent aggregated network metrics."
   },
   "map": {
-    "globalOperations": "Global Operations Active"
+    "globalOperations": "Global Operations Active",
+    "milano": "Milan (HQ)",
+    "paris": "Paris",
+    "berlin": "Berlin",
+    "madrid": "Madrid",
+    "dubai": "Dubai",
+    "china": "China"
   },
   "mediaCarousel": {
     "slide1": "Contextual campaigns in shopping malls.",
