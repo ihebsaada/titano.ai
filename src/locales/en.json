@@ -161,7 +161,7 @@
     "ctaButton": "Contact us for media partnerships"
   },
   "footer": {
-    "description": "Titano is a European company based in Milan, building the operational layer for autonomous robotics and intelligent infrastructure.",
+    "description": "",
     "company": "Company",
     "technology": "Technology",
     "legal": "Legal",
@@ -176,6 +176,8 @@
     "heroTitle": "The European Infrastructure for Autonomous Robotics, based in Milan."
   },
   "about": {
+    "contactTitle": "Contact",
+    "teamTitle": "Our Team",
     "visionStory1": "Autonomy is not the future, it is the present. We believe robots should leave the lab and join our daily spaces, bringing efficiency and new services where people live and work.",
     "visionStory1Highlight": "Autonomy is not the future, it is the present.",
     "visionStory2": "Titano OS is the brain of the operation, turning standard hardware into an intelligent network of moving data and media.",

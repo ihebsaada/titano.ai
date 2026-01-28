@@ -161,7 +161,7 @@
     "ctaButton": "Contattaci per partnership media"
   },
   "footer": {
-    "description": "Titano è una società europea con sede a Milano, che costruisce il layer operativo per la robotica autonoma e le infrastrutture intelligenti.",
+    "description": "",
     "company": "Azienda",
     "technology": "Tecnologia",
     "legal": "Legale",
@@ -176,6 +176,8 @@
     "heroTitle": "L'Infrastruttura Europea per la Robotica Autonoma, con sede a Milano."
   },
   "about": {
+    "contactTitle": "Contatti",
+    "teamTitle": "Il Nostro Team",
     "visionStory1": "L'autonomia non è il futuro, è il presente. Crediamo che i robot debbano uscire dai laboratori ed entrare nei nostri spazi quotidiani, portando efficienza e nuovi servizi dove le persone vivono e lavorano.",
     "visionStory1Highlight": "L'autonomia non è il futuro, è il presente.",
     "visionStory2": "Titano OS è il cervello dell'operazione, trasformando hardware standard in una rete intelligente di dati e media in movimento.",
