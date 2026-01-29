@@ -57,7 +57,8 @@
     "berlin": "Berlino",
     "madrid": "Madrid",
     "dubai": "Dubai",
-    "china": "Cina"
+    "shanghai": "Shanghai",
+    "miami": "Miami"
   },
   "mediaCarousel": {
     "slide1": "Campagne contestuali nei centri commerciali.",
@@ -178,7 +179,7 @@
     "privacy": "Privacy Policy",
     "terms": "Termini di Servizio",
     "cookies": "Cookie Policy",
-    "businessDetails": "Titano Srl, con sede legale in Roma, Via Anastasio II n. 442 CAP 00165, codice fiscale e partita IVA 18186181006;"
+    "businessDetails": "Titano Srl, con sede legale in Roma, Via Anastasio II n. 442 CAP 00165, codice fiscale e partita IVA 18186181006"
   },
   "mission": {
     "heroTitle": "Costruiamo l’infrastruttura per l’autonomia nel mondo reale."

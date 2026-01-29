@@ -20,7 +20,8 @@ const defaultLocations: Location[] = [
   { name: "map.berlin", coords: [52.5200, 13.4050] },
   { name: "map.madrid", coords: [40.4168, -3.7038] },
   { name: "map.dubai", coords: [25.2048, 55.2708] },
-  { name: "map.china", coords: [31.2304, 121.4737] },
+  { name: "map.shanghai", coords: [31.2304, 121.4737] },
+  { name: "map.miami", coords: [25.7617, -80.1918] },
 ];
 
 const EUReachMap = ({ locations = defaultLocations, theme = 'light', className = '' }: EUReachMapProps) => {

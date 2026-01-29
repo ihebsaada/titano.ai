@@ -21,7 +21,7 @@ const team = [
   { 
     name: "Dal Gill", 
     role: "Chief Market Partnerships Officer", 
-    image: "/Images/Team/dal.avif" 
+    image: "/Images/Team/Dal.PNG" 
   },
   { 
     name: "Constantijn Vereecken", 
