@@ -17,7 +17,6 @@ const Home = () => {
     <div className="min-h-screen relative">
       <VideoHero />
 
-      {/* Floating Intro Section */}
       <div className="relative z-10 -mt-24 px-6 md:px-12 max-w-7xl mx-auto mb-24">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -37,12 +36,10 @@ const Home = () => {
         </motion.div>
       </div>
 
-      {/* Trust Logos */}
       <section className="mb-32">
         <LogoMarquee />
       </section>
 
-      {/* Mosaic Showcase (Pillars) */}
       <section className="px-6 md:px-12 max-w-[1920px] mx-auto mb-32">
         <div className="mb-12 text-center md:text-left">
            <h3 className="text-sm font-bold uppercase tracking-widest text-accent mb-2">{t('home.ecosystemTag')}</h3>
@@ -51,15 +48,12 @@ const Home = () => {
         <MosaicShowcase />
       </section>
 
-      {/* Autonomous Units */}
       <AutonomousUnits />
 
-      {/* Metrics */}
       <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32">
         <MetricsTicker />
       </section>
 
-      {/* Map & Scale */}
       <section className="px-6 md:px-12 max-w-7xl mx-auto mb-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
           <div>
@@ -72,7 +66,6 @@ const Home = () => {
         <EUReachMap />
       </section>
 
-      {/* Media Carousel */}
       <section className="px-6 md:px-12 max-w-[1920px] mx-auto mb-24">
         <div className="mb-12 text-center">
            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">{t('home.mediaTitle')}</h2>
@@ -81,7 +74,6 @@ const Home = () => {
         <MediaCarousel />
       </section>
 
-      {/* CTA Section */}
       <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32 text-center">
         <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">{t('home.ctaTitle')}</h2>
         <p className="text-xl text-text-secondary max-w-2xl mx-auto mb-8">

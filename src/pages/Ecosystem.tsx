@@ -19,10 +19,9 @@ const Ecosystem = () => {
       <OSLayerStack />
       <RoboticsAlternating />
       <OperationsHubSection />
-      <div className="h-32" /> {/* Spacer */}
+      <div className="h-32" />
       <WorkflowDiagram />
 
-      {/* Final CTA */}
       <section className="px-6 md:px-12 pb-32 text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}

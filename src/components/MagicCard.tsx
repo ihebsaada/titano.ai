@@ -11,7 +11,7 @@ interface MagicCardProps {
 const MagicCard: React.FC<MagicCardProps> = ({
   children,
   className = "",
-  gradientColor = "rgba(47, 128, 237, 0.15)", // Accent blue with low opacity
+  gradientColor = "rgba(47, 128, 237, 0.15)",
   variant = 'default'
 }) => {
   const divRef = useRef<HTMLDivElement>(null);
@@ -33,9 +33,6 @@ const MagicCard: React.FC<MagicCardProps> = ({
     setOpacity(0);
   };
 
-  // Check if custom background is provided
-  // const hasCustomBackground = className && (className.includes('bg-') || className.includes('bg['));
-
   return (
     <div
       ref={divRef}
@@ -48,7 +45,6 @@ const MagicCard: React.FC<MagicCardProps> = ({
         className
       )}
     >
-      {/* Spotlight Effect */}
       <div
         className="pointer-events-none absolute -inset-px opacity-0 transition-opacity duration-300 z-0"
         style={{
@@ -56,8 +52,6 @@ const MagicCard: React.FC<MagicCardProps> = ({
           background: `radial-gradient(800px circle at ${position.x}px ${position.y}px, ${gradientColor}, transparent 40%)`,
         }}
       />
-      
-      {/* Content */}
       <div className="relative z-10 h-full">
         {children}
       </div>

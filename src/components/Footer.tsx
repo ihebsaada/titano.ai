@@ -28,7 +28,6 @@ const Footer = () => {
       <div className="max-w-[1920px] mx-auto px-6 md:px-12 relative z-10 pt-20 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
           
-          {/* Brand Column */}
           <div className="md:col-span-5 flex flex-col items-start">
             <Link to="/" className="inline-block mb-8 group">
                 <motion.img 
@@ -51,7 +50,6 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Links Columns */}
           <div className="md:col-span-2">
             <h4 className="text-white font-bold mb-6 text-lg tracking-tight">{t('footer.company')}</h4>
             <ul className="space-y-4">

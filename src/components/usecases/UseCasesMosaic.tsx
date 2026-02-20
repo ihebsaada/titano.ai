@@ -14,7 +14,6 @@ const UseCasesMosaic = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        {/* 1. Universities */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +31,6 @@ const UseCasesMosaic = () => {
           </MagicCard>
         </motion.div>
 
-        {/* 2. Retail */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +49,6 @@ const UseCasesMosaic = () => {
           </MagicCard>
         </motion.div>
 
-        {/* 3. Events */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,7 +67,6 @@ const UseCasesMosaic = () => {
           </MagicCard>
         </motion.div>
 
-        {/* 4. Transportation Hubs */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +85,6 @@ const UseCasesMosaic = () => {
           </MagicCard>
         </motion.div>
 
-        {/* 5. Security Environments */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

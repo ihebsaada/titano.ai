@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./index.html",
@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#F1F1F1', // Updated from snippet
+        background: '#F1F1F1',
         surface: '#FFFFFF',
-        foreground: '#1B1B1B', // Updated from snippet
-        'text-secondary': '#727272', // Updated from snippet
+        foreground: '#1B1B1B',
+        'text-secondary': '#727272',
         accent: '#2F80ED',
         'glass-border': 'rgba(255, 255, 255, 0.4)',
         'glass-bg': 'rgba(253, 253, 253, 0.75)',

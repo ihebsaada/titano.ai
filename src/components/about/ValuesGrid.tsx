@@ -11,7 +11,6 @@ const ValuesGrid = () => {
       <h2 className="text-3xl font-heading font-bold mb-12">{t('about.valuesTitle')}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[600px]">
         
-        {/* Safety - Large */}
         <motion.div 
           className="md:col-span-2 md:row-span-1"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -29,7 +28,6 @@ const ValuesGrid = () => {
           </MagicCard>
         </motion.div>
 
-        {/* Clarity - Tall */}
         <motion.div 
           className="md:col-span-1 md:row-span-2"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -50,7 +48,6 @@ const ValuesGrid = () => {
           </MagicCard>
         </motion.div>
 
-        {/* Scalability */}
         <motion.div 
           className="md:col-span-1 md:row-span-1"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -67,7 +64,6 @@ const ValuesGrid = () => {
           </MagicCard>
         </motion.div>
 
-        {/* Precision */}
         <motion.div 
           className="md:col-span-1 md:row-span-1"
           initial={{ opacity: 0, scale: 0.95 }}

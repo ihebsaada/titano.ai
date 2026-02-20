@@ -19,7 +19,6 @@ const VideoHero = () => {
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-dark">
-      {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
          <video
             key={isMobile ? 'mobile' : 'desktop'}
@@ -31,11 +30,9 @@ const VideoHero = () => {
             preload="auto"
             src={isMobile ? "/videos/video-mobile.mp4" : "/videos/Sequenza 01_4.mp4"}
           />
-          {/* Overlay to ensure text readability */}
           <div className="absolute inset-0 bg-black/50" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-6 max-w-5xl mx-auto">
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}
@@ -70,7 +67,6 @@ const VideoHero = () => {
         </motion.div>
       </div>
       
-      {/* Scroll indicator */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

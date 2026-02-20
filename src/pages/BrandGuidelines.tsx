@@ -13,7 +13,6 @@ const BRAND_PAGES = [
 const BrandGuidelines = () => {
   return (
     <div className="min-h-screen bg-black">
-      {/* Page Header - Positioned below main navbar */}
       <div className="pt-32 pb-12 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 border-b border-white/10 pb-8">
           <div>
@@ -49,7 +48,6 @@ const BrandGuidelines = () => {
         </div>
       </div>
 
-      {/* Vertical Image List - No gaps, no text, no rounding */}
       <div className="pb-32 flex flex-col items-center">
         {BRAND_PAGES.map((page, index) => (
           <motion.div

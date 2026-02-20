@@ -11,7 +11,7 @@ interface SpotlightCardProps {
 const SpotlightCard: React.FC<SpotlightCardProps> = ({
   children,
   className = "",
-  spotlightColor = "rgba(59, 130, 246, 0.1)", // Light blue default
+  spotlightColor = "rgba(59, 130, 246, 0.1)",
   variant = 'default'
 }) => {
   const divRef = useRef<HTMLDivElement>(null);
@@ -32,9 +32,6 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
   const handleMouseLeave = () => {
     setOpacity(0);
   };
-
-  // Check if custom background is provided
-  // const hasCustomBackground = className && (className.includes('bg-') || className.includes('bg['));
 
   return (
     <div

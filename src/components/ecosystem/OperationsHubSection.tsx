@@ -15,7 +15,6 @@ const OperationsHubSection = () => {
 
   return (
     <section className="bg-[#101010] py-24 md:py-32 relative overflow-hidden">
-      {/* Background Grid */}
       <div className="absolute inset-0 opacity-10" 
         style={{ 
           backgroundImage: 'linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px)', 

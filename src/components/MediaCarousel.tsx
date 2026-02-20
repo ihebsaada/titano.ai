@@ -77,7 +77,6 @@ const MediaCarousel = () => {
         </div>
       </div>
       
-      {/* Indicators */}
       <div className="absolute top-8 right-8 flex gap-2">
         {slides.map((_, i) => (
           <div 

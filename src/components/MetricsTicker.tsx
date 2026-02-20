@@ -28,13 +28,11 @@ const MetricsTicker = () => {
 
   return (
     <div className="w-full">
-      {/* Header */}
       <div className="mb-12 text-center md:text-left">
          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">{t('realWorldData.title')}</h2>
          <p className="text-xl text-text-secondary max-w-3xl">{t('realWorldData.subtitle')}</p>
       </div>
 
-      {/* Cases Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         {cases.map((item, index) => (
           <motion.div 
@@ -70,7 +68,6 @@ const MetricsTicker = () => {
         ))}
       </div>
 
-      {/* Disclaimer */}
       <div className="text-center border-t border-white/10 pt-8">
         <p className="text-xs md:text-sm text-gray-500 font-mono uppercase tracking-wider max-w-3xl mx-auto">
           {t('realWorldData.disclaimer')}

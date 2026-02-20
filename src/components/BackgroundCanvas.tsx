@@ -30,12 +30,10 @@ const BackgroundCanvas = () => {
     const draw = () => {
       ctx.clearRect(0, 0, width, height);
       
-      // Draw grid
       ctx.strokeStyle = 'rgba(0, 0, 0, 0.03)';
       ctx.lineWidth = 1;
       const gridSize = 100;
       
-      // Moving grid effect
       const time = Date.now() * 0.0005;
       const offsetX = (time * 10) % gridSize;
       const offsetY = (time * 10) % gridSize;
@@ -53,8 +51,7 @@ const BackgroundCanvas = () => {
         ctx.stroke();
       }
 
-      // Draw particles
-      ctx.fillStyle = 'rgba(47, 128, 237, 0.2)'; // Accent color
+      ctx.fillStyle = 'rgba(47, 128, 237, 0.2)';
       particles.forEach((p) => {
         p.x += p.vx;
         p.y += p.vy;

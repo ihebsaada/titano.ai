@@ -16,12 +16,11 @@ const Navbar = () => {
     i18n.changeLanguage(newLang);
   };
 
-  // Close mobile menu on route change
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
 
-  // Lock body scroll when menu is open
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -42,7 +41,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Floating Navbar Capsule */}
       <motion.nav 
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -51,9 +49,7 @@ const Navbar = () => {
       >
         <SpotlightCard className="rounded-full px-6 py-3 shadow-float border border-white/30 backdrop-blur-xl bg-white/60">
           <div className="flex items-center justify-between w-full h-full">
-            {/* Logo */}
             <Link to="/" className="relative z-50 flex items-center gap-2 group">
-               {/* Using black logo for default navbar state */}
                <img 
                  src="/Images/Risorsa 3.png" 
                  alt="Titano AI" 
@@ -63,7 +59,6 @@ const Navbar = () => {
                />
             </Link>
 
-            {/* Desktop Menu */}
             <div className="hidden md:flex items-center gap-1">
               {navLinks.map((link) => (
                 <Link
@@ -81,7 +76,6 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* Language Switcher & CTA (Desktop) */}
             <div className="hidden md:flex items-center gap-4">
               <button 
                 onClick={toggleLanguage}
@@ -100,7 +94,6 @@ const Navbar = () => {
               </Link>
             </div>
 
-            {/* Mobile Toggle */}
             <button 
               className="md:hidden relative z-50 p-2 text-black rounded-full hover:bg-black/5 transition-colors"
               onClick={() => setIsOpen(!isOpen)}
@@ -131,7 +124,6 @@ const Navbar = () => {
         </SpotlightCard>
       </motion.nav>
 
-      {/* Crazy Mobile Dropdown (Fullscreen Glass) */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -140,7 +132,6 @@ const Navbar = () => {
             exit={{ opacity: 0, transition: { duration: 0.3 } }}
             className="fixed inset-0 z-40 bg-[#F1F1F1]/95 backdrop-blur-3xl flex flex-col pt-32 px-6 pb-12"
           >
-            {/* Background animated elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-10">
                <motion.div 
                  animate={{ scale: [1, 1.2, 1], rotate: [0, 10, 0] }}

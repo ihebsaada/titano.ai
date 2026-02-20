@@ -17,7 +17,6 @@ const UseCases = () => {
       <CampaignFlowDiagram />
       <ProofMetrics />
 
-      {/* Final CTA */}
       <section className="px-6 md:px-12 pb-32 text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}

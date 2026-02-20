@@ -46,16 +46,12 @@ const MosaicShowcase = () => {
           className={`group relative overflow-hidden rounded-[32px] ${item.colSpan} ${item.height || "h-80"}`}
         >
           <Link to={item.link} className="block w-full h-full">
-            {/* Image Background */}
             <div 
               className="absolute inset-0 bg-cover transition-transform duration-700 group-hover:scale-105"
               style={{ backgroundImage: `url('${item.image}')`, backgroundPosition: item.bgPos }}
             />
             
-            {/* Overlay */}
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
-            
-            {/* Content */}
             <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/80 to-transparent flex justify-between items-end">
               <div>
                 <h3 className="text-3xl font-heading font-bold text-white mb-2">{item.title}</h3>

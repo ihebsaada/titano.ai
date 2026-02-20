@@ -28,7 +28,6 @@ const EcosystemHero = () => {
         </motion.p>
       </div>
 
-      {/* Decorative elements */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[120px] -z-20 pointer-events-none" />
     </section>
   );

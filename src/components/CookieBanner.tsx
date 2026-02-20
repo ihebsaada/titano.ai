@@ -28,7 +28,6 @@ const CookieBanner = () => {
         const parsed = JSON.parse(savedConsent);
         setPreferences(parsed);
       } catch (e) {
-        // Fallback for old simple 'true' value
         if (savedConsent === 'true') {
           setPreferences({ necessary: true, analytics: true, marketing: true });
         }
@@ -56,7 +55,7 @@ const CookieBanner = () => {
   };
 
   const togglePreference = (key: keyof typeof preferences) => {
-    if (key === 'necessary') return; // Cannot disable necessary cookies
+    if (key === 'necessary') return;
     setPreferences(prev => ({ ...prev, [key]: !prev[key] }));
   };
 
@@ -64,7 +63,6 @@ const CookieBanner = () => {
     <AnimatePresence>
       {isVisible && (
         <>
-          {/* Backdrop for Settings Modal */}
           {showSettings && (
             <motion.div
               initial={{ opacity: 0 }}
@@ -75,7 +73,6 @@ const CookieBanner = () => {
             />
           )}
 
-          {/* Main Banner */}
           {!showSettings && (
             <motion.div
               initial={{ y: 100, opacity: 0 }}
@@ -111,7 +108,6 @@ const CookieBanner = () => {
             </motion.div>
           )}
 
-          {/* Settings Modal */}
           {showSettings && (
             <motion.div
               initial={{ scale: 0.95, opacity: 0, y: 20 }}
@@ -136,7 +132,6 @@ const CookieBanner = () => {
                 </div>
 
                 <div className="space-y-4 md:space-y-6 mb-8">
-                  {/* Necessary */}
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
                       <h5 className="font-bold text-sm mb-1">{t('cookies.necessary')}</h5>
@@ -147,7 +142,6 @@ const CookieBanner = () => {
                     </div>
                   </div>
 
-                  {/* Analytics */}
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
                       <h5 className="font-bold text-sm mb-1">{t('cookies.analytics')}</h5>
@@ -161,7 +155,6 @@ const CookieBanner = () => {
                     </button>
                   </div>
 
-                  {/* Marketing */}
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
                       <h5 className="font-bold text-sm mb-1">{t('cookies.marketing')}</h5>

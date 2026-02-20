@@ -11,7 +11,6 @@ const LogoMarquee = () => {
 
   return (
     <div className="w-full overflow-hidden py-6 bg-white/30 backdrop-blur-md border-y border-white/20 relative group">
-      {/* Gradient Mask for smooth edges */}
       <div className="absolute inset-y-0 left-0 w-32 md:w-48 bg-gradient-to-r from-white/90 via-white/40 to-transparent z-10" />
       <div className="absolute inset-y-0 right-0 w-32 md:w-48 bg-gradient-to-l from-white/90 via-white/40 to-transparent z-10" />
       
@@ -28,7 +27,6 @@ const LogoMarquee = () => {
                />
             </div>
           ))}
-          {/* Duplicate for seamless loop */}
           {logos.map((logo, index) => (
             <div key={`dup-${index}`} className="flex items-center justify-center cursor-default w-[220px] md:w-[320px]">
                <img 

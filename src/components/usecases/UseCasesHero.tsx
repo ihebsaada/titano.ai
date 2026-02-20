@@ -37,7 +37,6 @@ const UseCasesHero = () => {
         </motion.p>
       </div>
       
-      {/* Decorative */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[100px] -z-20 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-500/5 rounded-full blur-[100px] -z-20 pointer-events-none" />
     </section>

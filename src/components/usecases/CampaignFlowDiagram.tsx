@@ -24,10 +24,8 @@ const CampaignFlowDiagram = () => {
       </div>
 
       <div className="relative">
-        {/* Connecting Line (Desktop) */}
         <div className="hidden md:block absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-y-1/2 z-0" />
 
-        {/* Steps Container */}
         <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-8 md:gap-4">
           
           {steps.map((step, index) => (
@@ -58,7 +56,6 @@ const CampaignFlowDiagram = () => {
                 </MagicCard>
               </motion.div>
 
-              {/* Mobile Arrow (Vertical Flow) */}
               {index < steps.length - 1 && (
                 <motion.div
                   initial={{ opacity: 0, scale: 0 }}

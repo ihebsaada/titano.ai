@@ -20,7 +20,6 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="bg-background min-h-screen pt-32 pb-24 px-6 md:px-12 relative overflow-hidden">
-      {/* Background Grid */}
       <div className="absolute inset-0 opacity-[0.1] pointer-events-none" 
         style={{
           backgroundImage: 'linear-gradient(#808080 1px, transparent 1px), linear-gradient(90deg, #808080 1px, transparent 1px)', 

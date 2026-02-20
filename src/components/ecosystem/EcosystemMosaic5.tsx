@@ -10,7 +10,6 @@ const EcosystemMosaic5 = () => {
     <section className="px-6 md:px-12 max-w-[1920px] mx-auto mb-32">
       <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-6 h-auto md:h-[900px]">
         
-        {/* BLOCK A: Titano OS (Top Left - Large) */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +33,6 @@ const EcosystemMosaic5 = () => {
           </MagicCard>
         </motion.div>
 
-        {/* BLOCK B: Data Fabric (Top Right) */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +51,6 @@ const EcosystemMosaic5 = () => {
           </MagicCard>
         </motion.div>
 
-        {/* BLOCK C: Operations Hub (Middle Right) */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +71,6 @@ const EcosystemMosaic5 = () => {
           </MagicCard>
         </motion.div>
 
-        {/* BLOCK D: Robotics Layer (Bottom Left) */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -105,7 +101,6 @@ const EcosystemMosaic5 = () => {
           </MagicCard>
         </motion.div>
 
-        {/* BLOCK E: Autonomous Media (Bottom Right) */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
