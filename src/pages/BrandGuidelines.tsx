@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
+import Seo from '../components/Seo';
 
 const BRAND_PAGES = [
   { src: '/brand-pages/page-1.png', title: 'Cover' },
@@ -13,6 +14,11 @@ const BRAND_PAGES = [
 const BrandGuidelines = () => {
   return (
     <div className="min-h-screen bg-black">
+      <Seo
+        title="Brand Guidelines | Titano"
+        description="Download official Titano brand assets and usage guidelines for partners and media publications."
+        path="/brand-guidelines"
+      />
       <div className="pt-32 pb-12 px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 border-b border-white/10 pb-8">
           <div>

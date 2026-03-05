@@ -7,22 +7,16 @@ const RoboticsAlternating = () => {
 
   const sections = [
     {
-      title: t('ecosystem.autonomyUpgrade'),
-      desc: t('ecosystem.autonomyUpgradeDesc'),
+      title: t('ecosystem.titanoOS'),
+      desc: t('ecosystem.lorenzoParagraph1'),
       image: "/Images/New/049e360d-18ea-4326-9a8f-692a95f7e6fd.avif",
       align: "left"
     },
     {
-      title: t('ecosystem.navigation'),
-      desc: t('ecosystem.navigationDesc'),
-      image: "/Images/New/55f31b54-3707-4ae9-8cf8-4f3db432fa33.avif",
-      align: "right"
-    },
-    {
-      title: t('ecosystem.interactionSafety'),
-      desc: t('ecosystem.interactionSafetyDesc'),
+      title: t('ecosystem.dataFabric'),
+      desc: t('ecosystem.lorenzoParagraph2'),
       image: "/Images/New/0f918059-c5e7-4c76-8f7f-169f9b992765.avif",
-      align: "left"
+      align: "right"
     }
   ];
 
@@ -60,14 +54,32 @@ const RoboticsAlternating = () => {
           >
             <SpotlightCard className="p-8 md:p-12 bg-white/50 border-white/40">
               <h3 className="text-3xl md:text-4xl font-heading font-bold mb-6">{section.title}</h3>
-              <p className="text-lg text-text-secondary leading-relaxed">
-                {section.desc}
-              </p>
+              <div className="text-lg text-text-secondary leading-relaxed space-y-4">
+                {section.desc.split('\n\n').map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
+              </div>
             </SpotlightCard>
           </motion.div>
 
         </div>
       ))}
+
+      {/* Third paragraph — full width */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        <SpotlightCard className="p-8 md:p-12 bg-white/50 border-white/40 text-center max-w-4xl mx-auto">
+          <div className="text-lg text-text-secondary leading-relaxed space-y-4">
+            {t('ecosystem.lorenzoParagraph3').split('\n\n').map((paragraph: string, i: number) => (
+              <p key={i} className="text-xl font-medium text-foreground">{paragraph}</p>
+            ))}
+          </div>
+        </SpotlightCard>
+      </motion.div>
     </section>
   );
 };

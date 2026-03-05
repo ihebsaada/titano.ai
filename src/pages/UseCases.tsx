@@ -6,12 +6,18 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import Seo from '../components/Seo';
 
 const UseCases = () => {
   const { t } = useTranslation();
 
   return (
     <div className="min-h-screen pt-24 relative">
+      <Seo
+        title="Use Cases | Robotic Media™ Deployments"
+        description="Robotic Media deployments across retail, events, transit hubs, campuses, and public spaces—delivering measurable DOOH with real-time analytics."
+        path="/use-cases"
+      />
       <UseCasesHero />
       <UseCasesMosaic />
       <CampaignFlowDiagram />

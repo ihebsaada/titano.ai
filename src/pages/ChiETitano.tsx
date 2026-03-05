@@ -1,12 +1,18 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import SpotlightCard from '../components/SpotlightCard';
+import Seo from '../components/Seo';
 
 const ChiETitano = () => {
   const { t } = useTranslation();
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
+      <Seo
+        title="Who is Titano | Robotic Media™ Infrastructure Company"
+        description="Titano is the company behind the Robotic Media infrastructure and the creator of Titano OS, the operating layer powering programmable media networks in the physical world."
+        path="/chi-e-titano"
+      />
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

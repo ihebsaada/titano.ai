@@ -47,9 +47,18 @@ const VideoHero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-2xl text-white/90 mb-10 max-w-3xl font-light"
+          className="text-lg md:text-2xl text-white/90 mb-6 max-w-3xl font-light whitespace-pre-line"
         >
           {t('hero.subtitle')}
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="text-sm md:text-base text-white/60 mb-10 max-w-2xl font-light leading-relaxed"
+        >
+          {t('hero.explainer')}
         </motion.p>
         
         <motion.div
@@ -58,7 +67,7 @@ const VideoHero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <Link 
-            to="/ecosistema"
+            to="/robotic-media"
             className="group flex items-center gap-3 px-8 py-4 bg-white text-dark rounded-full font-bold text-lg hover:bg-gray-200 transition-all"
           >
             {t('hero.explore')}

@@ -7,9 +7,9 @@ const OperationsHubSection = () => {
   const { t } = useTranslation();
 
   const stats = [
-    { label: t('ecosystem.mapping'), value: t('ecosystem.active') },
-    { label: t('ecosystem.telemetry'), value: t('ecosystem.realtime') },
-    { label: t('ecosystem.issues'), value: t('ecosystem.zeroCritical') },
+    { label: t('ecosystem.impressions'), value: t('ecosystem.certified') },
+    { label: t('ecosystem.campaigns'), value: t('ecosystem.realtime') },
+    { label: t('ecosystem.uptime'), value: t('ecosystem.highAvailability') },
     { label: t('ecosystem.network'), value: "EU" },
   ];
 

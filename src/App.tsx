@@ -7,6 +7,7 @@ import AboutContact from './pages/AboutContact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import BrandGuidelines from './pages/BrandGuidelines';
 import ChiETitano from './pages/ChiETitano';
+import RoboticMedia from './pages/RoboticMedia';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/brand-guidelines" element={<BrandGuidelines />} />
         <Route path="/chi-e-titano" element={<ChiETitano />} />
+        <Route path="/robotic-media" element={<RoboticMedia />} />
       </Routes>
     </MainLayout>
   );

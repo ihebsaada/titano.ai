@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import SpotlightCard from '../components/SpotlightCard';
 import { Settings } from 'lucide-react';
+import Seo from '../components/Seo';
 
 const PrivacyPolicy = () => {
   const { t } = useTranslation();
@@ -20,6 +21,11 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="bg-background min-h-screen pt-32 pb-24 px-6 md:px-12 relative overflow-hidden">
+      <Seo
+        title="Privacy Policy | Titano"
+        description="Read how Titano collects, uses, and protects personal data across its website and media infrastructure services."
+        path="/privacy-policy"
+      />
       <div className="absolute inset-0 opacity-[0.1] pointer-events-none" 
         style={{
           backgroundImage: 'linear-gradient(#808080 1px, transparent 1px), linear-gradient(90deg, #808080 1px, transparent 1px)', 

@@ -1,6 +1,6 @@
 import EcosystemHero from '../components/ecosystem/EcosystemHero';
 import EcosystemMosaic5 from '../components/ecosystem/EcosystemMosaic5';
-import OSLayerStack from '../components/ecosystem/OSLayerStack';
+// import OSLayerStack from '../components/ecosystem/OSLayerStack';
 import RoboticsAlternating from '../components/ecosystem/RoboticsAlternating';
 import OperationsHubSection from '../components/ecosystem/OperationsHubSection';
 import WorkflowDiagram from '../components/ecosystem/WorkflowDiagram';
@@ -8,15 +8,21 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import Seo from '../components/Seo';
 
 const Ecosystem = () => {
   const { t } = useTranslation();
 
   return (
     <div className="min-h-screen pt-24 relative">
+      <Seo
+        title="Robotic Media Ecosystem | Network Partners & Infrastructure"
+        description="A global ecosystem of robot manufacturers, venues, media partners, and measurement infrastructure connected through Titano OS."
+        path="/ecosistema"
+      />
       <EcosystemHero />
       <EcosystemMosaic5 />
-      <OSLayerStack />
+      {/* <OSLayerStack /> */}
       <RoboticsAlternating />
       <OperationsHubSection />
       <div className="h-32" />

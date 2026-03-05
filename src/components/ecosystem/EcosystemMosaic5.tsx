@@ -122,7 +122,7 @@ const EcosystemMosaic5 = () => {
                </div>
                <div className="text-right flex-grow">
                    <h3 className="text-2xl font-heading font-bold mb-1">{t('ecosystem.autonomousMedia')}</h3>
-                   <p className="text-gray-300">Application Layer</p>
+                   <p className="text-gray-300">{t('ecosystem.roboticsDesc')}</p>
                </div>
             </div>
           </MagicCard>

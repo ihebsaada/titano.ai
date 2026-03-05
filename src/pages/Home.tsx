@@ -6,7 +6,7 @@ import MediaCarousel from '../components/MediaCarousel';
 import EUReachMap from '../components/EUReachMap';
 import VideoHero from '../components/VideoHero';
 import SpotlightCard from '../components/SpotlightCard';
-import AutonomousUnits from '../components/AutonomousUnits';
+import Seo from '../components/Seo';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
@@ -15,6 +15,11 @@ const Home = () => {
 
   return (
     <div className="min-h-screen relative">
+      <Seo
+        title="Robotic Media™ Infrastructure by Titano"
+        description="Robotic Media is a new infrastructure category where autonomous machines become programmable media nodes operating in the physical world. Powered by Titano OS."
+        path="/"
+      />
       <VideoHero />
 
       <div className="relative z-10 -mt-24 px-6 md:px-12 max-w-7xl mx-auto mb-24">
@@ -44,11 +49,10 @@ const Home = () => {
         <div className="mb-12 text-center md:text-left">
            <h3 className="text-sm font-bold uppercase tracking-widest text-accent mb-2">{t('home.ecosystemTag')}</h3>
            <h2 className="text-4xl md:text-5xl font-heading font-bold">{t('home.ecosystemTitle')}</h2>
+           <p className="text-lg text-text-secondary mt-4 max-w-3xl">{t('home.ecosystemSubtitle')}</p>
         </div>
         <MosaicShowcase />
       </section>
-
-      <AutonomousUnits />
 
       <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32">
         <MetricsTicker />

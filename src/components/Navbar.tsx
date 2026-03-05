@@ -36,6 +36,7 @@ const Navbar = () => {
     { name: t('navbar.home'), path: '/', desc: t('navbar.homeDesc') },
     { name: t('navbar.ecosystem'), path: '/ecosistema', desc: t('navbar.ecosystemDesc') },
     { name: t('navbar.useCases'), path: '/use-cases', desc: t('navbar.useCasesDesc') },
+    { name: t('navbar.roboticMedia'), path: '/robotic-media', desc: t('navbar.roboticMediaDesc') },
     { name: t('navbar.about'), path: '/about-contact', desc: t('navbar.aboutDesc') },
   ];
 
