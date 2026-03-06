@@ -11,27 +11,27 @@
     "chiETitano": "Chi è Titano",
     "chiETitanoDesc": "Identità Istituzionale",
     "contact": "Contattaci",
-    "roboticMedia": "Robotic Media",
+    "roboticMedia": "Robotic Media™",
     "roboticMediaDesc": "La Nuova Disciplina Media"
   },
   "hero": {
-    "title": "Robotic Media",
+    "title": "Robotic Media™",
     "subtitle": "Robot intelligenti. Media dinamici. Dati reali.\nUna sola infrastruttura.",
-    "explore": "Explore Robotic Media",
-    "explainer": "Robotic Media è una nuova categoria infrastrutturale che trasforma robot autonomi in reti media programmabili che operano nel mondo fisico."
+    "explore": "Explore Robotic Media™",
+    "explainer": "Robotic Media™ è una nuova categoria infrastrutturale che trasforma robot autonomi in reti media programmabili che operano nel mondo fisico."
   },
   "home": {
     "introTitle": "Una Nuova Infrastruttura Media",
-    "introText": "Robotic Media è una nuova categoria di media programmabili che operano nel mondo fisico.\n\nDefinita da Lorenzo Macali e abilitata da Titano OS.",
+    "introText": "Robotic Media™ è una nuova categoria di media programmabili che operano nel mondo fisico.\n\nDefinita da Lorenzo Macali e abilitata da Titano OS.",
     "ecosystemTag": "Ecosistema",
-    "ecosystemTitle": "Robotic Media Ecosystem",
+    "ecosystemTitle": "Robotic Media™ Ecosystem",
     "ecosystemSubtitle": "Una rete globale di macchine autonome, location fisiche e partner media connessi tramite Titano OS.",
     "scaleTitle": "Rete Globale",
     "scaleText": "Robot autonomi connessi tramite Titano OS creano una nuova rete media distribuita che opera negli ambienti del mondo reale.",
-    "mediaTitle": "Robotic Media",
-    "mediaText": "Campagne media programmabili che operano negli ambienti fisici tramite Titano OS.",
-    "ctaTitle": "Unisciti alla Rete Robotic Media",
-    "ctaText": "Collabora con Titano OS come manufacturer, venue o brand per attivare reti Robotic Media.",
+    "mediaTitle": "Robotic Media™",
+    "mediaText": "Campagne Robotic Media™ programmabili che operano negli ambienti fisici tramite Titano OS.",
+    "ctaTitle": "Unisciti alla Rete Robotic Media™",
+    "ctaText": "Collabora con Titano OS come manufacturer, venue o brand per attivare reti Robotic Media™.",
     "ctaButton": "Contattaci"
   },
   "metrics": {
@@ -72,7 +72,7 @@
   "slide5": "Distribuzione contestuale dei media in aree ad alta affluenza.",
   "slide6": "Pubblicità dinamica in grandi eventi.",
   "slide7": "Orchestrazione di campagne su reti distribuite.",
-  "slide8": "Deployment di Robotic Media su scala."
+  "slide8": "Deployment di Robotic Media™ su scala."
 },
   "mosaic": {
     "robotics": "Robotica",
@@ -83,18 +83,19 @@
     "mediaNetworkDesc": "DOOH in movimento."
   },
   "ecosystem": {
-    "heroTitle": "Robotic Media Ecosystem",
+    "heroTitle": "Robotic Media™ Ecosystem",
     "heroSubtitle": "Una rete globale di macchine autonome, location fisiche e partner media connessi tramite Titano OS.",
     "roboticsLayer": "Come Funziona",
-    "roboticsDesc": "Robot di diversi produttori operano come nodi media programmabili in ambienti fisici.",
+    "roboticsDesc": "Titano OS connette robot di diversi produttori e li trasforma in nodi Robotic Media™ programmabili negli ambienti fisici.",
     "roboticsSubtitle": "Dalla connessione alla delivery delle campagne.",
     "titanoOS": "Titano OS",
     "titanoOSDesc": "Software di infrastruttura media per programmazione contenuti, orchestrazione campagne, certificazione impression e analytics di rete.",
     "dataFabric": "Dati & Misurazione",
     "dataFabricDesc": "Infrastruttura per impression certificate, tracciamento delle interazioni e analytics nel mondo reale su tutti i nodi media connessi.",
-    "autonomousMedia": "Rete Robotic Media",
-    "operationsHub": "Rete EU",
-    "operationsHubDesc": "Centro operativo per monitoraggio dello stato dei nodi media e delle performance delle campagne sulla rete europea.",
+    "autonomousMedia": "Rete Robotic Media™",
+    "operationsHub": "Rete Globale",
+    "operationsHubDesc": "Centro operativo per il monitoraggio dello stato dei nodi media e delle performance delle campagne sulla rete globale.",
+    "autonomousMediaDesc": "Una rete globale di nodi Robotic Media™ programmabili che abilita delivery di campagna, tracciamento delle interazioni e operazioni misurabili negli ambienti reali.",
     "osLayersTitle": "Titano OS Media Layer",
     "osLayersSubtitle": "Un layer di orchestrazione media progettato per ambienti fisici su scala.",
     "layer1Title": "Programmazione Contenuti",
@@ -107,11 +108,11 @@
     "layer4Desc": "Dashboard di performance di flotta, insight di ottimizzazione e reportistica in tempo reale.",
     "layer5Title": "Infrastruttura Dati",
     "layer5Desc": "Pipeline dati unificata che connette i nodi media ai sistemi di analytics e reporting.",
-    "lorenzoParagraph1": "Titano \u00e8 l'azienda dietro l'infrastruttura Robotic Media.\n\nL'azienda sviluppa Titano OS, l'infrastruttura proprietaria progettata per abilitare reti Robotic Media in ambienti reali.\n\nAttraverso questa infrastruttura, robot autonomi diventano nodi media programmabili capaci di distribuire contenuti, raccogliere interazioni e generare dati misurabili negli spazi fisici.",
-    "lorenzoParagraph2": "Robotic Media \u00e8 una nuova categoria infrastrutturale definita nel 2026 da Lorenzo Macali, Founder & CEO di Titano.\n\nLa categoria descrive un nuovo paradigma in cui macchine autonome operano come nodi di una rete media distribuita negli ambienti fisici.",
+    "lorenzoParagraph1": "Titano \u00e8 l'azienda dietro l'infrastruttura Robotic Media™.\n\nL'azienda sviluppa Titano OS, l'infrastruttura proprietaria progettata per abilitare reti Robotic Media™ in ambienti reali.\n\nAttraverso questa infrastruttura, robot autonomi diventano nodi media programmabili capaci di distribuire contenuti, raccogliere interazioni e generare dati misurabili negli spazi fisici.",
+    "lorenzoParagraph2": "Robotic Media™ \u00e8 una nuova categoria infrastrutturale definita nel 2026 da Lorenzo Macali, Founder & CEO di Titano.\n\nLa categoria descrive un nuovo paradigma in cui macchine autonome operano come nodi di una rete media distribuita negli ambienti fisici.",
     "lorenzoParagraph3": "Titano si concentra sulla costruzione dell'operating layer che connette macchine autonome, location fisiche e sistemi media in una rete programmabile unificata.\n\nL'obiettivo \u00e8 creare l'infrastruttura globale che alimenta la prossima generazione di media fisici.",
     "operationsHubTitle": "Operazioni di Rete",
-    "operationsHubText": "Un centro operativo in tempo reale che monitora lo stato dei nodi media, la delivery delle campagne e le performance della rete in Europa.",
+    "operationsHubText": "Un centro operativo in tempo reale che monitora lo stato dei nodi media, la delivery delle campagne e le performance della rete a livello globale.",
     "impressions": "Impression",
     "certified": "Certificate",
     "campaigns": "Campagne",
@@ -119,12 +120,12 @@
     "uptime": "Uptime",
     "highAvailability": "99.9%",
     "network": "Rete",
-    "ctaTitle": "L'Infrastruttura Dietro il Robotic Media",
+    "ctaTitle": "L'Infrastruttura Dietro il Robotic Media™",
     "ctaText": "Scopri come Titano OS alimenta la prossima generazione di media programmabili operanti in ambienti reali.",
     "ctaButton": "Esplora i Casi d'Uso"
   },
   "workflow": {
-    "title": "Il Workflow Robotic Media",
+    "title": "Il Workflow Robotic Media™",
     "subtitle": "Dall'integrazione alla delivery ottimizzata delle campagne.",
     "connect": "Integra",
     "connectDesc": "Robot multi marca si connettono a Titano OS come nodi media",
@@ -147,7 +148,7 @@
   "heroTitle": "Media Autonomo",
   "heroSubtitle": "DOOH dinamico, contestuale e misurabile attraverso la mobilità robotica.",
   "verticals": "Verticali",
-  "subtitle": "Ambienti media in cui operano i deployment Robotic Media.",
+  "subtitle": "Ambienti media in cui operano i deployment Robotic Media™.",
 
   "universities": "Campus & Università",
   "universitiesDesc": "Campagne mirate e servizi informativi erogati tramite nodi media autonomi in ambienti campus su larga scala.",
@@ -165,7 +166,7 @@
   "securityDesc": "Infrastruttura media urbana in aree pedonali e spazi pubblici per campagne DOOH dinamiche e misurabili.",
 
   "ctaTitle": "Pronto a Innovare?",
-  "ctaText": "Metti in movimento il tuo brand. Contattaci per scoprire le opportunità del network Robotic Media.",
+  "ctaText": "Metti in movimento il tuo brand. Contattaci per scoprire le opportunità del network Robotic Media™.",
   "ctaButton": "Contattaci per partnership media"
 },
   "proofMetrics": {
@@ -197,7 +198,7 @@
     "visionStory1": "L'autonomia non è il futuro, è il presente. Crediamo che i robot debbano uscire dai laboratori e integrarsi negli spazi quotidiani, portando efficienza e nuovi servizi dove le persone vivono e lavorano.",
     "visionStory1Highlight": "L'autonomia non è il futuro, è il presente.",
     "visionStory2": "Titano OS è il cervello del sistema: trasforma l'hardware standard in una rete intelligente di dati e media in movimento.",
-    "visionStory3": "Nati in Europa, costruiamo tecnologia etica e sicura per abilitare la prossima generazione di servizi urbani e commerciali.",
+    "visionStory3": "Costruiamo tecnologia etica e sicura per abilitare la prossima generazione di servizi urbani e commerciali su scala globale.",
     "valuesTitle": "I Nostri Valori",
     "valueSafetyTitle": "Sicurezza",
     "valueSafetyDesc": "La sicurezza delle persone e degli ambienti è la priorità assoluta in ogni riga di codice e in ogni movimento.",
@@ -216,7 +217,7 @@
   "kpiDefinition": "Definizione di obiettivi, location e segmenti di audience.",
 
   "titanoOS": "Pianificazione di Rete",
-  "aiConfig": "Le campagne vengono programmate e distribuite sulla rete Robotic Media.",
+  "aiConfig": "Le campagne vengono programmate e distribuite sulla rete Robotic Media™.",
 
   "robot": "Delivery Media",
   "fieldActivation": "I contenuti vengono erogati da nodi media autonomi negli ambienti fisici.",
@@ -229,18 +230,18 @@
 },
   "chiETitano": {
     "title": "Chi è Titano",
-    "mainText": "Titano è una società europea leader nello sviluppo di infrastrutture operative per la robotica autonoma e i media intelligenti.",
+    "mainText": "Titano è una società globale che sviluppa infrastrutture operative per la robotica autonoma e i media intelligenti.",
     "hqLabel": "Sede Centrale",
     "hqValue": "Milano, Italia",
     "scopeLabel": "Ambito Operativo",
-    "scopeValue": "Europa",
+    "scopeValue": "Globale",
     "sectorsTitle": "Core Business & Settori",
     "sector1": "Robotica Autonoma: Sviluppo di sistemi di navigazione e controllo per piattaforme robotiche di terze parti.",
     "sector2": "Infrastrutture Intelligenti: Creazione del layer operativo che abilita l'autonomia in ambienti complessi del mondo reale.",
-    "sector3": "Robotic Media: Trasformazione della robotica in un nuovo canale di comunicazione e advertising dinamico guidato dai dati.",
+    "sector3": "Robotic Media™: Trasformazione della robotica in un nuovo canale di comunicazione e advertising dinamico guidato dai dati.",
     "clarificationTitle": "Chiarimento Importante",
     "clarificationText": "Titano è un'entità aziendale privata operante nel settore tecnologico. Non è un satellite, non è un progetto spaziale, né un riferimento a figure mitologiche. La nostra missione è radicata esclusivamente nello sviluppo di tecnologie terrestri per l'automazione e l'intelligenza artificiale applicata alla robotica.",
-    "footerText": "Come infrastruttura europea, Titano si impegna a costruire il ponte tra il mondo digitale dei dati e l'esecuzione fisica dei compiti attraverso robot autonomi, garantendo scalabilità, sicurezza e innovazione nel tessuto urbano e commerciale globale."
+    "footerText": "Titano si impegna a costruire il ponte tra il mondo digitale dei dati e l'esecuzione fisica dei compiti attraverso robot autonomi, garantendo scalabilità, sicurezza e innovazione negli ambienti urbani e commerciali globali."
   },
   "cookies": {
     "title": "Preferenze Cookie",
@@ -272,9 +273,9 @@
   },
   "roboticMedia": {
     "hero": {
-      "title": "Robotic Media",
+      "title": "Robotic Media™",
       "subtitle": "Una nuova categoria di infrastruttura media nel mondo fisico.",
-      "attribution": "Robotic Media è una nuova categoria infrastrutturale definita nel 2026 da Lorenzo Macali, Founder & CEO di Titano.",
+      "attribution": "Robotic Media™ è una nuova categoria infrastrutturale definita nel 2026 da Lorenzo Macali, Founder & CEO di Titano.",
       "lead": "I robot diventano nodi media programmabili distribuiscono contenuti, abilitano misurazione verificata e generano dati reali su larga scala.",
       "cta": "Scarica il White Paper"
     },
@@ -285,9 +286,9 @@
       "globalNetworkAlt": "Rete media robotica operativa su scala in una venue al coperto"
     },
     "definition": {
-      "title": "Cos'è il Robotic Media",
-      "statement": "Robotic Media descrive un'infrastruttura che trasforma robot autonomi in nodi media programmabili operanti nel mondo fisico.",
-      "body": "A differenza dei media tradizionali out of home  cartelloni, segnaletica digitale, display statici  il Robotic Media è dinamico, misurabile e fisicamente presente dove si trova il pubblico. Ogni robot diventa un nodo in una rete media distribuita: distribuendo contenuti, raccogliendo impression certificate e abilitando dati di interazione nel mondo reale."
+      "title": "Cos'è il Robotic Media™",
+      "statement": "Robotic Media™ descrive un'infrastruttura che trasforma robot autonomi in nodi media programmabili operanti nel mondo fisico.",
+      "body": "A differenza dei media tradizionali out of home  cartelloni, segnaletica digitale, display statici  il Robotic Media™ è dinamico, misurabile e fisicamente presente dove si trova il pubblico. Ogni robot diventa un nodo in una rete media distribuita: distribuendo contenuti, raccogliendo impression certificate e abilitando dati di interazione nel mondo reale."
     },
     "titanoOS": {
       "title": "Titano OS: Software di Infrastruttura Media",
@@ -301,7 +302,7 @@
       ]
     },
     "ecosystem": {
-      "title": "L'Ecosistema Robotic Media",
+      "title": "L'Ecosistema Robotic Media™",
       "subtitle": "Quattro pilastri che connettono robot, venue, brand e dati in un'infrastruttura media unificata.",
       "blocks": {
         "manufacturers": {
@@ -310,11 +311,11 @@
         },
         "venues": {
           "title": "Venue & Location",
-          "desc": "Ambienti fisici in cui operano le reti Robotic Media  centri commerciali, aeroporti, hotel, campus, eventi."
+          "desc": "Ambienti fisici in cui operano le reti Robotic Media™  centri commerciali, aeroporti, hotel, campus, eventi."
         },
         "mediaBrands": {
           "title": "Media & Brand",
-          "desc": "Brand e partner media che attivano campagne sulle reti Robotic Media."
+          "desc": "Brand e partner media che attivano campagne sulle reti Robotic Media™."
         },
         "measurement": {
           "title": "Dati & Misurazione",
@@ -324,15 +325,15 @@
     },
     "globalNetwork": {
       "title": "Una Rete Globale",
-      "body": "Il Robotic Media è un'infrastruttura attiva in fase di distribuzione. Titano sta costruendo una rete di robot media enabled in venue, città ed eventi.",
+      "body": "Il Robotic Media™ è un'infrastruttura attiva in fase di distribuzione. Titano sta costruendo una rete di robot media enabled in venue, città ed eventi.",
       "bullets": [
-        "Consolidamento della rete europea nel 2026",
+        "Espansione della rete globale nel 2026",
         "Espansione internazionale verso nuovi mercati",
         "10.000 nodi media connessi entro il 2027"
       ]
     },
     "useCases": {
-      "title": "Dove Opera il Robotic Media",
+      "title": "Dove Opera il Robotic Media™",
       "subtitle": "Infrastruttura media scalabile distribuita in ambienti fisici ad alto traffico.",
       "cta": "Scopri tutti i casi d'uso",
       "cards": {
@@ -361,7 +362,7 @@
     },
     "download": {
       "title": "Scarica il White Paper",
-      "subtitle": "Accedi alla tesi completa sul Robotic Media e al framework tecnico.",
+      "subtitle": "Accedi alla tesi completa sul Robotic Media™ e al framework tecnico.",
       "downloadEN": "Download (English)",
       "downloadIT": "Download (Italiano)",
       "githubLabel": "Leggi su GitHub"
@@ -375,11 +376,11 @@
       },
       "venues": {
         "title": "Venue & Location",
-        "desc": "Ambienti fisici in cui operano le reti Robotic Media  centri commerciali, aeroporti, hotel, campus, eventi."
+        "desc": "Ambienti fisici in cui operano le reti Robotic Media™  centri commerciali, aeroporti, hotel, campus, eventi."
       },
       "mediaBrands": {
         "title": "Media & Brand",
-        "desc": "Brand e partner media che attivano campagne sulle reti Robotic Media."
+        "desc": "Brand e partner media che attivano campagne sulle reti Robotic Media™."
       },
       "measurement": {
         "title": "Dati & Misurazione",
