@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import LogoMarquee from "../components/LogoMarquee";
+// import LogoMarquee from "../components/LogoMarquee";
 import MetricsTicker from "../components/MetricsTicker";
-import MosaicShowcase from "../components/MosaicShowcase";
-import MediaCarousel from "../components/MediaCarousel";
+// import MosaicShowcase from "../components/MosaicShowcase";
+// import MediaCarousel from "../components/MediaCarousel";
 import EUReachMap from "../components/EUReachMap";
 import VideoHero from "../components/VideoHero";
 import SpotlightCard from "../components/SpotlightCard";
@@ -41,9 +41,9 @@ const Home = () => {
         </motion.div>
       </div>
 
-      <section className="mb-32">
+      {/* <section className="mb-32">
         <LogoMarquee />
-      </section>
+      </section> */}
 
       <section className="px-6 md:px-12 max-w-[1920px] mx-auto mb-32">
         <div className="mb-12 text-center md:text-left">
@@ -57,7 +57,7 @@ const Home = () => {
             {t("home.ecosystemSubtitle")}
           </p>
         </div>
-        <MosaicShowcase />
+        {/* <MosaicShowcase /> */}
       </section>
 
       <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32">
@@ -85,7 +85,7 @@ const Home = () => {
           </h2>
           <p className="text-xl text-text-secondary">{t("home.mediaText")}</p>
         </div>
-        <MediaCarousel />
+        {/* <MediaCarousel /> */}
       </section>
 
       <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32 text-center">

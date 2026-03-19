@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
-import MagicCard from '../MagicCard';
-import { Bot, Cpu, Database, Map, MonitorPlay } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { motion } from "framer-motion";
+import MagicCard from "../MagicCard";
+import { /*Bot,*/ Cpu, Database, Map /*MonitorPlay*/ } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const EcosystemMosaic5 = () => {
   const { t } = useTranslation();
@@ -9,69 +9,90 @@ const EcosystemMosaic5 = () => {
   return (
     <section className="px-6 md:px-12 max-w-[1920px] mx-auto mb-32">
       <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-6 h-auto md:h-[900px]">
-        
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="md:col-span-2 md:row-span-2 group"
         >
-          <MagicCard className="h-full p-8 md:p-10 flex flex-col justify-between relative overflow-hidden bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
-             <div className="relative z-10 flex flex-col h-full justify-between">
-                <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="bg-white/10 p-2 rounded-xl text-white backdrop-blur-sm border border-white/10">
-                      <Cpu size={32} />
-                    </div>
-                    <h3 className="text-3xl font-heading font-bold">{t('ecosystem.titanoOS')}</h3>
+          <MagicCard
+            className="h-full p-8 md:p-10 flex flex-col justify-between relative overflow-hidden bg-[#1B1B1B] text-white border-white/10"
+            gradientColor="rgba(255, 255, 255, 0.1)"
+            variant="dark"
+          >
+            <div className="relative z-10 flex flex-col h-full justify-between">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-white/10 p-2 rounded-xl text-white backdrop-blur-sm border border-white/10">
+                    <Cpu size={32} />
                   </div>
-                  <p className="text-gray-400 text-xl max-w-md">
-                    {t('ecosystem.titanoOSDesc')}
-                  </p>
+                  <h3 className="text-3xl font-heading font-bold">
+                    {t("ecosystem.titanoOS")}
+                  </h3>
                 </div>
-             </div>
+                <p className="text-gray-400 text-xl max-w-md">
+                  {t("ecosystem.titanoOSDesc")}
+                </p>
+              </div>
+            </div>
           </MagicCard>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
           className="md:col-span-2 md:row-span-1 group"
         >
-          <MagicCard className="h-full p-8 flex flex-col justify-center bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
+          <MagicCard
+            className="h-full p-8 flex flex-col justify-center bg-[#1B1B1B] text-white border-white/10"
+            gradientColor="rgba(255, 255, 255, 0.1)"
+            variant="dark"
+          >
             <div className="flex items-center gap-4 mb-4">
-                <div className="bg-white/10 w-12 h-12 rounded-xl flex items-center justify-center shadow-sm text-white border border-white/10">
-                  <Database size={24} />
-                </div>
-                <h3 className="text-2xl font-heading font-bold">{t('ecosystem.dataFabric')}</h3>
+              <div className="bg-white/10 w-12 h-12 rounded-xl flex items-center justify-center shadow-sm text-white border border-white/10">
+                <Database size={24} />
+              </div>
+              <h3 className="text-2xl font-heading font-bold">
+                {t("ecosystem.dataFabric")}
+              </h3>
             </div>
-            <p className="text-lg text-gray-400">{t('ecosystem.dataFabricDesc')}</p>
+            <p className="text-lg text-gray-400">
+              {t("ecosystem.dataFabricDesc")}
+            </p>
           </MagicCard>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
           className="md:col-span-2 md:row-span-1 group"
         >
-          <MagicCard className="h-full p-8 flex items-center relative overflow-hidden bg-[#1B1B1B] text-white border-white/10" gradientColor="rgba(255, 255, 255, 0.1)" variant="dark">
+          <MagicCard
+            className="h-full p-8 flex items-center relative overflow-hidden bg-[#1B1B1B] text-white border-white/10"
+            gradientColor="rgba(255, 255, 255, 0.1)"
+            variant="dark"
+          >
             <div className="relative z-10 flex items-center gap-6">
-               <div className="bg-white/10 p-4 rounded-2xl text-white border border-white/10 backdrop-blur-sm">
-                 <Map size={32} />
-               </div>
-               <div>
-                 <h3 className="text-2xl font-heading font-bold mb-1">{t('ecosystem.operationsHub')}</h3>
-                 <p className="text-gray-400">{t('ecosystem.operationsHubDesc')}</p>
-               </div>
+              <div className="bg-white/10 p-4 rounded-2xl text-white border border-white/10 backdrop-blur-sm">
+                <Map size={32} />
+              </div>
+              <div>
+                <h3 className="text-2xl font-heading font-bold mb-1">
+                  {t("ecosystem.operationsHub")}
+                </h3>
+                <p className="text-gray-400">
+                  {t("ecosystem.operationsHubDesc")}
+                </p>
+              </div>
             </div>
           </MagicCard>
         </motion.div>
 
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -126,8 +147,7 @@ const EcosystemMosaic5 = () => {
                </div>
             </div>
           </MagicCard>
-        </motion.div>
-
+        </motion.div> */}
       </div>
     </section>
   );

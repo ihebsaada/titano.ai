@@ -1,14 +1,14 @@
-import EcosystemHero from '../components/ecosystem/EcosystemHero';
-import EcosystemMosaic5 from '../components/ecosystem/EcosystemMosaic5';
+import EcosystemHero from "../components/ecosystem/EcosystemHero";
+import EcosystemMosaic5 from "../components/ecosystem/EcosystemMosaic5";
 // import OSLayerStack from '../components/ecosystem/OSLayerStack';
-import RoboticsAlternating from '../components/ecosystem/RoboticsAlternating';
-import OperationsHubSection from '../components/ecosystem/OperationsHubSection';
-import WorkflowDiagram from '../components/ecosystem/WorkflowDiagram';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
-import Seo from '../components/Seo';
+// import RoboticsAlternating from "../components/ecosystem/RoboticsAlternating";
+import OperationsHubSection from "../components/ecosystem/OperationsHubSection";
+import WorkflowDiagram from "../components/ecosystem/WorkflowDiagram";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import Seo from "../components/Seo";
 
 const Ecosystem = () => {
   const { t } = useTranslation();
@@ -23,7 +23,7 @@ const Ecosystem = () => {
       <EcosystemHero />
       <EcosystemMosaic5 />
       {/* <OSLayerStack /> */}
-      <RoboticsAlternating />
+      {/* <RoboticsAlternating /> */}
       <OperationsHubSection />
       <div className="h-32" />
       <WorkflowDiagram />
@@ -38,16 +38,16 @@ const Ecosystem = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-purple-900/10 opacity-50" />
           <div className="relative z-10">
             <h2 className="text-4xl md:text-6xl font-heading font-bold mb-8">
-              {t('ecosystem.ctaTitle')}
+              {t("ecosystem.ctaTitle")}
             </h2>
             <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-              {t('ecosystem.ctaText')}
+              {t("ecosystem.ctaText")}
             </p>
-            <Link 
+            <Link
               to="/use-cases"
               className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 transition-colors"
             >
-              {t('ecosystem.ctaButton')}
+              {t("ecosystem.ctaButton")}
               <ArrowRight size={20} />
             </Link>
           </div>
