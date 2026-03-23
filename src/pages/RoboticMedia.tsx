@@ -89,13 +89,13 @@ const RoboticMedia = () => {
                   <div className="w-[80%] h-[80%] bg-accent/10 rounded-full blur-3xl" />
                 </div>
                 <div className="relative rounded-[40px] border border-white/10 backdrop-blur-2xl overflow-hidden bg-white/5 shadow-xl shadow-black/10">
-                  <img
+                  {/* <img
                     src="/robotic-media/img1.jpeg"
                     alt={t("roboticMedia.images.heroAlt")}
                     loading="lazy"
                     decoding="async"
                     className="w-full max-h-[520px] object-cover mx-auto"
-                  />
+                  /> */}
                 </div>
               </motion.div>
             </div>
