@@ -125,13 +125,13 @@ const RoboticMedia = () => {
                     <div className="w-[70%] h-[70%] bg-accent/5 rounded-full blur-3xl" />
                   </div>
                   <div className="relative rounded-[32px] border border-white/10 overflow-hidden bg-white/5 shadow-xl shadow-black/10 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl hover:shadow-black/15">
-                    <img
+                    {/* <img
                       src="/robotic-media/img2.jpeg"
                       alt={t("roboticMedia.images.definitionAlt")}
                       loading="lazy"
                       decoding="async"
                       className="w-full h-auto object-cover rounded-[32px]"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
@@ -172,13 +172,13 @@ const RoboticMedia = () => {
                     <div className="w-[70%] h-[70%] bg-accent/5 rounded-full blur-3xl" />
                   </div>
                   <div className="relative rounded-[32px] border border-white/10 overflow-hidden bg-white/5 shadow-xl shadow-black/10 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl hover:shadow-black/15">
-                    <img
+                    {/* <img
                       src="/robotic-media/img4.jpeg"
                       alt={t("roboticMedia.images.titanoOSAlt")}
                       loading="lazy"
                       decoding="async"
                       className="w-full h-auto object-cover rounded-[32px]"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
@@ -259,13 +259,13 @@ const RoboticMedia = () => {
                     <div className="w-[70%] h-[70%] bg-accent/5 rounded-full blur-3xl" />
                   </div>
                   <div className="relative rounded-[32px] border border-white/10 overflow-hidden bg-white/5 shadow-xl shadow-black/10 transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl hover:shadow-black/15">
-                    <img
+                    {/* <img
                       src="/robotic-media/img3.jpeg"
                       alt={t("roboticMedia.images.globalNetworkAlt")}
                       loading="lazy"
                       decoding="async"
                       className="w-full h-auto object-cover rounded-[32px]"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
