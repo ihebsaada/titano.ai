@@ -1,3 +1,100 @@
+// import { motion } from "framer-motion";
+// import MagicCard from "../MagicCard";
+// import { useTranslation } from "react-i18next";
+
+// const team = [
+//   {
+//     name: "Lorenzo Macali",
+//     role: "Founder & Chief Executive Officer",
+//     image: "/Images/Team/lorenzo.avif",
+//     linkedin: "https://www.linkedin.com/in/lorenzomacali/",
+//   },
+//   {
+//     name: "Richard Yang",
+//     role: "Chief Technology Officer",
+//     image: "/Images/Team/richard11.JPEG",
+//     linkedin: "https://www.linkedin.com/in/richard-yang-0b34221a/",
+//   },
+//   {
+//     name: "Dal Gill",
+//     role: "Chief Market Partnerships Officer",
+//     image: "/Images/Team/Dal.PNG",
+//     linkedin: "https://www.linkedin.com/in/dalgill/",
+//   },
+//   {
+//     name: "Constantijn Vereecken",
+//     role: "General Manager",
+//     image: "/Images/Team/Constantijn.avif",
+//     linkedin: "https://www.linkedin.com/in/constantijnvereecken/",
+//   },
+//   {
+//     name: "Jonathan Marin",
+//     role: "Chief Commercial Officer",
+//     image: "/Images/Team/Jonathan.avif",
+//     linkedin: "https://www.linkedin.com/in/jonathanmarin1/",
+//   },
+//   {
+//     name: "Gabriel maddalena",
+//     role: "Head of Robotics Platform Engineering",
+//     image: "/Images/Team/gabriel.PNG",
+//     linkedin: "https://www.linkedin.com/in/gabriele-maddalena-9b6181152/",
+//   },
+//   {
+//     name: "Davide Geraci",
+//     role: "Sales Director Italy",
+//     image: "/Images/Team/davide_gar.JPEG",
+//     linkedin: "https://www.linkedin.com/in/davidegeraci/",
+//   },
+// ];
+
+// const TeamSection = () => {
+//   const { t } = useTranslation();
+
+//   return (
+//     <section className="px-6 md:px-12 max-w-[1920px] mx-auto mb-32 pt-24 border-t border-black/5">
+//       <h2 className="text-3xl font-heading font-bold mb-12">
+//         {t("about.teamTitle")}
+//       </h2>
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+//         {team.map((member, index) => (
+//           <motion.div
+//             key={index}
+//             initial={{ opacity: 0, y: 10 }}
+//             whileInView={{ opacity: 1, y: 0 }}
+//             viewport={{ once: true }}
+//             transition={{ delay: index * 0.1 }}
+//             className="group"
+//           >
+//             <MagicCard
+//               className="p-6 h-full bg-[#1B1B1B] border-white/10 text-white flex flex-col items-center text-center hover:border-white/20 transition-colors"
+//               gradientColor="rgba(255, 255, 255, 0.05)"
+//               variant="dark"
+//             >
+//               <div className="w-full aspect-[3/4] mb-6 rounded-2xl overflow-hidden border border-white/10 group-hover:border-white/30 transition-all duration-500 relative mx-auto">
+//                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
+//                 <img
+//                   src={member.image}
+//                   alt={member.name}
+//                   loading="lazy"
+//                   decoding="async"
+//                   className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105 transition-all duration-500 ease-out"
+//                 />
+//               </div>
+//               <h3 className="text-lg font-bold mb-1 font-heading group-hover:text-white transition-colors">
+//                 {member.name}
+//               </h3>
+//               <p className="text-gray-400 text-xs uppercase tracking-wider font-mono group-hover:text-gray-300 transition-colors">
+//                 {member.role}
+//               </p>
+//             </MagicCard>
+//           </motion.div>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default TeamSection;
 import { motion } from "framer-motion";
 import MagicCard from "../MagicCard";
 import { useTranslation } from "react-i18next";
@@ -7,41 +104,43 @@ const team = [
     name: "Lorenzo Macali",
     role: "Founder & Chief Executive Officer",
     image: "/Images/Team/lorenzo.avif",
+    linkedin: "https://www.linkedin.com/in/lorenzomacali/",
   },
   {
     name: "Richard Yang",
     role: "Chief Technology Officer",
     image: "/Images/Team/richard11.JPEG",
+    linkedin: "https://www.linkedin.com/in/richard-yang-0b34221a/",
   },
-  // {
-  //   name: "Francisco Javier Martin Romo",
-  //   role: "Chief Hardware Partnerships Officer",
-  //   image: "/Images/Team/Francisco.avif"
-  // },
   {
     name: "Dal Gill",
     role: "Chief Market Partnerships Officer",
     image: "/Images/Team/Dal.PNG",
+    linkedin: "https://www.linkedin.com/in/dalgill/",
   },
   {
     name: "Constantijn Vereecken",
     role: "General Manager",
     image: "/Images/Team/Constantijn.avif",
+    linkedin: "https://www.linkedin.com/in/constantijnvereecken/",
   },
   {
     name: "Jonathan Marin",
     role: "Chief Commercial Officer",
     image: "/Images/Team/Jonathan.avif",
+    linkedin: "https://www.linkedin.com/in/jonathanmarin1/",
   },
   {
     name: "Gabriel maddalena",
     role: "Head of Robotics Platform Engineering",
     image: "/Images/Team/gabriel.PNG",
+    linkedin: "https://www.linkedin.com/in/gabriele-maddalena-9b6181152/",
   },
   {
     name: "Davide Geraci",
     role: "Sales Director Italy",
     image: "/Images/Team/davide_gar.JPEG",
+    linkedin: "https://www.linkedin.com/in/davidegeraci/",
   },
 ];
 
@@ -53,6 +152,7 @@ const TeamSection = () => {
       <h2 className="text-3xl font-heading font-bold mb-12">
         {t("about.teamTitle")}
       </h2>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
         {team.map((member, index) => (
           <motion.div
@@ -63,28 +163,38 @@ const TeamSection = () => {
             transition={{ delay: index * 0.1 }}
             className="group"
           >
-            <MagicCard
-              className="p-6 h-full bg-[#1B1B1B] border-white/10 text-white flex flex-col items-center text-center hover:border-white/20 transition-colors"
-              gradientColor="rgba(255, 255, 255, 0.05)"
-              variant="dark"
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block h-full"
             >
-              <div className="w-full aspect-[3/4] mb-6 rounded-2xl overflow-hidden border border-white/10 group-hover:border-white/30 transition-all duration-500 relative mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105 transition-all duration-500 ease-out"
-                />
-              </div>
-              <h3 className="text-lg font-bold mb-1 font-heading group-hover:text-white transition-colors">
-                {member.name}
-              </h3>
-              <p className="text-gray-400 text-xs uppercase tracking-wider font-mono group-hover:text-gray-300 transition-colors">
-                {member.role}
-              </p>
-            </MagicCard>
+              <MagicCard
+                className="p-6 h-full bg-[#1B1B1B] border-white/10 text-white flex flex-col items-center text-center hover:border-white/20 transition-all duration-300 cursor-pointer hover:scale-[1.02]"
+                gradientColor="rgba(255, 255, 255, 0.05)"
+                variant="dark"
+              >
+                <div className="w-full aspect-[3/4] mb-6 rounded-2xl overflow-hidden border border-white/10 group-hover:border-white/30 transition-all duration-500 relative mx-auto">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
+
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105 transition-all duration-500 ease-out"
+                  />
+                </div>
+
+                <h3 className="text-lg font-bold mb-1 font-heading group-hover:text-white transition-colors">
+                  {member.name}
+                </h3>
+
+                <p className="text-gray-400 text-xs uppercase tracking-wider font-mono group-hover:text-gray-300 transition-colors">
+                  {member.role}
+                </p>
+              </MagicCard>
+            </a>
           </motion.div>
         ))}
       </div>
